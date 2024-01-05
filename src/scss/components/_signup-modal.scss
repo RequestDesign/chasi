@@ -1,0 +1,93 @@
+.signup-modal {
+    .auth-modal-content__switcher-container {
+        margin-bottom: 2.4rem;
+
+        @media (max-width: 48em) {
+            margin-bottom: 4.8rem;
+        }
+    }
+
+    #continueRegButton, #confirmCodeButton, #confirmPasswordButton {
+        margin-bottom: 2.4rem;
+        width: 100%;
+
+        @media (max-width: 48em) {
+            margin-bottom: 4.8rem;
+        }
+    }
+
+    #signUpButton {
+        width: 100%;
+
+        @media (max-width: 48em) {
+            font-size: 3.2rem;
+            padding: 2.4rem 17.8rem;
+        }
+    }
+
+    .auth-modal-content__send-code-again {
+        color: #298267;
+        font-size: 1.6rem;
+        line-height: 150%;
+
+        @media (max-width: 48em) {
+            font-size: 3.2rem;
+        }
+    }
+
+    .auth-modal-content__agr {
+        color: #999;
+        font-size: 1.3rem;
+        line-height: 123.077%;
+        margin-bottom: 2.4rem;
+
+        @media (max-width: 48em) {
+            font-size: 2.6rem;
+            margin-bottom: 4.8rem;
+        }
+    }
+
+    #cityInputWrapper {
+        position: relative;
+
+        .city-list {
+            position: absolute;
+            top: calc(100% + 0.8rem);
+            width: 100%;
+            max-height: 19.3rem;
+            overflow: auto;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            box-shadow: 0 0.4rem 1rem 0 rgba(0, 0, 0, 0.1);
+            padding: 0 1.6rem;
+
+            background-color: #fff;
+            border-radius: 0.8rem;
+            font-size: 1.6rem;
+
+            @media (max-width: 48em) {
+                top: calc(100% + 1.6rem);
+                max-height: 38.6rem;
+                padding: 0 3.2rem;
+                font-size: 3.2rem;
+                border-radius: 1.6rem;
+                box-shadow: 0 0.8rem 2rem 0 rgba(0, 0, 0, 0.1);
+            }
+
+            &__item {
+                padding: 1.45rem 0;
+                border-bottom: 0.1rem solid #f1f3f3;
+                cursor: pointer;
+
+                &:last-child {
+                    border-bottom: none;
+                }
+
+                @media (max-width: 48em) {
+                    padding: 2.9rem 0rem;
+                }
+            }
+        }
+    }
+}

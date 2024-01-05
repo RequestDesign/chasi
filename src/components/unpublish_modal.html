@@ -1,0 +1,32 @@
+<div class="unpublish-modal modal desktop">
+    <div class="modal-back"></div>
+    <div class="modal-wrapper">
+        <div class="modal-exit">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M8 8L16 16" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M16 8L8 16" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </div>
+
+        <div class="modal-content">
+            <div class="modal__title">Выберите причину:</div>
+            <div class="modal__list">
+                <label for="soldByChasi" class="modal__list__item">
+                    <span>Продал с помощью Часы.ру</span>
+                    <input type="radio" name="reason" id="soldByChasi" checked />
+                </label>
+
+                <label for="soldByExt" class="modal__list__item">
+                    <span>Продал где-то ещё</span>
+                    <input type="radio" name="reason" id="soldByExt" />
+                </label>
+
+                <label for="other" class="modal__list__item">
+                    <span>Другая причина</span>
+                    <input type="radio" name="reason" id="other" />
+                </label>
+            </div>
+            <button class="btn btn__green btn--unpublish--modal">Снять с публикации</button>
+        </div>
+    </div>
+</div>

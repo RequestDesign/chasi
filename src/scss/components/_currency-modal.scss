@@ -1,0 +1,29 @@
+.currency-modal{
+    .options-modal__header{
+        display: flex;
+        gap: 25.4rem;
+        align-items: center;
+        font-size: 3.2rem;
+        line-height: 150%;
+        margin-bottom: 2.4rem;
+        font-weight: 600;
+    }
+
+    .options-modal__items{
+        gap: 0;
+        line-height: 150%;
+    }
+
+    .options-modal__item{
+        padding: 2.4rem 0;
+        border-bottom: 0.2rem solid #F1F3F3;
+
+        &:last-child{
+            border-bottom: none;
+        }
+    }
+
+    .price-converted{
+        font-weight: 600;
+    } 
+}

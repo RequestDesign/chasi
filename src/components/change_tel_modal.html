@@ -1,0 +1,53 @@
+<div class="modal profile-modal change-tel-modal">
+    <div class="modal-back"></div>
+    <div class="modal-wrapper">
+        <div class="profile-modal-top-mobile">
+            <div class="modal-exit desktop">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M8 8L16 16" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M16 8L8 16" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+            <div class="modal-exit mobile">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 18L9 12L15 6" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+        </div>
+
+        <div class="modal-content profile-modal-content">
+            <div class="profile-modal-content__title">Укажите новый номер</div>
+            <div class="profile-modal-content__desc">На ваш номер поступит СМС с кодом подтверждения</div>
+
+            <div class="profile-modal-content__change-tel-stages">
+                <div class="change-tel-first-stage">
+                    <form class="profile-modal-content__form" id="changeTelForm">
+                        <div class="input-wrapper">
+                            <input type="text" class="profile-modal-content__input" id="changeTelInput" required />
+                            <span>Телефон</span>
+                        </div>
+                    </form>
+                    <button class="btn btn__green" disabled type="submit" id="sendCodeOnTelButton">Отправить код</button>
+                </div>
+
+                <div class="change-tel-second-stage">
+                    <form class="profile-modal-content__form" id="changeTelForm">
+                        <div class="input-wrapper">
+                            <input type="text" class="profile-modal-content__input" id="changeTelInputDisabled" readonly required />
+                            <span>Телефон</span>
+                        </div>
+                        
+                        <div class="change-tel-hint">Введите код из СМС</div>
+
+                        <div class="input-wrapper">
+                            <input type="text" class="profile-modal-content__input" id="codeTelInput" required />
+                            <span>Код</span>
+                        </div>
+                    </form>
+                    <div class="profile-modal__send-code-again">Отправить код повторно</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

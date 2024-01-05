@@ -1,0 +1,13 @@
+.dropdown {
+    &.open {
+        .dropdown_bottom {
+            display: block;
+        }
+    }
+    &_top {
+        cursor: pointer;
+    }
+    &_bottom {
+        display: none;
+    }
+}

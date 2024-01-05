@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+        <title>Создание объявления</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header__top">
+                    <div class="header__top_container_left">
+                        <a class="header__logo"><img src="./assets/images/logo.svg" alt="Logo"></a>
+                        <div class="header__logo_text desktop">Кременчуг-Константиновское</div>
+                    </div>
+                    <div class="header__top_container_center">
+                        <div class="header__search_blur"></div>
+                        <div class="header__search">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M15.7138 6.8382C18.1647 9.28913 18.1647 13.2629 15.7138 15.7138C13.2629 18.1647 9.28913 18.1647 6.8382 15.7138C4.38727 13.2629 4.38727 9.28913 6.8382 6.8382C9.28913 4.38727 13.2629 4.38727 15.7138 6.8382" stroke="#7E8582" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M19 19L15.71 15.71" stroke="#7E8582" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <input class="header__search_input" type="text" placeholder="Введите название часов">
+                        </div>
+                        <a class="header__filter" href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14 14H16C16.552 14 17 14.448 17 15V19C17 19.552 16.552 20 16 20H14C13.448 20 13 19.552 13 19V15C13 14.448 13.448 14 14 14Z" stroke="#7E8582" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21 17H17" stroke="#7E8582" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M13 17H3" stroke="#7E8582" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 10H8C7.448 10 7 9.552 7 9V5C7 4.448 7.448 4 8 4H10C10.552 4 11 4.448 11 5V9C11 9.552 10.552 10 10 10Z" stroke="#7E8582" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M3 7H7" stroke="#7E8582" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M11 7H21" stroke="#7E8582" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <div class="header__search-cancel">Отменить</div>
+                        <div class="header__search_box">
+                            <div class="header__search_list">
+                                <a class="header__search_item">
+                                    <span>Rolex</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M9 18L15 12L9 6" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                                <a class="header__search_item">
+                                    <span>Rolex Cosmograph Daytona </span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M9 18L15 12L9 6" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                                <a class="header__search_item">
+                                    <span>Rolex Cosmograph Daytona </span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M9 18L15 12L9 6" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                                <a class="header__search_item">
+                                    <span>Rolex</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M9 18L15 12L9 6" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                                <a class="header__search_item">
+                                    <span>Rolex Cosmograph Daytona </span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M9 18L15 12L9 6" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                                <a class="header__search_item">
+                                    <span>Rolex Cosmograph Daytona </span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M9 18L15 12L9 6" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                                <a class="header__search_item">
+                                    <span>Rolex</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M9 18L15 12L9 6" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                                <a class="header__search_item">
+                                    <span>Rolex Cosmograph Daytona </span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M9 18L15 12L9 6" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                                <a class="header__search_item">
+                                    <span>Rolex Cosmograph Daytona </span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M9 18L15 12L9 6" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                                <a class="header__search_item">
+                                    <span>Rolex</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M9 18L15 12L9 6" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                                <a class="header__search_item">
+                                    <span>Rolex Cosmograph Daytona </span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M9 18L15 12L9 6" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                                <a class="header__search_item">
+                                    <span>Rolex Cosmograph Daytona </span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M9 18L15 12L9 6" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                                <a class="header__search_item">
+                                    <span>Rolex</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M9 18L15 12L9 6" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                                <a class="header__search_item">
+                                    <span>Rolex Cosmograph Daytona </span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M9 18L15 12L9 6" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                                <a class="header__search_item">
+                                    <span>Rolex Cosmograph Daytona </span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M9 18L15 12L9 6" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__top_container_right">
+                        <a class="header__icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16 7.28133C16.9187 6.20667 18.508 5 20.928 5C25.16 5 28 8.97333 28 12.6733C28 20.408 18.3707 26.3333 16 26.3333C13.6293 26.3333 4 20.408 4 12.6733C4 8.97333 6.84 5 11.072 5C13.492 5 15.0813 6.20667 16 7.28133Z" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Избранное</span>
+                        </a>
+                        <a class="header__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16 26.375V26.375C9.99337 26.375 5.125 21.5066 5.125 15.5V15.5C5.125 9.49337 9.99337 4.625 16 4.625V4.625C22.0066 4.625 26.875 9.49337 26.875 15.5V15.5C26.875 21.5066 22.0066 26.375 16 26.375Z" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M15.9987 10.667V20.3337" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M20.8346 15.5H11.168" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Объявления</span>
+                        </a>
+                        <a class="header__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none">
+                                <path d="M11.3267 26.6667H16.5" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M11.5185 26.667H7.06651C5.96918 26.667 5.41985 25.3403 6.19585 24.5656L7.64918 23.1123" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5.8335 15.9997C5.8335 10.109 10.6095 5.33301 16.5002 5.33301C22.3908 5.33301 27.1668 10.109 27.1668 15.9997C27.1668 21.8903 22.3908 26.6663 16.5002 26.6663" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8.1399 22.6134L7.64656 23.1067" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8.14416 22.6173C6.7015 20.7987 5.8335 18.5027 5.8335 16" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Сообщения</span>
+                        </a>
+                        <a class="header__icon">
+                            <div class="header__photo">
+                                <img src="./assets/images/avatar1.webp" alt="">
+                            </div>
+                            <span>Имя</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="header__bottom">
+                    <div class="header__bottom_swiper">
+                        <div class="swiper-wrapper">
+                            <a class="swiper-slide header__bottom_slide">Rolex</a>
+                            <a class="swiper-slide header__bottom_slide">Orient</a>
+                            <a class="swiper-slide header__bottom_slide">Fossil</a>
+                            <a class="swiper-slide header__bottom_slide">Cartier</a>
+                            <a class="swiper-slide header__bottom_slide">Rolex</a>
+                            <a class="swiper-slide header__bottom_slide">Orient</a>
+                            <a class="swiper-slide header__bottom_slide">Fossil</a>
+                            <a class="swiper-slide header__bottom_slide">Cartier</a>
+                            <a class="swiper-slide header__bottom_slide">Rolex</a>
+                            <a class="swiper-slide header__bottom_slide">Orient</a>
+                            <a class="swiper-slide header__bottom_slide">Fossil</a>
+                            <a class="swiper-slide header__bottom_slide">Cartier</a>
+                            <a class="swiper-slide header__bottom_slide">Rolex</a>
+                            <a class="swiper-slide header__bottom_slide">Orient</a>
+                            <a class="swiper-slide header__bottom_slide">Fossil</a>
+                            <a class="swiper-slide header__bottom_slide">Cartier</a>
+                            <a class="swiper-slide header__bottom_slide">Rolex</a>
+                            <a class="swiper-slide header__bottom_slide">Orient</a>
+                            <a class="swiper-slide header__bottom_slide">Fossil</a>
+                            <a class="swiper-slide header__bottom_slide">Cartier</a>
+                            <a class="swiper-slide header__bottom_slide">Rolex</a>
+                            <a class="swiper-slide header__bottom_slide">Orient</a>
+                            <a class="swiper-slide header__bottom_slide">Fossil</a>
+                            <a class="swiper-slide header__bottom_slide">Cartier</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="creating-adv">
+            <div class="container">
+                <div class="creating-adv__header">
+                    <h2 class="creating-adv__title desktop">Объявления</h2>
+                    <button class="btn btn--post-ad btn__green">Разместить объявление</button>
+                </div>
+
+                <div class="creating-adv__switchers">
+                    <a href="#!" class="switcher-cards switcher-cards--active" data-switcher="cardsAwaiting">
+                        <span>Ждут действий</span>
+                    </a>
+
+                    <a href="#!" class="switcher-cards" data-switcher="cardsPublished">
+                        <span>Активные</span>
+                    </a>
+
+                    <a href="#!" class="switcher-cards" data-switcher="cardsArchive">
+                        <span>Архив</span>
+                    </a>
+                </div>
+
+                <div class="creating-adv__switchers-container">
+                    <!-- awaiting -->
+                    <div class="creating-adv__switcher-content" data-content="cardsAwaiting">
+                        <div class="creating-adv__card card--awaiting card--unpayed">
+                            <div class="creating-adv__card__img">
+                                <img src="./assets/images/rolex.webp" alt="Watch" />
+                            </div>
+
+                            <div class="creating-adv__card__info">
+                                <div class="creating-adv__card__desc">
+                                    <div class="creating-adv__card__title">Rolex Cosmograph Daytona Tissot PRC 200</div>
+                                    <div class="creating-adv__card__price">190 000 ₽</div>
+                                </div>
+
+                                <div class="creating-adv__card__status">
+                                    <span class="status">Ожидает оплаты</span>
+                                    <!-- <span class="status-time">26 дней до удаления</span> -->
+                                </div>
+
+                                <div class="creating-adv__card__edit">
+                                    <a href="#!">Привязать карту</a>
+                                    <button class="btn--edit">
+                                        <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M1.59517 2.93182C1.31487 2.93182 1.07434 2.83144 0.87358 2.63068C0.672822 2.42992 0.572443 2.18939 0.572443 1.90909C0.572443 1.62879 0.672822 1.38826 0.87358 1.1875C1.07434 0.986742 1.31487 0.886364 1.59517 0.886364C1.87547 0.886364 2.116 0.986742 2.31676 1.1875C2.51752 1.38826 2.6179 1.62879 2.6179 1.90909C2.6179 2.0947 2.57055 2.26515 2.47585 2.42045C2.38494 2.57576 2.26184 2.70076 2.10653 2.79545C1.95502 2.88636 1.78456 2.93182 1.59517 2.93182ZM6.00142 2.93182C5.72112 2.93182 5.48059 2.83144 5.27983 2.63068C5.07907 2.42992 4.97869 2.18939 4.97869 1.90909C4.97869 1.62879 5.07907 1.38826 5.27983 1.1875C5.48059 0.986742 5.72112 0.886364 6.00142 0.886364C6.28172 0.886364 6.52225 0.986742 6.72301 1.1875C6.92377 1.38826 7.02415 1.62879 7.02415 1.90909C7.02415 2.0947 6.9768 2.26515 6.8821 2.42045C6.79119 2.57576 6.66809 2.70076 6.51278 2.79545C6.36127 2.88636 6.19081 2.93182 6.00142 2.93182ZM10.4077 2.93182C10.1274 2.93182 9.88684 2.83144 9.68608 2.63068C9.48532 2.42992 9.38494 2.18939 9.38494 1.90909C9.38494 1.62879 9.48532 1.38826 9.68608 1.1875C9.88684 0.986742 10.1274 0.886364 10.4077 0.886364C10.688 0.886364 10.9285 0.986742 11.1293 1.1875C11.33 1.38826 11.4304 1.62879 11.4304 1.90909C11.4304 2.0947 11.383 2.26515 11.2884 2.42045C11.1974 2.57576 11.0743 2.70076 10.919 2.79545C10.7675 2.88636 10.5971 2.93182 10.4077 2.93182Z"
+                                                fill="#298267"
+                                            />
+                                        </svg>
+                                    </button>
+                                    <ul class="creating-adv__card__options">
+                                        <li class="creating-adv__card__option"><a href="#!">Редактировать</a></li>
+                                        <li class="creating-adv__card__option"><a href="#!">Переместить в архив</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="creating-adv__card card--awaiting card--rejected">
+                            <div class="creating-adv__card__img">
+                                <img src="./assets/images/rolex-2.webp" alt="Watch" />
+                            </div>
+
+                            <div class="creating-adv__card__info">
+                                <div class="creating-adv__card__desc">
+                                    <div class="creating-adv__card__title">Rolex Datejust Turn-O-Graph</div>
+                                    <div class="creating-adv__card__price">26 ₽</div>
+                                </div>
+
+                                <div class="creating-adv__card__status">
+                                    <span class="status">Отклонено</span>
+                                    <!-- <span class="status-time">26 дней до удаления</span> -->
+                                </div>
+
+                                <div class="creating-adv__card__edit">
+                                    <a href="#!">Редактировать</a>
+                                    <button class="btn--edit">
+                                        <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M1.59517 2.93182C1.31487 2.93182 1.07434 2.83144 0.87358 2.63068C0.672822 2.42992 0.572443 2.18939 0.572443 1.90909C0.572443 1.62879 0.672822 1.38826 0.87358 1.1875C1.07434 0.986742 1.31487 0.886364 1.59517 0.886364C1.87547 0.886364 2.116 0.986742 2.31676 1.1875C2.51752 1.38826 2.6179 1.62879 2.6179 1.90909C2.6179 2.0947 2.57055 2.26515 2.47585 2.42045C2.38494 2.57576 2.26184 2.70076 2.10653 2.79545C1.95502 2.88636 1.78456 2.93182 1.59517 2.93182ZM6.00142 2.93182C5.72112 2.93182 5.48059 2.83144 5.27983 2.63068C5.07907 2.42992 4.97869 2.18939 4.97869 1.90909C4.97869 1.62879 5.07907 1.38826 5.27983 1.1875C5.48059 0.986742 5.72112 0.886364 6.00142 0.886364C6.28172 0.886364 6.52225 0.986742 6.72301 1.1875C6.92377 1.38826 7.02415 1.62879 7.02415 1.90909C7.02415 2.0947 6.9768 2.26515 6.8821 2.42045C6.79119 2.57576 6.66809 2.70076 6.51278 2.79545C6.36127 2.88636 6.19081 2.93182 6.00142 2.93182ZM10.4077 2.93182C10.1274 2.93182 9.88684 2.83144 9.68608 2.63068C9.48532 2.42992 9.38494 2.18939 9.38494 1.90909C9.38494 1.62879 9.48532 1.38826 9.68608 1.1875C9.88684 0.986742 10.1274 0.886364 10.4077 0.886364C10.688 0.886364 10.9285 0.986742 11.1293 1.1875C11.33 1.38826 11.4304 1.62879 11.4304 1.90909C11.4304 2.0947 11.383 2.26515 11.2884 2.42045C11.1974 2.57576 11.0743 2.70076 10.919 2.79545C10.7675 2.88636 10.5971 2.93182 10.4077 2.93182Z"
+                                                fill="#298267"
+                                            />
+                                        </svg>
+                                    </button>
+                                    <ul class="creating-adv__card__options">
+                                        <li class="creating-adv__card__option"><a href="#!">Переместить в архив</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="creating-adv__card card--awaiting card--expired">
+                            <div class="creating-adv__card__img">
+                                <img src="./assets/images/rolex-3.webp" alt="Watch" />
+                            </div>
+
+                            <div class="creating-adv__card__info">
+                                <div class="creating-adv__card__desc">
+                                    <div class="creating-adv__card__title">Rolex Datejust 36</div>
+                                    <div class="creating-adv__card__price">26 960 ₽</div>
+                                </div>
+
+                                <div class="creating-adv__card__status">
+                                    <span class="status">Истек срок размещения</span>
+                                    <!-- <span class="status-time">26 дней до удаления</span> -->
+                                </div>
+
+                                <div class="creating-adv__card__edit">
+                                    <a href="#!">Опубликовать снова</a>
+                                    <button class="btn--edit">
+                                        <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M1.59517 2.93182C1.31487 2.93182 1.07434 2.83144 0.87358 2.63068C0.672822 2.42992 0.572443 2.18939 0.572443 1.90909C0.572443 1.62879 0.672822 1.38826 0.87358 1.1875C1.07434 0.986742 1.31487 0.886364 1.59517 0.886364C1.87547 0.886364 2.116 0.986742 2.31676 1.1875C2.51752 1.38826 2.6179 1.62879 2.6179 1.90909C2.6179 2.0947 2.57055 2.26515 2.47585 2.42045C2.38494 2.57576 2.26184 2.70076 2.10653 2.79545C1.95502 2.88636 1.78456 2.93182 1.59517 2.93182ZM6.00142 2.93182C5.72112 2.93182 5.48059 2.83144 5.27983 2.63068C5.07907 2.42992 4.97869 2.18939 4.97869 1.90909C4.97869 1.62879 5.07907 1.38826 5.27983 1.1875C5.48059 0.986742 5.72112 0.886364 6.00142 0.886364C6.28172 0.886364 6.52225 0.986742 6.72301 1.1875C6.92377 1.38826 7.02415 1.62879 7.02415 1.90909C7.02415 2.0947 6.9768 2.26515 6.8821 2.42045C6.79119 2.57576 6.66809 2.70076 6.51278 2.79545C6.36127 2.88636 6.19081 2.93182 6.00142 2.93182ZM10.4077 2.93182C10.1274 2.93182 9.88684 2.83144 9.68608 2.63068C9.48532 2.42992 9.38494 2.18939 9.38494 1.90909C9.38494 1.62879 9.48532 1.38826 9.68608 1.1875C9.88684 0.986742 10.1274 0.886364 10.4077 0.886364C10.688 0.886364 10.9285 0.986742 11.1293 1.1875C11.33 1.38826 11.4304 1.62879 11.4304 1.90909C11.4304 2.0947 11.383 2.26515 11.2884 2.42045C11.1974 2.57576 11.0743 2.70076 10.919 2.79545C10.7675 2.88636 10.5971 2.93182 10.4077 2.93182Z"
+                                                fill="#298267"
+                                            />
+                                        </svg>
+                                    </button>
+                                    <ul class="creating-adv__card__options">
+                                        <li class="creating-adv__card__option"><a href="#!">Редактировать</a></li>
+                                        <li class="creating-adv__card__option"><a href="#!">Переместить в архив</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="creating-adv__card card--awaiting card--draft">
+                            <div class="creating-adv__card__img"></div>
+
+                            <div class="creating-adv__card__info">
+                                <div class="creating-adv__card__desc">
+                                    <div class="creating-adv__card__title">Rolex Datejust 36</div>
+                                    <div class="creating-adv__card__price">Цена не указана</div>
+                                </div>
+
+                                <div class="creating-adv__card__status">
+                                    <span class="status">Черновик</span>
+                                    <span class="status-time">26 дней до удаления</span>
+                                </div>
+
+                                <div class="creating-adv__card__edit">
+                                    <a href="#!">Отправить на проверку</a>
+                                    <button class="btn--edit">
+                                        <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M1.59517 2.93182C1.31487 2.93182 1.07434 2.83144 0.87358 2.63068C0.672822 2.42992 0.572443 2.18939 0.572443 1.90909C0.572443 1.62879 0.672822 1.38826 0.87358 1.1875C1.07434 0.986742 1.31487 0.886364 1.59517 0.886364C1.87547 0.886364 2.116 0.986742 2.31676 1.1875C2.51752 1.38826 2.6179 1.62879 2.6179 1.90909C2.6179 2.0947 2.57055 2.26515 2.47585 2.42045C2.38494 2.57576 2.26184 2.70076 2.10653 2.79545C1.95502 2.88636 1.78456 2.93182 1.59517 2.93182ZM6.00142 2.93182C5.72112 2.93182 5.48059 2.83144 5.27983 2.63068C5.07907 2.42992 4.97869 2.18939 4.97869 1.90909C4.97869 1.62879 5.07907 1.38826 5.27983 1.1875C5.48059 0.986742 5.72112 0.886364 6.00142 0.886364C6.28172 0.886364 6.52225 0.986742 6.72301 1.1875C6.92377 1.38826 7.02415 1.62879 7.02415 1.90909C7.02415 2.0947 6.9768 2.26515 6.8821 2.42045C6.79119 2.57576 6.66809 2.70076 6.51278 2.79545C6.36127 2.88636 6.19081 2.93182 6.00142 2.93182ZM10.4077 2.93182C10.1274 2.93182 9.88684 2.83144 9.68608 2.63068C9.48532 2.42992 9.38494 2.18939 9.38494 1.90909C9.38494 1.62879 9.48532 1.38826 9.68608 1.1875C9.88684 0.986742 10.1274 0.886364 10.4077 0.886364C10.688 0.886364 10.9285 0.986742 11.1293 1.1875C11.33 1.38826 11.4304 1.62879 11.4304 1.90909C11.4304 2.0947 11.383 2.26515 11.2884 2.42045C11.1974 2.57576 11.0743 2.70076 10.919 2.79545C10.7675 2.88636 10.5971 2.93182 10.4077 2.93182Z"
+                                                fill="#298267"
+                                            />
+                                        </svg>
+                                    </button>
+                                    <ul class="creating-adv__card__options">
+                                        <li class="creating-adv__card__option"><a href="#!">Редактировать</a></li>
+                                        <li class="creating-adv__card__option"><a href="#!">Переместить в архив</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- published = активные -->
+                    <div class="creating-adv__switcher-content" data-content="cardsPublished">
+                        <div class="creating-adv__card card--published">
+                            <div class="creating-adv__card__img">
+                                <img src="./assets/images/rolex-2.webp" alt="Rolex" />
+                            </div>
+
+                            <div class="creating-adv__card__info">
+                                <div class="creating-adv__card__desc">
+                                    <div class="creating-adv__card__title">Rolex Datejust Turn-O-Graph</div>
+                                    <div class="creating-adv__card__price">132 000 ₽</div>
+                                </div>
+
+                                <div class="creating-adv__card__icons">
+                                    <span class="views"><img src="./assets/images/views-ico.svg" alt="Views" />124</span>
+                                    <span class="likes"><img src="./assets/images/like-ico.svg" alt="Likes" />127</span>
+                                    <span class="calls"><img src="./assets/images/call-ico.svg" alt="Calls" />11</span>
+                                </div>
+
+                                <div class="creating-adv__card__status">
+                                    <span class="status">Размещено</span>
+                                    <span class="status-time">Размещение до 31.11.23</span>
+                                </div>
+
+                                <div class="creating-adv__card__edit">
+                                    <a href="#!">Поднять просмотры</a>
+                                    <button class="btn--edit">
+                                        <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M1.59517 2.93182C1.31487 2.93182 1.07434 2.83144 0.87358 2.63068C0.672822 2.42992 0.572443 2.18939 0.572443 1.90909C0.572443 1.62879 0.672822 1.38826 0.87358 1.1875C1.07434 0.986742 1.31487 0.886364 1.59517 0.886364C1.87547 0.886364 2.116 0.986742 2.31676 1.1875C2.51752 1.38826 2.6179 1.62879 2.6179 1.90909C2.6179 2.0947 2.57055 2.26515 2.47585 2.42045C2.38494 2.57576 2.26184 2.70076 2.10653 2.79545C1.95502 2.88636 1.78456 2.93182 1.59517 2.93182ZM6.00142 2.93182C5.72112 2.93182 5.48059 2.83144 5.27983 2.63068C5.07907 2.42992 4.97869 2.18939 4.97869 1.90909C4.97869 1.62879 5.07907 1.38826 5.27983 1.1875C5.48059 0.986742 5.72112 0.886364 6.00142 0.886364C6.28172 0.886364 6.52225 0.986742 6.72301 1.1875C6.92377 1.38826 7.02415 1.62879 7.02415 1.90909C7.02415 2.0947 6.9768 2.26515 6.8821 2.42045C6.79119 2.57576 6.66809 2.70076 6.51278 2.79545C6.36127 2.88636 6.19081 2.93182 6.00142 2.93182ZM10.4077 2.93182C10.1274 2.93182 9.88684 2.83144 9.68608 2.63068C9.48532 2.42992 9.38494 2.18939 9.38494 1.90909C9.38494 1.62879 9.48532 1.38826 9.68608 1.1875C9.88684 0.986742 10.1274 0.886364 10.4077 0.886364C10.688 0.886364 10.9285 0.986742 11.1293 1.1875C11.33 1.38826 11.4304 1.62879 11.4304 1.90909C11.4304 2.0947 11.383 2.26515 11.2884 2.42045C11.1974 2.57576 11.0743 2.70076 10.919 2.79545C10.7675 2.88636 10.5971 2.93182 10.4077 2.93182Z"
+                                                fill="#298267"
+                                            />
+                                        </svg>
+                                    </button>
+                                    <ul class="creating-adv__card__options">
+                                        <li class="creating-adv__card__option"><a href="#!">Редактировать</a></li>
+                                        <li class="creating-adv__card__option"><a href="#!">Снять с публикации</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="creating-adv__card card--published card--promoted">
+                            <div class="creating-adv__card__img">
+                                <img src="./assets/images/rolex-3.webp" alt="Rolex" />
+                            </div>
+
+                            <div class="creating-adv__card__info">
+                                <div class="creating-adv__card__desc">
+                                    <div class="creating-adv__card__title">Rolex Datejust Turn-O-Graph</div>
+                                    <div class="creating-adv__card__price">132 000 ₽</div>
+                                </div>
+
+                                <div class="creating-adv__card__icons">
+                                    <span class="views"><img src="./assets/images/views-ico.svg" alt="Views" />2 942</span>
+                                    <span class="likes"><img src="./assets/images/like-ico.svg" alt="Likes" />1270</span>
+                                    <span class="calls"><img src="./assets/images/call-ico.svg" alt="Calls" />48</span>
+                                </div>
+
+                                <div class="creating-adv__card__status">
+                                    <span class="status">Продвигается</span>
+                                    <span class="status-time">Продвижение до 31.11.23</span>
+                                </div>
+
+                                <div class="creating-adv__card__edit">
+                                    <a href="#!">Снять с публикации</a>
+                                    <button class="btn--edit">
+                                        <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M1.59517 2.93182C1.31487 2.93182 1.07434 2.83144 0.87358 2.63068C0.672822 2.42992 0.572443 2.18939 0.572443 1.90909C0.572443 1.62879 0.672822 1.38826 0.87358 1.1875C1.07434 0.986742 1.31487 0.886364 1.59517 0.886364C1.87547 0.886364 2.116 0.986742 2.31676 1.1875C2.51752 1.38826 2.6179 1.62879 2.6179 1.90909C2.6179 2.0947 2.57055 2.26515 2.47585 2.42045C2.38494 2.57576 2.26184 2.70076 2.10653 2.79545C1.95502 2.88636 1.78456 2.93182 1.59517 2.93182ZM6.00142 2.93182C5.72112 2.93182 5.48059 2.83144 5.27983 2.63068C5.07907 2.42992 4.97869 2.18939 4.97869 1.90909C4.97869 1.62879 5.07907 1.38826 5.27983 1.1875C5.48059 0.986742 5.72112 0.886364 6.00142 0.886364C6.28172 0.886364 6.52225 0.986742 6.72301 1.1875C6.92377 1.38826 7.02415 1.62879 7.02415 1.90909C7.02415 2.0947 6.9768 2.26515 6.8821 2.42045C6.79119 2.57576 6.66809 2.70076 6.51278 2.79545C6.36127 2.88636 6.19081 2.93182 6.00142 2.93182ZM10.4077 2.93182C10.1274 2.93182 9.88684 2.83144 9.68608 2.63068C9.48532 2.42992 9.38494 2.18939 9.38494 1.90909C9.38494 1.62879 9.48532 1.38826 9.68608 1.1875C9.88684 0.986742 10.1274 0.886364 10.4077 0.886364C10.688 0.886364 10.9285 0.986742 11.1293 1.1875C11.33 1.38826 11.4304 1.62879 11.4304 1.90909C11.4304 2.0947 11.383 2.26515 11.2884 2.42045C11.1974 2.57576 11.0743 2.70076 10.919 2.79545C10.7675 2.88636 10.5971 2.93182 10.4077 2.93182Z"
+                                                fill="#298267"
+                                            />
+                                        </svg>
+                                    </button>
+                                    <ul class="creating-adv__card__options">
+                                        <li class="creating-adv__card__option"><a href="#!">Редактировать</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="creating-adv__card card--published card--on-moderation">
+                            <div class="creating-adv__card__img">
+                                <img src="./assets/images/rolex.webp" alt="Rolex" />
+                            </div>
+
+                            <div class="creating-adv__card__info">
+                                <div class="creating-adv__card__desc">
+                                    <div class="creating-adv__card__title">Rolex Cosmograph Daytona Tissot PRC 200</div>
+                                    <div class="creating-adv__card__price">56 000 ₽</div>
+                                </div>
+
+                                <div class="creating-adv__card__icons">
+                                    <span class="views"><img src="./assets/images/views-ico.svg" alt="Views" />0</span>
+                                    <span class="likes"><img src="./assets/images/like-ico.svg" alt="Likes" />0</span>
+                                    <span class="calls"><img src="./assets/images/call-ico.svg" alt="Calls" />0</span>
+                                </div>
+
+                                <div class="creating-adv__card__status">
+                                    <span class="status">На модерации</span>
+                                </div>
+
+                                <div class="creating-adv__card__edit">
+                                    <a href="#!">Редактировать</a>
+                                    <button class="btn--edit">
+                                        <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M1.59517 2.93182C1.31487 2.93182 1.07434 2.83144 0.87358 2.63068C0.672822 2.42992 0.572443 2.18939 0.572443 1.90909C0.572443 1.62879 0.672822 1.38826 0.87358 1.1875C1.07434 0.986742 1.31487 0.886364 1.59517 0.886364C1.87547 0.886364 2.116 0.986742 2.31676 1.1875C2.51752 1.38826 2.6179 1.62879 2.6179 1.90909C2.6179 2.0947 2.57055 2.26515 2.47585 2.42045C2.38494 2.57576 2.26184 2.70076 2.10653 2.79545C1.95502 2.88636 1.78456 2.93182 1.59517 2.93182ZM6.00142 2.93182C5.72112 2.93182 5.48059 2.83144 5.27983 2.63068C5.07907 2.42992 4.97869 2.18939 4.97869 1.90909C4.97869 1.62879 5.07907 1.38826 5.27983 1.1875C5.48059 0.986742 5.72112 0.886364 6.00142 0.886364C6.28172 0.886364 6.52225 0.986742 6.72301 1.1875C6.92377 1.38826 7.02415 1.62879 7.02415 1.90909C7.02415 2.0947 6.9768 2.26515 6.8821 2.42045C6.79119 2.57576 6.66809 2.70076 6.51278 2.79545C6.36127 2.88636 6.19081 2.93182 6.00142 2.93182ZM10.4077 2.93182C10.1274 2.93182 9.88684 2.83144 9.68608 2.63068C9.48532 2.42992 9.38494 2.18939 9.38494 1.90909C9.38494 1.62879 9.48532 1.38826 9.68608 1.1875C9.88684 0.986742 10.1274 0.886364 10.4077 0.886364C10.688 0.886364 10.9285 0.986742 11.1293 1.1875C11.33 1.38826 11.4304 1.62879 11.4304 1.90909C11.4304 2.0947 11.383 2.26515 11.2884 2.42045C11.1974 2.57576 11.0743 2.70076 10.919 2.79545C10.7675 2.88636 10.5971 2.93182 10.4077 2.93182Z"
+                                                fill="#298267"
+                                            />
+                                        </svg>
+                                    </button>
+                                    <ul class="creating-adv__card__options">
+                                        <li class="creating-adv__card__option"><a href="#!">Переместить в архив</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- archive -->
+                    <div class="creating-adv__switcher-content" data-content="cardsArchive">
+                        <div class="creating-adv__card card--archive card--expired">
+                            <div class="creating-adv__card__img">
+                                <img src="./assets/images/rolex-2.webp" alt="Rolex" />
+                            </div>
+
+                            <div class="creating-adv__card__info">
+                                <div class="creating-adv__card__desc">
+                                    <div class="creating-adv__card__title">Rolex Datejust Turn-O-Graph</div>
+                                    <div class="creating-adv__card__price">132 000 ₽</div>
+                                </div>
+
+                                <div class="creating-adv__card__icons">
+                                    <span class="views"><img src="./assets/images/views-ico.svg" alt="Views" />124</span>
+                                    <span class="likes"><img src="./assets/images/like-ico.svg" alt="Likes" />127</span>
+                                    <span class="calls"><img src="./assets/images/call-ico.svg" alt="Calls" />48</span>
+                                </div>
+
+                                <div class="creating-adv__card__status">
+                                    <span class="status">Истек срок размещения</span>
+                                    <span class="status-time">26 дней до удаления</span>
+                                </div>
+
+                                <div class="creating-adv__card__edit">
+                                    <a href="#!">Опубликовать снова</a>
+                                    <button class="btn--edit">
+                                        <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M1.59517 2.93182C1.31487 2.93182 1.07434 2.83144 0.87358 2.63068C0.672822 2.42992 0.572443 2.18939 0.572443 1.90909C0.572443 1.62879 0.672822 1.38826 0.87358 1.1875C1.07434 0.986742 1.31487 0.886364 1.59517 0.886364C1.87547 0.886364 2.116 0.986742 2.31676 1.1875C2.51752 1.38826 2.6179 1.62879 2.6179 1.90909C2.6179 2.0947 2.57055 2.26515 2.47585 2.42045C2.38494 2.57576 2.26184 2.70076 2.10653 2.79545C1.95502 2.88636 1.78456 2.93182 1.59517 2.93182ZM6.00142 2.93182C5.72112 2.93182 5.48059 2.83144 5.27983 2.63068C5.07907 2.42992 4.97869 2.18939 4.97869 1.90909C4.97869 1.62879 5.07907 1.38826 5.27983 1.1875C5.48059 0.986742 5.72112 0.886364 6.00142 0.886364C6.28172 0.886364 6.52225 0.986742 6.72301 1.1875C6.92377 1.38826 7.02415 1.62879 7.02415 1.90909C7.02415 2.0947 6.9768 2.26515 6.8821 2.42045C6.79119 2.57576 6.66809 2.70076 6.51278 2.79545C6.36127 2.88636 6.19081 2.93182 6.00142 2.93182ZM10.4077 2.93182C10.1274 2.93182 9.88684 2.83144 9.68608 2.63068C9.48532 2.42992 9.38494 2.18939 9.38494 1.90909C9.38494 1.62879 9.48532 1.38826 9.68608 1.1875C9.88684 0.986742 10.1274 0.886364 10.4077 0.886364C10.688 0.886364 10.9285 0.986742 11.1293 1.1875C11.33 1.38826 11.4304 1.62879 11.4304 1.90909C11.4304 2.0947 11.383 2.26515 11.2884 2.42045C11.1974 2.57576 11.0743 2.70076 10.919 2.79545C10.7675 2.88636 10.5971 2.93182 10.4077 2.93182Z"
+                                                fill="#298267"
+                                            />
+                                        </svg>
+                                    </button>
+                                    <ul class="creating-adv__card__options">
+                                        <li class="creating-adv__card__option"><a href="#!">Удалить</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="creating-adv__card card--archive card--unpublished">
+                            <div class="creating-adv__card__img">
+                                <img src="./assets/images/rolex-3.webp" alt="Rolex" />
+                            </div>
+
+                            <div class="creating-adv__card__info">
+                                <div class="creating-adv__card__desc">
+                                    <div class="creating-adv__card__title">Rolex Datejust 36</div>
+                                    <div class="creating-adv__card__price">702 000 ₽</div>
+                                </div>
+
+                                <div class="creating-adv__card__icons">
+                                    <span class="views"><img src="./assets/images/views-ico.svg" alt="Views" />2 942</span>
+                                    <span class="likes"><img src="./assets/images/like-ico.svg" alt="Likes" />1270</span>
+                                    <span class="calls"><img src="./assets/images/call-ico.svg" alt="Calls" />48</span>
+                                </div>
+
+                                <div class="creating-adv__card__status">
+                                    <span class="status">Снято с публикации</span>
+                                    <span class="status-time">26 дней до удаления</span>
+                                </div>
+
+                                <div class="creating-adv__card__edit">
+                                    <a href="#!">Опубликовать снова</a>
+                                    <button class="btn--edit">
+                                        <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M1.59517 2.93182C1.31487 2.93182 1.07434 2.83144 0.87358 2.63068C0.672822 2.42992 0.572443 2.18939 0.572443 1.90909C0.572443 1.62879 0.672822 1.38826 0.87358 1.1875C1.07434 0.986742 1.31487 0.886364 1.59517 0.886364C1.87547 0.886364 2.116 0.986742 2.31676 1.1875C2.51752 1.38826 2.6179 1.62879 2.6179 1.90909C2.6179 2.0947 2.57055 2.26515 2.47585 2.42045C2.38494 2.57576 2.26184 2.70076 2.10653 2.79545C1.95502 2.88636 1.78456 2.93182 1.59517 2.93182ZM6.00142 2.93182C5.72112 2.93182 5.48059 2.83144 5.27983 2.63068C5.07907 2.42992 4.97869 2.18939 4.97869 1.90909C4.97869 1.62879 5.07907 1.38826 5.27983 1.1875C5.48059 0.986742 5.72112 0.886364 6.00142 0.886364C6.28172 0.886364 6.52225 0.986742 6.72301 1.1875C6.92377 1.38826 7.02415 1.62879 7.02415 1.90909C7.02415 2.0947 6.9768 2.26515 6.8821 2.42045C6.79119 2.57576 6.66809 2.70076 6.51278 2.79545C6.36127 2.88636 6.19081 2.93182 6.00142 2.93182ZM10.4077 2.93182C10.1274 2.93182 9.88684 2.83144 9.68608 2.63068C9.48532 2.42992 9.38494 2.18939 9.38494 1.90909C9.38494 1.62879 9.48532 1.38826 9.68608 1.1875C9.88684 0.986742 10.1274 0.886364 10.4077 0.886364C10.688 0.886364 10.9285 0.986742 11.1293 1.1875C11.33 1.38826 11.4304 1.62879 11.4304 1.90909C11.4304 2.0947 11.383 2.26515 11.2884 2.42045C11.1974 2.57576 11.0743 2.70076 10.919 2.79545C10.7675 2.88636 10.5971 2.93182 10.4077 2.93182Z"
+                                                fill="#298267"
+                                            />
+                                        </svg>
+                                    </button>
+                                    <ul class="creating-adv__card__options">
+                                        <li class="creating-adv__card__option"><a href="#!">Удалить</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="creating-adv__card card--archive card--expired">
+                            <div class="creating-adv__card__img">
+                                <img src="./assets/images/rolex.webp" alt="Rolex" />
+                            </div>
+
+                            <div class="creating-adv__card__info">
+                                <div class="creating-adv__card__desc">
+                                    <div class="creating-adv__card__title">Rolex Cosmograph Daytona Tissot PRC 200</div>
+                                    <div class="creating-adv__card__price">56 000 ₽</div>
+                                </div>
+
+                                <div class="creating-adv__card__icons">
+                                    <span class="views"><img src="./assets/images/views-ico.svg" alt="Views" />0</span>
+                                    <span class="likes"><img src="./assets/images/like-ico.svg" alt="Likes" />0</span>
+                                    <span class="calls"><img src="./assets/images/call-ico.svg" alt="Calls" />0</span>
+                                </div>
+
+                                <div class="creating-adv__card__status">
+                                    <span class="status">Истек срок размещения</span>
+                                    <span class="status-time">26 дней до удаления</span>
+                                </div>
+
+                                <div class="creating-adv__card__edit">
+                                    <a href="#!">Опубликовать снова</a>
+                                    <button class="btn--edit">
+                                        <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M1.59517 2.93182C1.31487 2.93182 1.07434 2.83144 0.87358 2.63068C0.672822 2.42992 0.572443 2.18939 0.572443 1.90909C0.572443 1.62879 0.672822 1.38826 0.87358 1.1875C1.07434 0.986742 1.31487 0.886364 1.59517 0.886364C1.87547 0.886364 2.116 0.986742 2.31676 1.1875C2.51752 1.38826 2.6179 1.62879 2.6179 1.90909C2.6179 2.0947 2.57055 2.26515 2.47585 2.42045C2.38494 2.57576 2.26184 2.70076 2.10653 2.79545C1.95502 2.88636 1.78456 2.93182 1.59517 2.93182ZM6.00142 2.93182C5.72112 2.93182 5.48059 2.83144 5.27983 2.63068C5.07907 2.42992 4.97869 2.18939 4.97869 1.90909C4.97869 1.62879 5.07907 1.38826 5.27983 1.1875C5.48059 0.986742 5.72112 0.886364 6.00142 0.886364C6.28172 0.886364 6.52225 0.986742 6.72301 1.1875C6.92377 1.38826 7.02415 1.62879 7.02415 1.90909C7.02415 2.0947 6.9768 2.26515 6.8821 2.42045C6.79119 2.57576 6.66809 2.70076 6.51278 2.79545C6.36127 2.88636 6.19081 2.93182 6.00142 2.93182ZM10.4077 2.93182C10.1274 2.93182 9.88684 2.83144 9.68608 2.63068C9.48532 2.42992 9.38494 2.18939 9.38494 1.90909C9.38494 1.62879 9.48532 1.38826 9.68608 1.1875C9.88684 0.986742 10.1274 0.886364 10.4077 0.886364C10.688 0.886364 10.9285 0.986742 11.1293 1.1875C11.33 1.38826 11.4304 1.62879 11.4304 1.90909C11.4304 2.0947 11.383 2.26515 11.2884 2.42045C11.1974 2.57576 11.0743 2.70076 10.919 2.79545C10.7675 2.88636 10.5971 2.93182 10.4077 2.93182Z"
+                                                fill="#298267"
+                                            />
+                                        </svg>
+                                    </button>
+                                    <ul class="creating-adv__card__options">
+                                        <li class="creating-adv__card__option"><a href="#!">Удалить</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <include src="./components/footer.html"></include>
+    </body>
+</html>

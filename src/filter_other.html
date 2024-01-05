@@ -1,0 +1,1436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<title>Поиск через фильтр</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__top">
+                <div class="header__top_container_left">
+                    <a class="header__logo"><img src="./assets/images/logo.svg" alt="Logo"></a>
+                    <div class="header__logo_text desktop">Кременчуг-Константиновское</div>
+                </div>
+                <div class="header__top_container_center">
+                    <div class="header__search_blur"></div>
+                    <div class="header__search">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M15.7138 6.8382C18.1647 9.28913 18.1647 13.2629 15.7138 15.7138C13.2629 18.1647 9.28913 18.1647 6.8382 15.7138C4.38727 13.2629 4.38727 9.28913 6.8382 6.8382C9.28913 4.38727 13.2629 4.38727 15.7138 6.8382" stroke="#7E8582" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M19 19L15.71 15.71" stroke="#7E8582" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <input class="header__search_input" type="text" placeholder="Введите название модели">
+                    </div>
+                    <a class="header__filter" href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14 14H16C16.552 14 17 14.448 17 15V19C17 19.552 16.552 20 16 20H14C13.448 20 13 19.552 13 19V15C13 14.448 13.448 14 14 14Z" stroke="#7E8582" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21 17H17" stroke="#7E8582" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M13 17H3" stroke="#7E8582" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10 10H8C7.448 10 7 9.552 7 9V5C7 4.448 7.448 4 8 4H10C10.552 4 11 4.448 11 5V9C11 9.552 10.552 10 10 10Z" stroke="#7E8582" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3 7H7" stroke="#7E8582" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M11 7H21" stroke="#7E8582" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <div class="header__search-cancel">Отменить</div>
+                    <div class="header__search_box">
+                        <div class="header__search_list">
+                            <a class="header__search_item">
+                                <span>Rolex</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M9 18L15 12L9 6" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a class="header__search_item">
+                                <span>Rolex Cosmograph Daytona </span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M9 18L15 12L9 6" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a class="header__search_item">
+                                <span>Rolex Cosmograph Daytona </span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M9 18L15 12L9 6" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a class="header__search_item">
+                                <span>Rolex</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M9 18L15 12L9 6" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a class="header__search_item">
+                                <span>Rolex Cosmograph Daytona </span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M9 18L15 12L9 6" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a class="header__search_item">
+                                <span>Rolex Cosmograph Daytona </span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M9 18L15 12L9 6" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a class="header__search_item">
+                                <span>Rolex</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M9 18L15 12L9 6" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a class="header__search_item">
+                                <span>Rolex Cosmograph Daytona </span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M9 18L15 12L9 6" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a class="header__search_item">
+                                <span>Rolex Cosmograph Daytona </span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M9 18L15 12L9 6" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a class="header__search_item">
+                                <span>Rolex</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M9 18L15 12L9 6" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a class="header__search_item">
+                                <span>Rolex Cosmograph Daytona </span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M9 18L15 12L9 6" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a class="header__search_item">
+                                <span>Rolex Cosmograph Daytona </span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M9 18L15 12L9 6" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a class="header__search_item">
+                                <span>Rolex</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M9 18L15 12L9 6" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a class="header__search_item">
+                                <span>Rolex Cosmograph Daytona </span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M9 18L15 12L9 6" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a class="header__search_item">
+                                <span>Rolex Cosmograph Daytona </span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M9 18L15 12L9 6" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__top_container_right">
+                    <a class="header__icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16 7.28133C16.9187 6.20667 18.508 5 20.928 5C25.16 5 28 8.97333 28 12.6733C28 20.408 18.3707 26.3333 16 26.3333C13.6293 26.3333 4 20.408 4 12.6733C4 8.97333 6.84 5 11.072 5C13.492 5 15.0813 6.20667 16 7.28133Z" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Избранное</span>
+                    </a>
+                    <a class="header__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16 26.375V26.375C9.99337 26.375 5.125 21.5066 5.125 15.5V15.5C5.125 9.49337 9.99337 4.625 16 4.625V4.625C22.0066 4.625 26.875 9.49337 26.875 15.5V15.5C26.875 21.5066 22.0066 26.375 16 26.375Z" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15.9987 10.667V20.3337" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M20.8346 15.5H11.168" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Объявления</span>
+                    </a>
+                    <a class="header__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none">
+                            <path d="M11.3267 26.6667H16.5" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M11.5185 26.667H7.06651C5.96918 26.667 5.41985 25.3403 6.19585 24.5656L7.64918 23.1123" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M5.8335 15.9997C5.8335 10.109 10.6095 5.33301 16.5002 5.33301C22.3908 5.33301 27.1668 10.109 27.1668 15.9997C27.1668 21.8903 22.3908 26.6663 16.5002 26.6663" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8.1399 22.6134L7.64656 23.1067" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8.14416 22.6173C6.7015 20.7987 5.8335 18.5027 5.8335 16" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Сообщения</span>
+                    </a>
+                    <a class="header__icon" data-modal="login-modal">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M23.6898 7.81022C27.9367 12.0572 27.9367 18.9428 23.6898 23.1898C19.4428 27.4367 12.5571 27.4367 8.31022 23.1898C4.06326 18.9428 4.06326 12.0571 8.31022 7.81022C12.5572 3.56326 19.4428 3.56326 23.6898 7.81022" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M18.4041 11.0581C19.7315 12.3855 19.7315 14.5376 18.4041 15.865C17.0767 17.1924 14.9245 17.1924 13.5971 15.865C12.2697 14.5376 12.2697 12.3855 13.5971 11.0581C14.9245 9.73065 17.0767 9.73065 18.4041 11.0581" stroke="#031E16" stroke-width="1.35938" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M22.8935 23.9076C21.1595 22.0818 18.7139 20.9375 15.9975 20.9375C13.2812 20.9375 10.8355 22.0818 9.10156 23.9088" stroke="#031E16" stroke-width="1.35938" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Профиль</span>
+                    </a>
+                </div>
+            </div>
+            <div class="header__bottom">
+                <div class="header__bottom_swiper">
+                    <div class="swiper-wrapper">
+                        <a class="swiper-slide header__bottom_slide">Rolex</a>
+                        <a class="swiper-slide header__bottom_slide">Orient</a>
+                        <a class="swiper-slide header__bottom_slide">Fossil</a>
+                        <a class="swiper-slide header__bottom_slide">Cartier</a>
+                        <a class="swiper-slide header__bottom_slide">Rolex</a>
+                        <a class="swiper-slide header__bottom_slide">Orient</a>
+                        <a class="swiper-slide header__bottom_slide">Fossil</a>
+                        <a class="swiper-slide header__bottom_slide">Cartier</a>
+                        <a class="swiper-slide header__bottom_slide">Rolex</a>
+                        <a class="swiper-slide header__bottom_slide">Orient</a>
+                        <a class="swiper-slide header__bottom_slide">Fossil</a>
+                        <a class="swiper-slide header__bottom_slide">Cartier</a>
+                        <a class="swiper-slide header__bottom_slide">Rolex</a>
+                        <a class="swiper-slide header__bottom_slide">Orient</a>
+                        <a class="swiper-slide header__bottom_slide">Fossil</a>
+                        <a class="swiper-slide header__bottom_slide">Cartier</a>
+                        <a class="swiper-slide header__bottom_slide">Rolex</a>
+                        <a class="swiper-slide header__bottom_slide">Orient</a>
+                        <a class="swiper-slide header__bottom_slide">Fossil</a>
+                        <a class="swiper-slide header__bottom_slide">Cartier</a>
+                        <a class="swiper-slide header__bottom_slide">Rolex</a>
+                        <a class="swiper-slide header__bottom_slide">Orient</a>
+                        <a class="swiper-slide header__bottom_slide">Fossil</a>
+                        <a class="swiper-slide header__bottom_slide">Cartier</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="filter">
+        <div class="container">
+            <div class="filter__left">
+                <div class="filter__title">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M15 18L9 12L15 6" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <strong>Фильтры</strong>
+                    <span class="filter__clear-all">Сбросить</span>
+                </div>
+                <div class="filter__blur"></div>
+                <form class="filter__container">
+                    <div class="filter__dropdown">
+                        <div class="filter__dropdown_top">
+                            <span>Город</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M6 9L12 15L18 9" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="filter__dropdown_bottom">
+                            <div class="filter__dropdown_header mobile">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M15 18L9 12L15 6" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <div class="filter__dropdown_header_title">Город</div>
+                                <div class="filter__dropdown_header_cancel">Сбросить</div>
+                            </div>
+                            <div class="filter__dropdown_search">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M15.7138 6.8382C18.1647 9.28913 18.1647 13.2629 15.7138 15.7138C13.2629 18.1647 9.28913 18.1647 6.8382 15.7138C4.38727 13.2629 4.38727 9.28913 6.8382 6.8382C9.28913 4.38727 13.2629 4.38727 15.7138 6.8382" stroke="#7E8582" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M19 19.0009L15.71 15.7109" stroke="#7E8582" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <input type="text" placeholder="Поиск">
+                                <svg class="filter__dropdown_search_cancel" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M8 8L16 16" stroke="#7E8582" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M16 8L8 16" stroke="#7E8582" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="filter__dropdown_list">
+                                <label class="filter__dropdown_item">
+                                    <span>Москва</span>
+                                    <input type="checkbox" name="brand">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M20 6.5L9 17.5L4 12.5" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </label>
+                                <label class="filter__dropdown_item">
+                                    <span>Санкт-Петербург</span>
+                                    <input type="checkbox" name="brand">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M20 6.5L9 17.5L4 12.5" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </label>
+                                <label class="filter__dropdown_item">
+                                    <span>Казань</span>
+                                    <input type="checkbox" name="brand">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M20 6.5L9 17.5L4 12.5" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </label>
+                                <label class="filter__dropdown_item">
+                                    <span>Нижний-Новгород</span>
+                                    <input type="checkbox" name="brand">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M20 6.5L9 17.5L4 12.5" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </label>
+                                <label class="filter__dropdown_item">
+                                    <span>Москва</span>
+                                    <input type="checkbox" name="brand">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M20 6.5L9 17.5L4 12.5" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </label>
+                                <label class="filter__dropdown_item">
+                                    <span>Санкт-Петербург</span>
+                                    <input type="checkbox" name="brand">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M20 6.5L9 17.5L4 12.5" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </label>
+                                <label class="filter__dropdown_item">
+                                    <span>Казань</span>
+                                    <input type="checkbox" name="brand">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M20 6.5L9 17.5L4 12.5" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </label>
+                                <label class="filter__dropdown_item">
+                                    <span>Нижний-Новгород</span>
+                                    <input type="checkbox" name="brand">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M20 6.5L9 17.5L4 12.5" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter__dropdown">
+                        <div class="filter__dropdown_top">
+                            <span>Бренд</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M6 9L12 15L18 9" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="filter__dropdown_bottom">
+                            <div class="filter__dropdown_header mobile">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M15 18L9 12L15 6" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <div class="filter__dropdown_header_title">Бренд</div>
+                                <div class="filter__dropdown_header_cancel">Сбросить</div>
+                            </div>
+                            <div class="filter__dropdown_search">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M15.7138 6.8382C18.1647 9.28913 18.1647 13.2629 15.7138 15.7138C13.2629 18.1647 9.28913 18.1647 6.8382 15.7138C4.38727 13.2629 4.38727 9.28913 6.8382 6.8382C9.28913 4.38727 13.2629 4.38727 15.7138 6.8382" stroke="#7E8582" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M19 19.0009L15.71 15.7109" stroke="#7E8582" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <input type="text" placeholder="Поиск">
+                                <svg class="filter__dropdown_search_cancel" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M8 8L16 16" stroke="#7E8582" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M16 8L8 16" stroke="#7E8582" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="filter__dropdown_list">
+                                <label class="filter__dropdown_item">
+                                    <span>Москва</span>
+                                    <input type="checkbox" name="brand">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M20 6.5L9 17.5L4 12.5" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </label>
+                                <label class="filter__dropdown_item">
+                                    <span>Санкт-Петербург</span>
+                                    <input type="checkbox" name="brand">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M20 6.5L9 17.5L4 12.5" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </label>
+                                <label class="filter__dropdown_item">
+                                    <span>Казань</span>
+                                    <input type="checkbox" name="brand">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M20 6.5L9 17.5L4 12.5" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </label>
+                                <label class="filter__dropdown_item">
+                                    <span>Нижний-Новгород</span>
+                                    <input type="checkbox" name="brand">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M20 6.5L9 17.5L4 12.5" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </label>
+                                <label class="filter__dropdown_item">
+                                    <span>Москва</span>
+                                    <input type="checkbox" name="brand">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M20 6.5L9 17.5L4 12.5" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </label>
+                                <label class="filter__dropdown_item">
+                                    <span>Санкт-Петербург</span>
+                                    <input type="checkbox" name="brand">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M20 6.5L9 17.5L4 12.5" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </label>
+                                <label class="filter__dropdown_item">
+                                    <span>Казань</span>
+                                    <input type="checkbox" name="brand">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M20 6.5L9 17.5L4 12.5" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </label>
+                                <label class="filter__dropdown_item">
+                                    <span>Нижний-Новгород</span>
+                                    <input type="checkbox" name="brand">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M20 6.5L9 17.5L4 12.5" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter__item">
+                        <div class="filter__item_title">Цена, ₽</div>
+                        <div class="filter__item_numbers">
+                            <input placeholder="от 1 000" type="text" id="price-from">
+                            <input placeholder="до 1 000 000 " type="text" id="price-to">
+                        </div>
+                    </div>
+                    <div class="filter__item">
+                        <div class="filter__item_title">Состояние</div>
+                        <div class="filter__item_box">
+                            <label class="filter__box_choice">
+                                <input type="checkbox">
+                                <span>Новые</span>
+                            </label>
+                            <label class="filter__box_choice">
+                                <input type="checkbox">
+                                <span>Неношенные</span>
+                            </label>
+                            <label class="filter__box_choice">
+                                <input type="checkbox">
+                                <span>Хорошее</span>
+                            </label>
+                            <label class="filter__box_choice">
+                                <input type="checkbox">
+                                <span>Очень хорошее</span>
+                            </label>
+                            <label class="filter__box_choice">
+                                <input type="checkbox">
+                                <span>Удовлетворительное</span>
+                            </label>
+                            <label class="filter__box_choice">
+                                <input type="checkbox">
+                                <span>С изъянами</span>
+                            </label>
+                            <label class="filter__box_choice">
+                                <input type="checkbox">
+                                <span>Неполная комплектация</span>
+                            </label>
+                            <label class="filter__box_choice">
+                                <input type="checkbox">
+                                <span>Нет данных</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="filter__hidden">
+                        <div class="filter__hidden_top">
+                            <div class="filter__item">
+                                <div class="filter__item_title">Продавцы</div>
+                                <div class="filter__item_box">
+                                    <label class="filter__box_choice">
+                                        <input type="checkbox">
+                                        <span>Все</span>
+                                    </label>
+                                    <label class="filter__box_choice">
+                                        <input type="checkbox">
+                                        <span>Частные</span>
+                                    </label>
+                                    <label class="filter__box_choice">
+                                        <input type="checkbox">
+                                        <span>Компании</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="filter__item">
+                                <div class="filter__item_title">Пол</div>
+                                <div class="filter__item_box">
+                                    <label class="filter__box_choice">
+                                        <input type="checkbox">
+                                        <span>Мужские</span>
+                                    </label>
+                                    <label class="filter__box_choice">
+                                        <input type="checkbox">
+                                        <span>Женские</span>
+                                    </label>
+                                    <label class="filter__box_choice">
+                                        <input type="checkbox">
+                                        <span>Унисекс</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="filter__item">
+                                <div class="filter__item_title">Год выпуска</div>
+                                <div class="filter__item_numbers">
+                                    <input placeholder="от 1937" type="text" id="date-from">
+                                    <input placeholder="до 2023 " type="text" id="date-to">
+                                </div>
+                            </div>
+                            <div class="filter__item">
+                                <div class="filter__item_title">Механизм</div>
+                                <div class="filter__item_box">
+                                    <label class="filter__box_choice">
+                                        <input type="checkbox">
+                                        <span>Механические</span>
+                                    </label>
+                                    <label class="filter__box_choice">
+                                        <input type="checkbox">
+                                        <span>Кварцевые</span>
+                                    </label>
+                                    <label class="filter__box_choice">
+                                        <input type="checkbox">
+                                        <span>Электронные</span>
+                                    </label>
+                                    <label class="filter__box_choice">
+                                        <input type="checkbox">
+                                        <span>Автоподзавод</span>
+                                    </label>
+                                    <label class="filter__box_choice">
+                                        <input type="checkbox">
+                                        <span>Кинетик</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="filter__dropdown">
+                                <div class="filter__dropdown_top">
+                                    <span>Цвет</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M6 9L12 15L18 9" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="filter__dropdown_bottom">
+                                    <div class="filter__dropdown_header mobile">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M15 18L9 12L15 6" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <div class="filter__dropdown_header_title">Цвет</div>
+                                        <div class="filter__dropdown_header_cancel">Сбросить</div>
+                                    </div>
+                                    <div class="filter__dropdown_search">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M15.7138 6.8382C18.1647 9.28913 18.1647 13.2629 15.7138 15.7138C13.2629 18.1647 9.28913 18.1647 6.8382 15.7138C4.38727 13.2629 4.38727 9.28913 6.8382 6.8382C9.28913 4.38727 13.2629 4.38727 15.7138 6.8382" stroke="#7E8582" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M19 19.0009L15.71 15.7109" stroke="#7E8582" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <input type="text" placeholder="Поиск">
+                                        <svg class="filter__dropdown_search_cancel" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M8 8L16 16" stroke="#7E8582" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M16 8L8 16" stroke="#7E8582" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <div class="filter__dropdown_list">
+                                        <label class="filter__dropdown_item">
+                                            <div class="filter__dropdown_color" style="background: #3A68F1;"></div>
+                                            <span>Синий</span>
+                                            <input type="checkbox" name="brand">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M20 6.5L9 17.5L4 12.5" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </label>
+                                        <label class="filter__dropdown_item">
+                                            <div class="filter__dropdown_color" style="background: #9C9C9C;"></div>
+                                            <span>Серый</span>
+                                            <input type="checkbox" name="brand">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M20 6.5L9 17.5L4 12.5" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </label>
+                                        <label class="filter__dropdown_item">
+                                            <div class="filter__dropdown_color" style="background: #CCC3AF;"></div>
+                                            <span>Бежевый</span>
+                                            <input type="checkbox" name="brand">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M20 6.5L9 17.5L4 12.5" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </label>
+                                        <label class="filter__dropdown_item">
+                                            <div class="filter__dropdown_color" style="background: #111111;"></div>
+                                            <span>Черный</span>
+                                            <input type="checkbox" name="brand">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M20 6.5L9 17.5L4 12.5" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </label>
+                                        <label class="filter__dropdown_item">
+                                            <div class="filter__dropdown_color" style="background: #3A68F1;"></div>
+                                            <span>Синий</span>
+                                            <input type="checkbox" name="brand">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M20 6.5L9 17.5L4 12.5" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </label>
+                                        <label class="filter__dropdown_item">
+                                            <div class="filter__dropdown_color" style="background: #9C9C9C;"></div>
+                                            <span>Серый</span>
+                                            <input type="checkbox" name="brand">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M20 6.5L9 17.5L4 12.5" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </label>
+                                        <label class="filter__dropdown_item">
+                                            <div class="filter__dropdown_color" style="background: #CCC3AF;"></div>
+                                            <span>Бежевый</span>
+                                            <input type="checkbox" name="brand">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M20 6.5L9 17.5L4 12.5" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </label>
+                                        <label class="filter__dropdown_item">
+                                            <div class="filter__dropdown_color" style="background: #111111;"></div>
+                                            <span>Черный</span>
+                                            <input type="checkbox" name="brand">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M20 6.5L9 17.5L4 12.5" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter__dropdown">
+                                <div class="filter__dropdown_top">
+                                    <span>Страна</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M6 9L12 15L18 9" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="filter__dropdown_bottom">
+                                    <div class="filter__dropdown_header mobile">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M15 18L9 12L15 6" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <div class="filter__dropdown_header_title">Страна</div>
+                                        <div class="filter__dropdown_header_cancel">Сбросить</div>
+                                    </div>
+                                    <div class="filter__dropdown_search">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M15.7138 6.8382C18.1647 9.28913 18.1647 13.2629 15.7138 15.7138C13.2629 18.1647 9.28913 18.1647 6.8382 15.7138C4.38727 13.2629 4.38727 9.28913 6.8382 6.8382C9.28913 4.38727 13.2629 4.38727 15.7138 6.8382" stroke="#7E8582" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M19 19.0009L15.71 15.7109" stroke="#7E8582" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <input type="text" placeholder="Поиск">
+                                        <svg class="filter__dropdown_search_cancel" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M8 8L16 16" stroke="#7E8582" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M16 8L8 16" stroke="#7E8582" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <div class="filter__dropdown_list">
+                                        <label class="filter__dropdown_item">
+                                            <span>Москва</span>
+                                            <input type="checkbox" name="brand">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M20 6.5L9 17.5L4 12.5" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </label>
+                                        <label class="filter__dropdown_item">
+                                            <span>Санкт-Петербург</span>
+                                            <input type="checkbox" name="brand">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M20 6.5L9 17.5L4 12.5" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </label>
+                                        <label class="filter__dropdown_item">
+                                            <span>Казань</span>
+                                            <input type="checkbox" name="brand">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M20 6.5L9 17.5L4 12.5" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </label>
+                                        <label class="filter__dropdown_item">
+                                            <span>Нижний-Новгород</span>
+                                            <input type="checkbox" name="brand">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M20 6.5L9 17.5L4 12.5" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </label>
+                                        <label class="filter__dropdown_item">
+                                            <span>Москва</span>
+                                            <input type="checkbox" name="brand">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M20 6.5L9 17.5L4 12.5" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </label>
+                                        <label class="filter__dropdown_item">
+                                            <span>Санкт-Петербург</span>
+                                            <input type="checkbox" name="brand">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M20 6.5L9 17.5L4 12.5" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </label>
+                                        <label class="filter__dropdown_item">
+                                            <span>Казань</span>
+                                            <input type="checkbox" name="brand">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M20 6.5L9 17.5L4 12.5" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </label>
+                                        <label class="filter__dropdown_item">
+                                            <span>Нижний-Новгород</span>
+                                            <input type="checkbox" name="brand">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M20 6.5L9 17.5L4 12.5" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter__item">
+                                <div class="filter__item_title">Материал корпуса</div>
+                                <div class="filter__item_box">
+                                    <label class="filter__box_choice">
+                                        <input type="checkbox">
+                                        <span>Алюминий</span>
+                                    </label>
+                                    <label class="filter__box_choice">
+                                        <input type="checkbox">
+                                        <span>Карбон</span>
+                                    </label>
+                                    <label class="filter__box_choice">
+                                        <input type="checkbox">
+                                        <span>Металл</span>
+                                    </label>
+                                    <label class="filter__box_choice">
+                                        <input type="checkbox">
+                                        <span>Полимер</span>
+                                    </label>
+                                    <label class="filter__box_choice">
+                                        <input type="checkbox">
+                                        <span>Золото</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="filter__item">
+                                <div class="filter__item_title">Форма корпуса</div>
+                                <div class="filter__item_box">
+                                    <label class="filter__box_choice">
+                                        <input type="checkbox">
+                                        <span>Бочка</span>
+                                    </label>
+                                    <label class="filter__box_choice">
+                                        <input type="checkbox">
+                                        <span>Овальная</span>
+                                    </label>
+                                    <label class="filter__box_choice">
+                                        <input type="checkbox">
+                                        <span>Круглая</span>
+                                    </label>
+                                    <label class="filter__box_choice">
+                                        <input type="checkbox">
+                                        <span>Квадратная</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="filter__item">
+                                <div class="filter__item_title">Размер корпуса</div>
+                                <div class="filter__item_box">
+                                    <label class="filter__box_choice">
+                                        <input type="checkbox">
+                                        <span>34 мм</span>
+                                    </label>
+                                    <label class="filter__box_choice">
+                                        <input type="checkbox">
+                                        <span>36 мм</span>
+                                    </label>
+                                    <label class="filter__box_choice">
+                                        <input type="checkbox">
+                                        <span>38 мм</span>
+                                    </label>
+                                    <label class="filter__box_choice">
+                                        <input type="checkbox">
+                                        <span>42 мм</span>
+                                    </label>
+                                    <label class="filter__box_choice">
+                                        <input type="checkbox">
+                                        <span>44 мм</span>
+                                    </label>
+                                    <label class="filter__box_choice">
+                                        <input type="checkbox">
+                                        <span>46 мм</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="filter__item">
+                                <div class="filter__item_title">Материал ремешка</div>
+                                <div class="filter__item_box">
+                                    <label class="filter__box_choice">
+                                        <input type="checkbox">
+                                        <span>Кожа</span>
+                                    </label>
+                                    <label class="filter__box_choice">
+                                        <input type="checkbox">
+                                        <span>Металл</span>
+                                    </label>
+                                    <label class="filter__box_choice">
+                                        <input type="checkbox">
+                                        <span>Силикон</span>
+                                    </label>
+                                    <label class="filter__box_choice">
+                                        <input type="checkbox">
+                                        <span>Керамика</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="filter__dropdown">
+                                <div class="filter__dropdown_top">
+                                    <span>Застёжка</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M6 9L12 15L18 9" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="filter__dropdown_bottom">
+                                    <div class="filter__dropdown_header mobile">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M15 18L9 12L15 6" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <div class="filter__dropdown_header_title">Застёжка</div>
+                                        <div class="filter__dropdown_header_cancel">Сбросить</div>
+                                    </div>
+                                    <div class="filter__dropdown_search">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M15.7138 6.8382C18.1647 9.28913 18.1647 13.2629 15.7138 15.7138C13.2629 18.1647 9.28913 18.1647 6.8382 15.7138C4.38727 13.2629 4.38727 9.28913 6.8382 6.8382C9.28913 4.38727 13.2629 4.38727 15.7138 6.8382" stroke="#7E8582" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M19 19.0009L15.71 15.7109" stroke="#7E8582" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <input type="text" placeholder="Поиск">
+                                        <svg class="filter__dropdown_search_cancel" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M8 8L16 16" stroke="#7E8582" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M16 8L8 16" stroke="#7E8582" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <div class="filter__dropdown_list">
+                                        <label class="filter__dropdown_item">
+                                            <span>Москва</span>
+                                            <input type="checkbox" name="brand">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M20 6.5L9 17.5L4 12.5" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </label>
+                                        <label class="filter__dropdown_item">
+                                            <span>Санкт-Петербург</span>
+                                            <input type="checkbox" name="brand">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M20 6.5L9 17.5L4 12.5" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </label>
+                                        <label class="filter__dropdown_item">
+                                            <span>Казань</span>
+                                            <input type="checkbox" name="brand">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M20 6.5L9 17.5L4 12.5" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </label>
+                                        <label class="filter__dropdown_item">
+                                            <span>Нижний-Новгород</span>
+                                            <input type="checkbox" name="brand">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M20 6.5L9 17.5L4 12.5" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </label>
+                                        <label class="filter__dropdown_item">
+                                            <span>Москва</span>
+                                            <input type="checkbox" name="brand">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M20 6.5L9 17.5L4 12.5" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </label>
+                                        <label class="filter__dropdown_item">
+                                            <span>Санкт-Петербург</span>
+                                            <input type="checkbox" name="brand">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M20 6.5L9 17.5L4 12.5" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </label>
+                                        <label class="filter__dropdown_item">
+                                            <span>Казань</span>
+                                            <input type="checkbox" name="brand">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M20 6.5L9 17.5L4 12.5" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </label>
+                                        <label class="filter__dropdown_item">
+                                            <span>Нижний-Новгород</span>
+                                            <input type="checkbox" name="brand">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M20 6.5L9 17.5L4 12.5" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter__item">
+                                <div class="filter__item_title">Циферблат</div>
+                                <div class="filter__item_box">
+                                    <label class="filter__box_choice">
+                                        <input type="checkbox">
+                                        <span>Аналоговый</span>
+                                    </label>
+                                    <label class="filter__box_choice">
+                                        <input type="checkbox">
+                                        <span>Цифровой</span>
+                                    </label>
+                                    <label class="filter__box_choice">
+                                        <input type="checkbox">
+                                        <span>Комбинированный</span>
+                                    </label>
+                                    <label class="filter__box_choice">
+                                        <input type="checkbox">
+                                        <span>Бинарный</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="filter__dropdown">
+                                <div class="filter__dropdown_top">
+                                    <span>Цвет циферблата</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M6 9L12 15L18 9" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="filter__dropdown_bottom">
+                                    <div class="filter__dropdown_header mobile">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M15 18L9 12L15 6" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <div class="filter__dropdown_header_title">Цвет циферблата</div>
+                                        <div class="filter__dropdown_header_cancel">Сбросить</div>
+                                    </div>
+                                    <div class="filter__dropdown_search">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M15.7138 6.8382C18.1647 9.28913 18.1647 13.2629 15.7138 15.7138C13.2629 18.1647 9.28913 18.1647 6.8382 15.7138C4.38727 13.2629 4.38727 9.28913 6.8382 6.8382C9.28913 4.38727 13.2629 4.38727 15.7138 6.8382" stroke="#7E8582" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M19 19.0009L15.71 15.7109" stroke="#7E8582" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <input type="text" placeholder="Поиск">
+                                        <svg class="filter__dropdown_search_cancel" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M8 8L16 16" stroke="#7E8582" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M16 8L8 16" stroke="#7E8582" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <div class="filter__dropdown_list">
+                                        <label class="filter__dropdown_item">
+                                            <div class="filter__dropdown_color" style="background: #3A68F1;"></div>
+                                            <span>Синий</span>
+                                            <input type="checkbox" name="brand">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M20 6.5L9 17.5L4 12.5" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </label>
+                                        <label class="filter__dropdown_item">
+                                            <div class="filter__dropdown_color" style="background: #9C9C9C;"></div>
+                                            <span>Серый</span>
+                                            <input type="checkbox" name="brand">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M20 6.5L9 17.5L4 12.5" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </label>
+                                        <label class="filter__dropdown_item">
+                                            <div class="filter__dropdown_color" style="background: #CCC3AF;"></div>
+                                            <span>Бежевый</span>
+                                            <input type="checkbox" name="brand">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M20 6.5L9 17.5L4 12.5" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </label>
+                                        <label class="filter__dropdown_item">
+                                            <div class="filter__dropdown_color" style="background: #111111;"></div>
+                                            <span>Черный</span>
+                                            <input type="checkbox" name="brand">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M20 6.5L9 17.5L4 12.5" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </label>
+                                        <label class="filter__dropdown_item">
+                                            <div class="filter__dropdown_color" style="background: #3A68F1;"></div>
+                                            <span>Синий</span>
+                                            <input type="checkbox" name="brand">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M20 6.5L9 17.5L4 12.5" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </label>
+                                        <label class="filter__dropdown_item">
+                                            <div class="filter__dropdown_color" style="background: #9C9C9C;"></div>
+                                            <span>Серый</span>
+                                            <input type="checkbox" name="brand">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M20 6.5L9 17.5L4 12.5" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </label>
+                                        <label class="filter__dropdown_item">
+                                            <div class="filter__dropdown_color" style="background: #CCC3AF;"></div>
+                                            <span>Бежевый</span>
+                                            <input type="checkbox" name="brand">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M20 6.5L9 17.5L4 12.5" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </label>
+                                        <label class="filter__dropdown_item">
+                                            <div class="filter__dropdown_color" style="background: #111111;"></div>
+                                            <span>Черный</span>
+                                            <input type="checkbox" name="brand">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M20 6.5L9 17.5L4 12.5" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter__item">
+                                <div class="filter__item_title">Водозащита</div>
+                                <div class="filter__item_box">
+                                    <label class="filter__box_choice">
+                                        <input type="checkbox">
+                                        <span>1 ATM</span>
+                                    </label>
+                                    <label class="filter__box_choice">
+                                        <input type="checkbox">
+                                        <span>3 ATM</span>
+                                    </label>
+                                    <label class="filter__box_choice">
+                                        <input type="checkbox">
+                                        <span>5 ATM</span>
+                                    </label>
+                                    <label class="filter__box_choice">
+                                        <input type="checkbox">
+                                        <span>10 ATM</span>
+                                    </label>
+                                    <label class="filter__box_choice">
+                                        <input type="checkbox">
+                                        <span>20 ATM</span>
+                                    </label>
+                                    <label class="filter__box_choice">
+                                        <input type="checkbox">
+                                        <span>30 ATM</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter__hidden_bottom">Все фильтры</div>
+                    </div>
+                    <div class="filter__btn mobile">
+                        <button class="btn btn__green">Показать</button>
+                    </div>
+                </form>
+
+            </div>
+            <div class="filter__right">
+                <div class="main-page__title">Результаты поиска</div>
+                <div class="main-page__list">
+                    <div class="main-page__item">
+                        <a class="main-page__item-img">
+                            <img src="./assets/images/main__item-img2.webp" alt="">
+                        </a>
+                        <div class="main-page__item-contain">
+                            <div class="main-page__item-name">Rolex Datejust Turn-O-Graph</div>
+                            <svg class='like' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 5.711C12.689 4.905 13.881 4 15.696 4C18.87 4 21 6.98 21 9.755C21 15.556 13.778 20 12 20C10.222 20 3 15.556 3 9.755C3 6.98 5.13 4 8.304 4C10.119 4 11.311 4.905 12 5.711Z" stroke="#031E16" stroke-width="1.76909" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="main-page__item-city">Ростов-на-Дону</div>
+                        <div class="main-page__item-cost">132 300 ₽</div>
+                    </div>
+                    <div class="main-page__item desktop">
+                        <a class="main-page__item-img">
+                            <img src="./assets/images/main__item-img3.webp" alt="">
+                        </a>
+                        <div class="main-page__item-contain">
+                            <div class="main-page__item-name">Rolex Datejust 36</div>
+                            <svg class='like' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 5.711C12.689 4.905 13.881 4 15.696 4C18.87 4 21 6.98 21 9.755C21 15.556 13.778 20 12 20C10.222 20 3 15.556 3 9.755C3 6.98 5.13 4 8.304 4C10.119 4 11.311 4.905 12 5.711Z" stroke="#031E16" stroke-width="1.76909" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="main-page__item-city">Рязань</div>
+                        <div class="main-page__item-cost">1 895 ₽</div>
+                    </div>
+                    <div class="main-page__item desktop">
+                        <a class="main-page__item-img">
+                            <img src="./assets/images/main__item-img4.webp" alt="">
+                        </a>
+                        <div class="main-page__item-contain">
+                            <div class="main-page__item-name">Hublot Big Bang 44 mm</div>
+                            <svg class='like' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 5.711C12.689 4.905 13.881 4 15.696 4C18.87 4 21 6.98 21 9.755C21 15.556 13.778 20 12 20C10.222 20 3 15.556 3 9.755C3 6.98 5.13 4 8.304 4C10.119 4 11.311 4.905 12 5.711Z" stroke="#031E16" stroke-width="1.76909" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="main-page__item-city">Владивосток</div>
+                        <div class="main-page__item-cost">1 422 634 ₽</div>
+                    </div>
+                    <div class="main-page__item main-page__item_adds">
+                        <div class="main-page__item-add">Реклама</div>
+                        <a class="main-page__item-img">
+                            <img src="./assets/images/main__item-img1.webp" alt="">
+                        </a>
+                        <div class="main-page__item-contain">
+                            <div class="main-page__item-name">Ноутбуки с доставкой сегодня</div>
+                        </div>
+                        <a class="main-page__item-link">
+                            <span>Смотреть</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M9 18L15 12L9 6" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="main-page__swipers">
+                    <div class="main-page__swiper-small">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide main-page__swiper-small-item">
+                                <a class="main-page__swiper-small-item_img">
+                                    <img src="./assets/images/main-page__swiper-small-item_img1.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide main-page__swiper-small-item">
+                                <a class="main-page__swiper-small-item_img">
+                                    <img src="./assets/images/main-page__swiper-small-item_img1.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide main-page__swiper-small-item">
+                                <a class="main-page__swiper-small-item_img">
+                                    <img src="./assets/images/main-page__swiper-small-item_img1.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide main-page__swiper-small-item">
+                                <a class="main-page__swiper-small-item_img">
+                                    <img src="./assets/images/main-page__swiper-small-item_img1.webp" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="main-page__swiper-small_pagination pagination__slides"></div>
+                        <div class="main-page__swiper-small-item_contain">
+                            <div class="main-page__swiper-small-item_name">Tissot Heritage</div>
+                            <svg class='like' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 5.711C12.689 4.905 13.881 4 15.696 4C18.87 4 21 6.98 21 9.755C21 15.556 13.778 20 12 20C10.222 20 3 15.556 3 9.755C3 6.98 5.13 4 8.304 4C10.119 4 11.311 4.905 12 5.711Z" stroke="#031E16" stroke-width="1.76909" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="main-page__swiper-small-item_city">Санкт-Петербург</div>
+                        <div class="main-page__swiper-small-item_cost">17 490 ₽</div>
+                    </div>
+                    <div class="main-page__swiper-small desktop">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide main-page__swiper-small-item">
+                                <a class="main-page__swiper-small-item_img">
+                                    <img src="./assets/images/main-page__swiper-small-item_img1.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide main-page__swiper-small-item">
+                                <a class="main-page__swiper-small-item_img">
+                                    <img src="./assets/images/main-page__swiper-small-item_img1.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide main-page__swiper-small-item">
+                                <a class="main-page__swiper-small-item_img">
+                                    <img src="./assets/images/main-page__swiper-small-item_img1.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide main-page__swiper-small-item">
+                                <a class="main-page__swiper-small-item_img">
+                                    <img src="./assets/images/main-page__swiper-small-item_img1.webp" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="main-page__swiper-small_pagination pagination__slides"></div>
+                        <div class="main-page__swiper-small-item_contain">
+                            <div class="main-page__swiper-small-item_name">Tissot Heritage</div>
+                            <svg class='like' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 5.711C12.689 4.905 13.881 4 15.696 4C18.87 4 21 6.98 21 9.755C21 15.556 13.778 20 12 20C10.222 20 3 15.556 3 9.755C3 6.98 5.13 4 8.304 4C10.119 4 11.311 4.905 12 5.711Z" stroke="#031E16" stroke-width="1.76909" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="main-page__swiper-small-item_city">Санкт-Петербург</div>
+                        <div class="main-page__swiper-small-item_cost">17 490 ₽</div>
+                    </div>
+                </div>
+                <div class="main-page__list">
+                    <div class="main-page__item">
+                        <a class="main-page__item-img">
+                            <img src="./assets/images/main__item-img1.webp" alt="">
+                        </a>
+                        <div class="main-page__item-contain">
+                            <div class="main-page__item-name">Rolex Cosmograph Daytona</div>
+                            <svg class='like' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 5.711C12.689 4.905 13.881 4 15.696 4C18.87 4 21 6.98 21 9.755C21 15.556 13.778 20 12 20C10.222 20 3 15.556 3 9.755C3 6.98 5.13 4 8.304 4C10.119 4 11.311 4.905 12 5.711Z" stroke="#031E16" stroke-width="1.76909" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="main-page__item-city">Москва</div>
+                        <div class="main-page__item-cost">18 567 000 ₽</div>
+                    </div>
+                    <div class="main-page__item">
+                        <a class="main-page__item-img">
+                            <img src="./assets/images/main__item-img2.webp" alt="">
+                        </a>
+                        <div class="main-page__item-contain">
+                            <div class="main-page__item-name">Rolex Datejust Turn-O-Graph</div>
+                            <svg class='like' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 5.711C12.689 4.905 13.881 4 15.696 4C18.87 4 21 6.98 21 9.755C21 15.556 13.778 20 12 20C10.222 20 3 15.556 3 9.755C3 6.98 5.13 4 8.304 4C10.119 4 11.311 4.905 12 5.711Z" stroke="#031E16" stroke-width="1.76909" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="main-page__item-city">Ростов-на-Дону</div>
+                        <div class="main-page__item-cost">132 300 ₽</div>
+                    </div>
+                    <div class="main-page__item desktop">
+                        <a class="main-page__item-img">
+                            <img src="./assets/images/main__item-img3.webp" alt="">
+                        </a>
+                        <div class="main-page__item-contain">
+                            <div class="main-page__item-name">Rolex Datejust 36</div>
+                            <svg class='like' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 5.711C12.689 4.905 13.881 4 15.696 4C18.87 4 21 6.98 21 9.755C21 15.556 13.778 20 12 20C10.222 20 3 15.556 3 9.755C3 6.98 5.13 4 8.304 4C10.119 4 11.311 4.905 12 5.711Z" stroke="#031E16" stroke-width="1.76909" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="main-page__item-city">Рязань</div>
+                        <div class="main-page__item-cost">1 895 ₽</div>
+                    </div>
+                    <div class="main-page__item desktop">
+                        <a class="main-page__item-img">
+                            <img src="./assets/images/main__item-img4.webp" alt="">
+                        </a>
+                        <div class="main-page__item-contain">
+                            <div class="main-page__item-name">Hublot Big Bang 44 mm</div>
+                            <svg class='like' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 5.711C12.689 4.905 13.881 4 15.696 4C18.87 4 21 6.98 21 9.755C21 15.556 13.778 20 12 20C10.222 20 3 15.556 3 9.755C3 6.98 5.13 4 8.304 4C10.119 4 11.311 4.905 12 5.711Z" stroke="#031E16" stroke-width="1.76909" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="main-page__item-city">Владивосток</div>
+                        <div class="main-page__item-cost">1 422 634 ₽</div>
+                    </div>
+                </div>
+                <div class="main-page__swipers">
+                    <div class="main-page__swiper-small_add">
+                        <div class="main-page__item-add">Реклама</div>
+                        <div class="main-page__swiper-small-item">
+                            
+                            <a class="main-page__swiper-small-item_img">
+                                <img src="./assets/images/main-page__swiper-small-item_img1.webp" alt="">
+                            </a>
+                        </div>
+                        <div class="main-page__swiper-small-item_contain">
+                            <div class="main-page__swiper-small-item_name">Ноутбуки с доставкой сегодня</div>
+                        </div>
+                        <div class="main-page__swiper-small-item_description">Покупайте у нас и получите не просто ноутбук, а средство для достижения ваших целей. Заходите на наш сайт прямо сейчас и выбирайте свой идеальный ноутбук!</div>
+                        <div class="main-page__item-link">
+                            <span>Смотреть</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M9 18L15 12L9 6" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="main-page__swiper-small desktop">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide main-page__swiper-small-item">
+                                <a class="main-page__swiper-small-item_img">
+                                    <img src="./assets/images/main-page__swiper-small-item_img1.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide main-page__swiper-small-item">
+                                <a class="main-page__swiper-small-item_img">
+                                    <img src="./assets/images/main-page__swiper-small-item_img1.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide main-page__swiper-small-item">
+                                <a class="main-page__swiper-small-item_img">
+                                    <img src="./assets/images/main-page__swiper-small-item_img1.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide main-page__swiper-small-item">
+                                <a class="main-page__swiper-small-item_img">
+                                    <img src="./assets/images/main-page__swiper-small-item_img1.webp" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="main-page__swiper-small_pagination pagination__slides"></div>
+                        <div class="main-page__swiper-small-item_contain">
+                            <div class="main-page__swiper-small-item_name">Tissot Heritage</div>
+                            <svg class='like' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 5.711C12.689 4.905 13.881 4 15.696 4C18.87 4 21 6.98 21 9.755C21 15.556 13.778 20 12 20C10.222 20 3 15.556 3 9.755C3 6.98 5.13 4 8.304 4C10.119 4 11.311 4.905 12 5.711Z" stroke="#031E16" stroke-width="1.76909" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="main-page__swiper-small-item_city">Санкт-Петербург</div>
+                        <div class="main-page__swiper-small-item_cost">17 490 ₽</div>
+                    </div>
+                </div>
+                <div class="main-page__list">
+                    <div class="main-page__item">
+                        <a class="main-page__item-img">
+                            <img src="./assets/images/main__item-img1.webp" alt="">
+                        </a>
+                        <div class="main-page__item-contain">
+                            <div class="main-page__item-name">Rolex Cosmograph Daytona</div>
+                            <svg class='like' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 5.711C12.689 4.905 13.881 4 15.696 4C18.87 4 21 6.98 21 9.755C21 15.556 13.778 20 12 20C10.222 20 3 15.556 3 9.755C3 6.98 5.13 4 8.304 4C10.119 4 11.311 4.905 12 5.711Z" stroke="#031E16" stroke-width="1.76909" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="main-page__item-city">Москва</div>
+                        <div class="main-page__item-cost">18 567 000 ₽</div>
+                    </div>
+                    <div class="main-page__item">
+                        <a class="main-page__item-img">
+                            <img src="./assets/images/main__item-img2.webp" alt="">
+                        </a>
+                        <div class="main-page__item-contain">
+                            <div class="main-page__item-name">Rolex Datejust Turn-O-Graph</div>
+                            <svg class='like' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 5.711C12.689 4.905 13.881 4 15.696 4C18.87 4 21 6.98 21 9.755C21 15.556 13.778 20 12 20C10.222 20 3 15.556 3 9.755C3 6.98 5.13 4 8.304 4C10.119 4 11.311 4.905 12 5.711Z" stroke="#031E16" stroke-width="1.76909" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="main-page__item-city">Ростов-на-Дону</div>
+                        <div class="main-page__item-cost">132 300 ₽</div>
+                    </div>
+                    <div class="main-page__item desktop">
+                        <a class="main-page__item-img">
+                            <img src="./assets/images/main__item-img3.webp" alt="">
+                        </a>
+                        <div class="main-page__item-contain">
+                            <div class="main-page__item-name">Rolex Datejust 36</div>
+                            <svg class='like' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 5.711C12.689 4.905 13.881 4 15.696 4C18.87 4 21 6.98 21 9.755C21 15.556 13.778 20 12 20C10.222 20 3 15.556 3 9.755C3 6.98 5.13 4 8.304 4C10.119 4 11.311 4.905 12 5.711Z" stroke="#031E16" stroke-width="1.76909" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="main-page__item-city">Рязань</div>
+                        <div class="main-page__item-cost">1 895 ₽</div>
+                    </div>
+                    <div class="main-page__item desktop">
+                        <a class="main-page__item-img">
+                            <img src="./assets/images/main__item-img4.webp" alt="">
+                        </a>
+                        <div class="main-page__item-contain">
+                            <div class="main-page__item-name">Hublot Big Bang 44 mm</div>
+                            <svg class='like' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 5.711C12.689 4.905 13.881 4 15.696 4C18.87 4 21 6.98 21 9.755C21 15.556 13.778 20 12 20C10.222 20 3 15.556 3 9.755C3 6.98 5.13 4 8.304 4C10.119 4 11.311 4.905 12 5.711Z" stroke="#031E16" stroke-width="1.76909" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="main-page__item-city">Владивосток</div>
+                        <div class="main-page__item-cost">1 422 634 ₽</div>
+                    </div>
+                </div>
+                <div class="main-page__big desktop">
+                    <div class="main-page__big_swiper">
+                        <div class="swiper-wrapper">
+                            <div class="main-page__big_slide swiper-slide">
+                                <a class="main-page__big_img">
+                                    <img src="./assets/images/main-page__swiper-small-item_img1.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="main-page__big_slide swiper-slide">
+                                <a class="main-page__big_img">
+                                    <img src="./assets/images/main-page__swiper-small-item_img1.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="main-page__big_slide swiper-slide">
+                                <a class="main-page__big_img">
+                                    <img src="./assets/images/main-page__swiper-small-item_img1.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="main-page__big_slide swiper-slide">
+                                <a class="main-page__big_img">
+                                    <img src="./assets/images/main-page__swiper-small-item_img1.webp" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-page__big_right">
+                        <div class="main-page__big_top">
+                            <div class="main-page__big_top_container">
+                                <div class="main-page__big_name">Cartier Ballon Bleu 44mm</div>
+                                <div class="main-page__big_city">Ярославль</div>
+                            </div>
+                            <svg class='like' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 5.711C12.689 4.905 13.881 4 15.696 4C18.87 4 21 6.98 21 9.755C21 15.556 13.778 20 12 20C10.222 20 3 15.556 3 9.755C3 6.98 5.13 4 8.304 4C10.119 4 11.311 4.905 12 5.711Z" stroke="#031E16" stroke-width="1.76909" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="main-page__big_info">
+                            <div class="main-page__big_info-item">
+                                <div class="main-page__big_info-name">Год выпуска</div>
+                                <div class="main-page__big_info-res">2021</div>
+                            </div>
+                            <div class="main-page__big_info-item">
+                                <div class="main-page__big_info-name">Механизм</div>
+                                <div class="main-page__big_info-res">Механические</div>
+                            </div>
+                            <div class="main-page__big_info-item">
+                                <div class="main-page__big_info-name">Страна</div>
+                                <div class="main-page__big_info-res">Франция</div>
+                            </div>
+                            <div class="main-page__big_info-item">
+                                <div class="main-page__big_info-name">Материал корпуса</div>
+                                <div class="main-page__big_info-res">Нержавеющая сталь</div>
+                            </div>
+                        </div>
+                        <div class="main-page__big_price">1 624 359 ₽</div>
+                    </div>
+                    <div class="main-page__big_pagination pagination__slides"></div>
+                </div>
+                <div class="main-page__list">
+                    <div class="main-page__item">
+                        <a class="main-page__item-img">
+                            <img src="./assets/images/main__item-img1.webp" alt="">
+                        </a>
+                        <div class="main-page__item-contain">
+                            <div class="main-page__item-name">Rolex Cosmograph Daytona</div>
+                            <svg class='like' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 5.711C12.689 4.905 13.881 4 15.696 4C18.87 4 21 6.98 21 9.755C21 15.556 13.778 20 12 20C10.222 20 3 15.556 3 9.755C3 6.98 5.13 4 8.304 4C10.119 4 11.311 4.905 12 5.711Z" stroke="#031E16" stroke-width="1.76909" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="main-page__item-city">Москва</div>
+                        <div class="main-page__item-cost">18 567 000 ₽</div>
+                    </div>
+                    <div class="main-page__item">
+                        <a class="main-page__item-img">
+                            <img src="./assets/images/main__item-img2.webp" alt="">
+                        </a>
+                        <div class="main-page__item-contain">
+                            <div class="main-page__item-name">Rolex Datejust Turn-O-Graph</div>
+                            <svg class='like' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 5.711C12.689 4.905 13.881 4 15.696 4C18.87 4 21 6.98 21 9.755C21 15.556 13.778 20 12 20C10.222 20 3 15.556 3 9.755C3 6.98 5.13 4 8.304 4C10.119 4 11.311 4.905 12 5.711Z" stroke="#031E16" stroke-width="1.76909" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="main-page__item-city">Ростов-на-Дону</div>
+                        <div class="main-page__item-cost">132 300 ₽</div>
+                    </div>
+                    <div class="main-page__item desktop">
+                        <a class="main-page__item-img">
+                            <img src="./assets/images/main__item-img3.webp" alt="">
+                        </a>
+                        <div class="main-page__item-contain">
+                            <div class="main-page__item-name">Rolex Datejust 36</div>
+                            <svg class='like' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 5.711C12.689 4.905 13.881 4 15.696 4C18.87 4 21 6.98 21 9.755C21 15.556 13.778 20 12 20C10.222 20 3 15.556 3 9.755C3 6.98 5.13 4 8.304 4C10.119 4 11.311 4.905 12 5.711Z" stroke="#031E16" stroke-width="1.76909" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="main-page__item-city">Рязань</div>
+                        <div class="main-page__item-cost">1 895 ₽</div>
+                    </div>
+                    <div class="main-page__item desktop">
+                        <a class="main-page__item-img">
+                            <img src="./assets/images/main__item-img4.webp" alt="">
+                        </a>
+                        <div class="main-page__item-contain">
+                            <div class="main-page__item-name">Hublot Big Bang 44 mm</div>
+                            <svg class='like' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 5.711C12.689 4.905 13.881 4 15.696 4C18.87 4 21 6.98 21 9.755C21 15.556 13.778 20 12 20C10.222 20 3 15.556 3 9.755C3 6.98 5.13 4 8.304 4C10.119 4 11.311 4.905 12 5.711Z" stroke="#031E16" stroke-width="1.76909" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="main-page__item-city">Владивосток</div>
+                        <div class="main-page__item-cost">1 422 634 ₽</div>
+                    </div>
+                </div>
+                <div class="main-page__big desktop">
+                    <div class="main-page__big_swiper_add">
+                        <div class="main-page__item-add">Реклама</div>
+                        <a class="main-page__big_img">
+                            <img src="./assets/images/main-page__swiper-small-item_img1.webp" alt="">
+                        </a>
+                        <div class="main-page__big_right">
+                            <div class="main-page__big_name">Ноутбуки с доставкой сегодня</div>
+                            <div class="main-page__big_description">Покупайте у нас и получите не просто ноутбук, а средство для достижения ваших целей. Заходите на наш сайт прямо сейчас и выбирайте свой идеальный ноутбук!</div>
+                            <a class="main-page__item-link">
+                                <span>Смотреть</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M9 18L15 12L9 6" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <include src="./components/footer.html"></include>
+</body>
+
+</html>
