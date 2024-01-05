@@ -157,7 +157,7 @@
                         </svg>
                         <span>Сообщения</span>
                     </a>
-                    <a class="header__icon" data-modal="auth-modal">
+                    <a class="header__icon" data-modal="login-modal">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
                             <path d="M23.6898 7.81022C27.9367 12.0572 27.9367 18.9428 23.6898 23.1898C19.4428 27.4367 12.5571 27.4367 8.31022 23.1898C4.06326 18.9428 4.06326 12.0571 8.31022 7.81022C12.5572 3.56326 19.4428 3.56326 23.6898 7.81022" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M18.4041 11.0581C19.7315 12.3855 19.7315 14.5376 18.4041 15.865C17.0767 17.1924 14.9245 17.1924 13.5971 15.865C12.2697 14.5376 12.2697 12.3855 13.5971 11.0581C14.9245 9.73065 17.0767 9.73065 18.4041 11.0581" stroke="#031E16" stroke-width="1.35938" stroke-linecap="round" stroke-linejoin="round"/>
@@ -196,6 +196,11 @@
                         <a class="swiper-slide header__bottom_slide">Cartier</a>
                     </div>
                 </div>
+                <div class="swiper-button-next desktop">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                        <path d="M9 18L15 12L9 6" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                </div>
             </div>
         </div>
     </header>
@@ -203,7 +208,7 @@
         <div class="characteristic__blur"></div>
         <div class="container">
             <div class="characteristic__header">
-                <a href="">
+                <a href="" data-modal="exit-char">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <path d="M15 18L9 12L15 6" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
@@ -1187,7 +1192,7 @@
                 </div>
                 <div class="characteristic__form_btns">
                     <button class="btn btn__green">Продолжить</button>
-                    <button class="btn btn__grey desktop">Сохранить и выйти</button>
+                    <button class="btn btn__grey desktop" data-modal="exit-char">Сохранить и выйти</button>
                 </div>
             </form>
         </div>
@@ -1209,42 +1214,78 @@
             <div class="modal-content recomendation-modal__content">
                 <ul class="recomendation-modal__steps">
                     <li class="recomendation-modal__step">
-                        <div class="recomendation-modal__step__title">1. Отметьте самые примечательные детали в часах</div>
-                    </li>
-                    <li class="recomendation-modal__step">
-                        <div class="recomendation-modal__step__title">2. Подготовьте оборудование:</div>
-                        <div class="recomendation-modal__step__desc">
-                            Естественный свет. Если есть возможность разместить место для фотосъёмки рядом с большим окном, можно снимать при естественном освещении.
-                        </div>
+                        <div class="recomendation-modal__step__title">1. Хорошее освещение</div>
+                        <div class="recomendation-modal__step__desc">Используйте естественное светлое освещение, если это возможно. Избегайте сильных теней, чтобы часы были четко видны.</div>
                         <div class="recomendation-modal__step__img">
                             <img src="./assets/images/rec-photo.webp" alt="Example" />
                             <span>Фото при естественном освещении</span>
                         </div>
                         <div class="recomendation-modal__step__desc">
-                            Искусственный свет. Если не получается организовать место для съёмки рядом с окном, снимайте с искусственным светом. Если вы никогда не занимались предметной съёмкой, вам
-                            поможет лайтбокс — световой куб с равномерным рассеянным освещением со всех сторон.
+                            Искусственный свет. Если не получается организовать место  для съёмки рядом с окном, снимайте с искусственным светом. Если вы никогда не занимались предметной съёмкой,
+                            вам поможет лайтбокс — световой куб с равномерным рассеянным освещением со всех сторон.
                         </div>
                     </li>
-                </ul>
-                <ul class="recomendation-modal__steps">
                     <li class="recomendation-modal__step">
-                        <div class="recomendation-modal__step__title">1. Отметьте самые примечательные детали в часах</div>
-                    </li>
-                    <li class="recomendation-modal__step">
-                        <div class="recomendation-modal__step__title">2. Подготовьте оборудование:</div>
-                        <div class="recomendation-modal__step__desc">
-                            Естественный свет. Если есть возможность разместить место для фотосъёмки рядом с большим окном, можно снимать при естественном освещении.
-                        </div>
+                        <div class="recomendation-modal__step__title">2. Чистый фон</div>
+                        <div class="recomendation-modal__step__desc">Фон должен быть простым и не отвлекающим.
+                            Можно использовать белый, черный или нейтральный цветной фон.</div>
                         <div class="recomendation-modal__step__img">
-                            <img src="./assets/images/rec-photo.webp" alt="Example" />
-                            <span>Фото при естественном освещении</span>
+                            <img src="./assets/images/rec-photo-2.webp" alt="Example" />
+                            <span>Фото на чистом фоне</span>
                         </div>
-                        <div class="recomendation-modal__step__desc">
-                            Искусственный свет. Если не получается организовать место для съёмки рядом с окном, снимайте с искусственным светом. Если вы никогда не занимались предметной съёмкой, вам
-                            поможет лайтбокс — световой куб с равномерным рассеянным освещением со всех сторон.
+                    
+                    </li>
+                    <li class="recomendation-modal__step">
+                        <div class="recomendation-modal__step__title">3. Угол съемки</div>
+                        <div class="recomendation-modal__step__desc">Зафиксируйте часы с разных ракурсов: спереди, сзади, сбоку.
+                            Сфокусируйтесь на деталях, таких как циферблат, ремешок, и механизм.</div>
+                    </li>
+                    <li class="recomendation-modal__step">
+                        <div class="recomendation-modal__step__title">4. Близкие крупные планы</div>
+                        <div class="recomendation-modal__step__desc">Сделайте несколько крупных планов, чтобы покупатели могли ближе рассмотреть детали.</div>
+                    </li>
+                    <li class="recomendation-modal__step">
+                        <div class="recomendation-modal__step__title">5. Разные ракурсы</div>
+                        <div class="recomendation-modal__step__desc">Покажите часы на руке, если это возможно, чтобы покупатели могли представить, как они будут смотреться на них.</div>
+                        <div class="recomendation-modal__step__img">
+                            <img src="./assets/images/rec-photo-3.webp" alt="Example" />
+                            <span>Фото часов на руке</span>
                         </div>
+                    
+                    </li>
+                    <li class="recomendation-modal__step">
+                        <div class="recomendation-modal__step__title">6. Качество изображения</div>
+                        <div class="recomendation-modal__step__desc">Используйте хороший фотоаппарат или камеру с высоким разрешением. Обратите внимание на резкость и четкость изображения.</div>
+                        <div class="recomendation-modal__step__desc">Не забывайте описывать характеристики и преимущества часов в объявлении, чтобы покупатели получили полную информацию.</div>
                     </li>
                 </ul>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- exit from characteristics modal -->
+    <div class="exit-char-modal modal modal--sm">
+        <div class="modal-back"></div>
+        <div class="modal-wrapper">
+            <div class="modal-exit desktop">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M8 8L16 16" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M16 8L8 16" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+            <div class="modal-return mobile">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M15 18L9 12L15 6" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+            <div class="modal-content">
+                <div class="modal--sm__title">Вы точно хотите выйти?</div>
+                <div class="modal--sm__desc">Все ваши изменения будут сохранены в черновик для последующего завершения</div>
+                <div class="modal--sm__btns">
+                    <button class="btn btn__green btn--exit">Выйти</button>
+                    <a href="#!" data-modal="close-modal">Вернуться и сохранить</a>
+                </div>
             </div>
         </div>
     </div>

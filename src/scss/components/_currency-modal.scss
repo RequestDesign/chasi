@@ -1,5 +1,5 @@
 .currency-modal{
-    .options-modal__header{
+    .bottom-sheet__header{
         display: flex;
         gap: 25.4rem;
         align-items: center;
@@ -9,12 +9,12 @@
         font-weight: 600;
     }
 
-    .options-modal__items{
+    .bottom-sheet__items{
         gap: 0;
         line-height: 150%;
     }
 
-    .options-modal__item{
+    .bottom-sheet__item{
         padding: 2.4rem 0;
         border-bottom: 0.2rem solid #F1F3F3;
 

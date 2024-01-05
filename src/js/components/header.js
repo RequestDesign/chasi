@@ -27,6 +27,10 @@ function remToPx(remValue) {
 const header__bottom_swiper = new Swiper(".header__bottom_swiper", {
     slidesPerView: 'auto',
     spaceBetween: `${remToPx(0.8)}rem`,
+    modules: [Navigation],
+    navigation: {
+        nextEl: ".swiper-button-next",
+      },
 });
 
 $('.header__search_input').on('input', function(){

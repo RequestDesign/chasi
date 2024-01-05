@@ -353,6 +353,45 @@
         grid-template-columns: 1fr 1fr;
         column-gap: 2rem;
         row-gap: 1.2rem;
+
+        &_add{
+            .main-page__big {
+                &_img {
+                    flex: none;
+                    width: 40.8rem;
+                    height: 30.2rem;
+        
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        border-radius: 1.2rem;
+                    }
+                }
+                &_right {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2.4rem;
+                }
+                &_name {
+                    font-size: 1.6rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 150%;
+                }
+                &_description {
+                    font-size: 1.6rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 150%;
+                }
+            }
+
+            .main-page__item-link {
+                margin-top: 0;
+            }
+        }
+
         &_swiper {
             overflow: hidden;
             margin-bottom: 1.2rem;
@@ -363,39 +402,7 @@
                 align-items: center;
                 position: relative;
 
-                .main-page__big {
-                    &_img {
-                        flex: none;
-                        width: 40.8rem;
-                        height: 30.2rem;
-            
-                        img {
-                            width: 100%;
-                            height: 100%;
-                            object-fit: cover;
-                            border-radius: 1.2rem;
-                        }
-                    }
-                    &_right {
-                        display: flex;
-                        flex-direction: column;
-                        gap: 2.4rem;
-                    }
-                    &_name {
-                        font-size: 1.6rem;
-                        font-style: normal;
-                        font-weight: 400;
-                        line-height: 150%;
-                        margin-bottom: 2.4rem;
-                    }
-                    &_description {
-                        font-size: 16px;
-                        font-style: normal;
-                        font-weight: 400;
-                        line-height: 150%;
-                        margin-bottom: 2.4rem;
-                    }
-                }
+                
             }
         }
         &_slide {
@@ -977,6 +984,10 @@
         }
     }
     .favorites {
+        .main-page__tubs{
+            margin-top: 4.8rem;
+        }
+        
         &__empty {
             height: auto;
             padding: 37rem 0;

@@ -71,7 +71,7 @@ $(function () {
     function showSecondResPwdStage() {
         $(".reset-password-second-stage").show();
         $(".reset-password-first-stage, .reset-password-third-stage").hide();
-        $("[data-switcher]").off();
+        $(".switcher--reset-pwd").off();
 
         if ($("#emailPwdInputDisabled").val() && !$("#phonePwdInputDisabled").val()) {
             //show email input

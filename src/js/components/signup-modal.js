@@ -1,5 +1,6 @@
 import $ from "jquery";
 import IMask from "imask";
+import { startTimer, destroyTimer, resetTimer } from "./send-code-timer";
 
 function applyIMask() {
     IMask(document.getElementById("phoneInput"), {
@@ -75,6 +76,7 @@ $(function () {
         $("#emailInput, #phoneInput, #regCode, #passwordInput, #repeatPasswordInput, #nameInput, #surnameInput, #cityInput").val("");
         $(".signup-modal .btn").prop("disabled", true);
         contactType = "email";
+        destroyTimer();
     }
 
     $('[data-modal="signup-modal"]').on("click", () => {
@@ -128,7 +130,7 @@ $(function () {
     function showSecondStage() {
         $(".signup-second-stage").show();
         $(".signup-first-stage, .signup-third-stage, .signup-fourth-stage").hide();
-        $('[data-switcher]').off()
+        $('.switcher--signup ').off()
 
         if ($("#emailInputDisabled").val() && !$("#phoneInputDisabled").val()) {
             //show email input
@@ -153,7 +155,10 @@ $(function () {
         //handle click on confirmCodeButton
         $("#confirmCodeButton").on("click", function () {
             showThirdStage();
+            destroyTimer()
         });
+
+        resetTimer();
     }
 
     //third stage

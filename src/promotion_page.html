@@ -8,7 +8,7 @@
         <title>Продвижение</title>
     </head>
     <body>
-        <header class="header">
+        <header class="header desktop">
             <div class="container">
                 <div class="header__top">
                     <div class="header__top_container_left">
@@ -155,7 +155,7 @@
                             </svg>
                             <span>Сообщения</span>
                         </a>
-                        <a class="header__icon" data-modal="auth-modal">
+                        <a class="header__icon" data-modal="login-modal">
                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
                                 <path d="M23.6898 7.81022C27.9367 12.0572 27.9367 18.9428 23.6898 23.1898C19.4428 27.4367 12.5571 27.4367 8.31022 23.1898C4.06326 18.9428 4.06326 12.0571 8.31022 7.81022C12.5572 3.56326 19.4428 3.56326 23.6898 7.81022" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M18.4041 11.0581C19.7315 12.3855 19.7315 14.5376 18.4041 15.865C17.0767 17.1924 14.9245 17.1924 13.5971 15.865C12.2697 14.5376 12.2697 12.3855 13.5971 11.0581C14.9245 9.73065 17.0767 9.73065 18.4041 11.0581" stroke="#031E16" stroke-width="1.35938" stroke-linecap="round" stroke-linejoin="round"/>
@@ -194,6 +194,11 @@
                             <a class="swiper-slide header__bottom_slide">Cartier</a>
                         </div>
                     </div>
+                    <div class="swiper-button-next desktop">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                            <path d="M9 18L15 12L9 6" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                    </div>
                 </div>
             </div>
         </header>
@@ -201,7 +206,7 @@
             <div class="container">
                 <div class="promotion__header mobile">
                     <button class="btn--go-back">
-                        <img src="./assets/images/arrow-left.svg" alt="Go Back" />
+                        <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none"> <path d="M15 18L9 12L15 6" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> </svg>
                     </button>
                 </div>
                 <div class="promotion__top">
@@ -266,8 +271,8 @@
 
                         <div class="promotion__info_mob">
                             <div class="promotion__header promotion__header--payment mobile">
-                                <button class="btn--go-back_info">
-                                    <img src="./assets/images/arrow-left.svg" alt="Go Back" />
+                                <button class="btn--go-back btn--go-back_info">
+                                    <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none"> <path d="M15 18L9 12L15 6" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> </svg>
                                 </button>
                             </div>
     
@@ -287,7 +292,7 @@
                         <div class="promotion__payment">
                             <div class="promotion__header promotion__header--payment mobile">
                                 <button class="btn--go-back">
-                                    <img src="./assets/images/arrow-left.svg" alt="Go Back" />
+                                    <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none"> <path d="M15 18L9 12L15 6" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> </svg>
                                 </button>
                                 <span class="promotion__header--payment__title">Способ оплаты</span>
                             </div>
@@ -324,7 +329,6 @@
                         <div class="promotion__info_price">1 600 ₽</div>
                     </div>
                 </div>
-
                 <div class="promotion__buttons">
                     <button class="btn btn__green" id="btnPublishAdv">Разместить объявление</button>
                     <button class="btn btn__green" id="btnConfitmPayment" type="submit">Подтвердить оплату</button>

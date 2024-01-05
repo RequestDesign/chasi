@@ -709,11 +709,11 @@
         }
 
         &__thumbnails-container {
-            display: flex;
-            gap: 1.3rem;
+            // display: flex;
+            // gap: 1.3rem;
 
             @media (max-width: 48em) {
-                gap: 2.6rem;
+                // gap: 2.6rem;
             }
         }
 
@@ -722,11 +722,13 @@
             height: 8rem;
             margin-bottom: 2.4rem;
             position: relative;
+            margin-right: 1.3rem;
 
             @media (max-width: 48em) {
                 width: 12rem;
                 height: 12rem;
                 margin-bottom: 4rem;
+                margin-right: 2.6rem;
             }
 
             &__img {

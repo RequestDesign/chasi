@@ -27,7 +27,7 @@
         }
     }
 
-    .fancybox__toolbar {
+    .fancybox__toolbar, .fancybox__toolbar.is-absolute{
         position: absolute;
         top: 1.6rem;
         right: 4rem;

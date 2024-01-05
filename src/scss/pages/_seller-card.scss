@@ -6,25 +6,42 @@
     &__left {
         flex: 1;
         padding: 4rem 6.5rem 4rem 3.2rem;
-        background: #FFF;
+        background: #fff;
         border-radius: 1.6rem;
         height: fit-content;
     }
+
     &__right {
         width: 90rem;
         padding: 4rem 3.2rem;
         border-radius: 1.6rem;
-        background: #FFF;
+        background: #fff;
         display: flex;
         flex-direction: column;
         gap: 4rem;
-        background: #FFF;
+        background: #fff;
     }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 2.4rem;
+        padding: 4.8rem 0 2.4rem;
+
+        button {
+            svg {
+                width: 4.8rem;
+                height: 4.8rem;
+            }
+        }
+    }
+
     &__img {
         width: 11.2rem;
         height: 11.2rem;
         border-radius: 50%;
-        border: 0.2rem solid rgba(40, 130, 103, 0.20);
+        border: 0.2rem solid rgba(40, 130, 103, 0.2);
         overflow: hidden;
         margin-bottom: 2.4rem;
 
@@ -40,7 +57,7 @@
         font-style: normal;
         font-weight: 400;
         line-height: 123.077%;
-        color: #7E8582;
+        color: #7e8582;
     }
     &__name {
         font-size: 2.4rem;
@@ -50,7 +67,7 @@
         margin-bottom: 0.4rem;
     }
     &__city {
-        color: #7E8582;
+        color: #7e8582;
         font-size: 1.3rem;
         font-style: normal;
         font-weight: 400;
@@ -74,7 +91,7 @@
 
         svg {
             width: 2.4rem;
-            height: 2.4rem; 
+            height: 2.4rem;
         }
     }
     &__ads {
@@ -91,7 +108,7 @@
     }
     &__tag {
         padding: 0.4rem 0.8rem;
-        background: #F1F3F3;
+        background: #f1f3f3;
         font-size: 1.6rem;
         font-style: normal;
         font-weight: 400;
@@ -99,7 +116,7 @@
         display: flex;
         gap: 0.4rem;
         border-radius: 0.4rem;
-        color: #7E8582;
+        color: #7e8582;
         align-items: center;
 
         span {
@@ -107,26 +124,37 @@
             gap: 0.4rem;
             align-items: center;
             &:nth-child(1)::after {
-                content: '';
+                content: "";
                 display: block;
                 width: 0.2rem;
                 height: 0.2rem;
                 border-radius: 50%;
-                background: #7E8582;
+                background: #7e8582;
             }
         }
     }
     &__btn {
         padding: 1.7rem 4rem;
-        color: #FFF;
+        color: #fff;
         font-size: 1.6rem;
         font-style: normal;
         font-weight: 400;
-        line-height: 150%;
         border-radius: 200rem;
         background: #298267;
         display: block;
         width: fit-content;
+
+        &--mobile {
+            position: fixed;
+            bottom: 12rem;
+            width: 100%;
+            background-color: #fff;
+            border-top: 0.2rem solid #f1f3f3;
+            right: 0;
+            left: 0;
+            padding: 4.8rem 3.2rem;
+            z-index: 2;
+        }
     }
 }
 .seller-card-modal {
@@ -173,7 +201,7 @@
             height: 4rem;
             position: relative;
             cursor: pointer;
-            
+
             svg {
                 width: 4rem;
                 height: 4rem;
@@ -221,16 +249,16 @@
             display: none;
 
             &:checked ~ span {
-                background: #031E16;
-                color: #FFFFFF;
+                background: #031e16;
+                color: #ffffff;
             }
         }
         span {
             display: block;
             padding: 0.4rem 0.8rem;
             border-radius: 0.4rem;
-            background: #F1F3F3;
-            color: #7E8582;
+            background: #f1f3f3;
+            color: #7e8582;
             cursor: pointer;
             font-size: 1.6rem;
             font-style: normal;
@@ -242,6 +270,8 @@
 
 @media (max-width: 48em) {
     .seller-card {
+        margin-bottom: 35rem;
+        
         .container {
             display: flex;
             flex-direction: column;
@@ -276,7 +306,7 @@
         &__img {
             width: 14.4rem;
             height: 14.4rem;
-            border: 0.4rem solid rgba(40, 130, 103, 0.20);
+            border: 0.4rem solid rgba(40, 130, 103, 0.2);
             overflow: hidden;
             margin-bottom: 0;
             flex: none;
@@ -302,10 +332,10 @@
         &__rating {
             font-size: 4rem;
             gap: 0.8rem;
-    
+
             svg {
                 width: 4.8rem;
-                height: 4.8rem; 
+                height: 4.8rem;
             }
         }
         &__ads {
@@ -313,14 +343,14 @@
         }
         &__tags {
             gap: 1.6rem;
-            margin-bottom: 3.2rem;
+            margin-bottom: 0;
         }
         &__tag {
             padding: 0.8rem 1.6rem;
             font-size: 3.2rem;
             gap: 0.8rem;
             border-radius: 0.8rem;
-    
+
             span {
                 gap: 0.8rem;
                 &:nth-child(1)::after {
@@ -365,11 +395,11 @@
             justify-content: space-between;
             flex-direction: row-reverse;
             width: 100%;
-    
+
             .star {
                 width: 12.8rem;
                 height: 12.8rem;
-                
+
                 svg {
                     width: 12.8rem;
                     height: 12.8rem;
@@ -378,7 +408,7 @@
         }
         &__box {
             display: none;
-    
+
             &.active {
                 display: block;
             }
@@ -401,4 +431,3 @@
         }
     }
 }
-

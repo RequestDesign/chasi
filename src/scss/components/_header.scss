@@ -103,10 +103,13 @@
         }
     }
     &__bottom {
+
+        position: relative;
         &_swiper {
             overflow: hidden;
             margin: 0 -3.2rem;
             padding-left: 3.2rem;
+            margin-right: 3.2rem;            
         }
         &_slide {
             border-radius: 4rem;
@@ -121,6 +124,29 @@
             font-weight: 400;
             line-height: 150%;
             background: #F1F3F3;
+        }
+
+        .swiper-button-next{
+            width: 4rem;
+            height: 4rem;
+            background-color: #fff;
+            border-radius: 100%;
+            box-shadow: 0 0.2rem 1.6rem 0 rgba(0, 0, 0, 0.08);
+            position: absolute;
+            z-index: 1;
+            bottom: 0;
+            top: 0;
+            right: 0;
+            margin: unset;
+        
+            &::after{
+                content: none;
+            }
+
+            svg{
+                width: 2.4rem;
+                height: 2.4rem;
+            }
         }
     }
     &__photo {

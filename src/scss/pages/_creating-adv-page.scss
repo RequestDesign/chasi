@@ -2,7 +2,8 @@
     margin-bottom: 4rem;
 
     @media (max-width: 48em) {
-        margin-bottom: 4.8rem;
+        margin-top: 10.8rem;
+        margin-bottom: 32rem;
     }
 
     .container {
@@ -72,7 +73,7 @@
             margin-bottom: 0;
 
             position: fixed;
-            bottom: 0;
+            bottom: 12rem;
             right: 0;
             left: 0;
             border-top: 0.2rem solid #f1f3f3;
@@ -101,6 +102,13 @@
             justify-content: space-between;
             margin-bottom: 0;
             border-bottom: 0.2rem solid rgba(40, 130, 103, 0.2);
+
+            position: fixed;
+            z-index: 10;
+            top: 0;
+            background-color: #fff;
+            width: 100%;
+            padding-top: 4.8rem;
         }
 
         .switcher-cards {
@@ -151,7 +159,7 @@
 
         @media (max-width: 48em) {
             gap: 0;
-            padding: 0 3.2rem 10rem;
+            max-height: unset;
         }
     }
 

@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header desktop">
         <div class="container">
             <div class="header__top">
                 <div class="header__top_container_left">
@@ -24,7 +24,7 @@
                             <path d="M15.7138 6.8382C18.1647 9.28913 18.1647 13.2629 15.7138 15.7138C13.2629 18.1647 9.28913 18.1647 6.8382 15.7138C4.38727 13.2629 4.38727 9.28913 6.8382 6.8382C9.28913 4.38727 13.2629 4.38727 15.7138 6.8382" stroke="#7E8582" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M19 19L15.71 15.71" stroke="#7E8582" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                        <input class="header__search_input" type="text" placeholder="Введите название часов">
+                        <input class="header__search_input" type="text" placeholder="Введите название модели">
                     </div>
                     <a class="header__filter" href="">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -157,11 +157,13 @@
                         </svg>
                         <span>Сообщения</span>
                     </a>
-                    <a class="header__icon">
-                        <div class="header__photo">
-                            <img src="./assets/images/avatar1.webp" alt="">
-                        </div>
-                        <span>Имя</span>
+                    <a class="header__icon" data-modal="login-modal">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M23.6898 7.81022C27.9367 12.0572 27.9367 18.9428 23.6898 23.1898C19.4428 27.4367 12.5571 27.4367 8.31022 23.1898C4.06326 18.9428 4.06326 12.0571 8.31022 7.81022C12.5572 3.56326 19.4428 3.56326 23.6898 7.81022" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M18.4041 11.0581C19.7315 12.3855 19.7315 14.5376 18.4041 15.865C17.0767 17.1924 14.9245 17.1924 13.5971 15.865C12.2697 14.5376 12.2697 12.3855 13.5971 11.0581C14.9245 9.73065 17.0767 9.73065 18.4041 11.0581" stroke="#031E16" stroke-width="1.35938" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M22.8935 23.9076C21.1595 22.0818 18.7139 20.9375 15.9975 20.9375C13.2812 20.9375 10.8355 22.0818 9.10156 23.9088" stroke="#031E16" stroke-width="1.35938" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Профиль</span>
                     </a>
                 </div>
             </div>
@@ -193,6 +195,11 @@
                         <a class="swiper-slide header__bottom_slide">Fossil</a>
                         <a class="swiper-slide header__bottom_slide">Cartier</a>
                     </div>
+                </div>
+                <div class="swiper-button-next desktop">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                        <path d="M9 18L15 12L9 6" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
                 </div>
             </div>
         </div>

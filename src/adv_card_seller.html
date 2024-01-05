@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
-        <title>Карточка товара черновик</title>
+        <title>Карточка товара продавец</title>
     </head>
 
     <body>
@@ -203,7 +203,7 @@
                 </div>
             </div>
         </header>
-        <section class="adv-card adv-card__seller adv-card__draft">
+        <section class="adv-card adv-card__seller">
             <!-- header -->
             <div class="adv-card__header mobile">
                 <button class="btn--go-back"><img src="./assets/images/arrow-left.svg" alt="Go Back" /></button>
@@ -217,13 +217,76 @@
                     <div class="adv-card__content">
                         <!-- slider -->
                         <div class="adv-card__slider">
-                            <div class="adv-card__slider--empty"></div>
+                            <div class="swiper-thumbnail-container">
+                                <div class="swiper swiper-thumbnail">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="./assets/images/rolex-2.webp" alt="rolex" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./assets/images/rolex.webp" alt="rolex" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./assets/images/rolex-3.webp" alt="rolex" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./assets/images/rolex.webp" alt="rolex" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./assets/images/rolex-2.webp" alt="rolex" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./assets/images/rolex-3.webp" alt="rolex" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./assets/images/rolex.webp" alt="rolex" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-prev">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                                        <path d="M6 9L12 15L18 9" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <div class="swiper-button-next">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                                        <path d="M6 9L12 15L18 9" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="adv-card__swiper swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide" data-fancybox="swiper-gallery" data-src="./assets/images/rolex-2.webp">
+                                        <img src="./assets/images/rolex-2.webp" alt="rolex" />
+                                    </div>
+                                    <div class="swiper-slide" data-fancybox="swiper-gallery" data-src="./assets/images/rolex.webp">
+                                        <img src="./assets/images/rolex.webp" alt="rolex" />
+                                    </div>
+                                    <div class="swiper-slide" data-fancybox="swiper-gallery" data-src="./assets/images/rolex-3.webp">
+                                        <img src="./assets/images/rolex-3.webp" alt="rolex" />
+                                    </div>
+                                    <div class="swiper-slide" data-fancybox="swiper-gallery" data-src="./assets/images/rolex.webp">
+                                        <img src="./assets/images/rolex.webp" alt="rolex" />
+                                    </div>
+                                    <div class="swiper-slide" data-fancybox="swiper-gallery" data-src="./assets/images/rolex-2.webp">
+                                        <img src="./assets/images/rolex-2.webp" alt="rolex" />
+                                    </div>
+                                    <div class="swiper-slide" data-fancybox="swiper-gallery" data-src="./assets/images/rolex-3.webp">
+                                        <img src="./assets/images/rolex-3.webp" alt="rolex" />
+                                    </div>
+                                    <div class="swiper-slide" data-fancybox="swiper-gallery" data-src="./assets/images/rolex.webp">
+                                        <img src="./assets/images/rolex.webp" alt="rolex" />
+                                    </div>
+                                </div>
+    
+                                <div class="swiper-pagination"></div>
+                            </div>
                         </div>
                         <!-- info mobile -->
                         <div class="adv-card__info--mobile mobile">
                             <div class="adv-card__title">
-                                <span class="adv-card__status">Черновик</span>
-                                <span class="title">Rolex Datejust 36</span>
+                                <span class="adv-card__status">Статус</span>
+                                <span class="title">Rolex Cosmograph Daytona</span>
                             </div>
                             <div class="adv-card__details">
                                 <span class="adv-card__detail adv-card__location">Москва</span>
@@ -253,13 +316,38 @@
                         <!-- characteristics -->
                         <div class="adv-card__characteristics">
                             <div class="adv-card__characteristics__title">Характеристики</div>
+                            <div class="adv-card__characteristics__grid">
+                                <div class="grid-row"><span class="category">Cостояние</span><span>Б/у</span></div>
+                                <div class="grid-row"><span class="category">Механизм</span><span>Механические</span></div>
+                                <div class="grid-row"><span class="category">Пол</span><span>Мужской</span></div>
+                                <div class="grid-row"><span class="category">Материал ремешка</span><span>Кожа</span></div>
+                                <div class="grid-row"><span class="category">Год выпуска</span><span>2021</span></div>
+                                <div class="grid-row"><span class="category">Застёжка</span><span>Классическая пряжка</span></div>
+                                <div class="grid-row"><span class="category">Механизм</span><span>Механические</span></div>
+                                <div class="grid-row"><span class="category">Циферблат</span><span>Классический</span></div>
+                                <div class="grid-row"><span class="category">Цвет</span><span>Серые</span></div>
+                                <div class="grid-row"><span class="category">Цвет циферблата</span><span>Коричневый</span></div>
+                                <div class="grid-row"><span class="category">Страна</span><span>Франция</span></div>
+                                <div class="grid-row"><span class="category">Водозащита</span><span>Нет</span></div>
+                                <div class="grid-row"><span class="category">Материал корпуса</span><span>Нержавеющая сталь</span></div>
+                                <div class="grid-row"><span class="category">Форма корпуса</span><span>Круглая</span></div>
+                            </div>
                         </div>
-
                         <!-- desc -->
                         <div class="adv-card__desc">
                             <div class="adv-card__desc__title">Описание</div>
+                            <div class="adv-card__desc__text">
+                                <p>
+                                    Классические мужские часы производства Франция. Надёжная модель на каждый день. На хорошем ходу, календарь работает корректно. Продается в комплекте с ремешком.
+                                    Цена чисто символическая). Классические мужские часы производства Франция.
+                                </p>
+                                <p>Надёжная модель на каждый день. На хорошем ходу, календарь работает корректно</p>
+                                <p>
+                                    Классические мужские часы производства Франция. Надёжная модель на каждый день. На хорошем ходу, календарь работает корректно. Продается в комплекте с ремешком.
+                                    Цена чисто символическая). Классические мужские часы производства Франция.
+                                </p>
+                            </div>
                         </div>
-
                         <!-- user card -->
                         <div class="adv-card__user-card mobile">
                             <div class="user-card">
@@ -290,7 +378,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <!-- connection -->
                         <div class="adv-card__seller__connection">
                             <div class="title">Телефон для связи</div>
@@ -304,15 +391,32 @@
                     <!-- sticky -->
                     <div class="adv-card__sticky desktop">
                         <div class="adv-card__title">
-                            <span class="adv-card__status">Черновик</span>
-                            <span class="title">Rolex Datejust 36</span>
+                            <span class="adv-card__status">Статус</span>
+                            <span class="title">Rolex Cosmograph Daytona</span>
                         </div>
                         <div class="adv-card__details desktop">
                             <span class="adv-card__detail adv-card__location">Москва</span>
                             <svg class="gray-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 4" fill="none">
                                 <circle cx="2" cy="2" r="2" fill="#7E8582" />
                             </svg>
+                            <span class="adv-card__detail adv-card__date">Опубликовано 28.08.2023</span>
+                            <svg class="gray-circle desktop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 4" fill="none">
+                                <circle cx="2" cy="2" r="2" fill="#7E8582" />
+                            </svg>
                             <span class="adv-card__detail adv-card__number desktop">Объявление №1245457890</span>
+                        </div>
+                        <div class="adv-card__price desktop">
+                            18 567 000 ₽
+                            <button class="btn--price" data-modal="currency">
+                                <svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M6 9L12 15L18 9" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                            <ul class="currency-list desktop">
+                                <li class="currency-list__item"><span class="currency">Рубль</span><span class="price-converted">18 567 000 ₽</span></li>
+                                <li class="currency-list__item"><span class="currency">Евро</span><span class="price-converted">~12 000 €</span></li>
+                                <li class="currency-list__item"><span class="currency">Доллар</span><span class="price-converted">~12 100 $</span></li>
+                            </ul>
                         </div>
 
                         <div class="adv-card__user-card">
@@ -351,18 +455,111 @@
                     <!-- buttons -->
                     <div class="adv-card__seller__buttons desktop">
                         <button class="btn btn__green btn--publish-again">
-                            <span>Отправить на проверку</span>
+                            <span>Поднять просмотры</span>
                         </button>
-                        <button class="btn btn__green btn--edit">
+                        <button class="btn btn__gray btn--edit">
                             <span>Редактировать</span>
                         </button>
-                        <button class="btn btn__gray btn--archive">
-                            <span>Переместить в архив</span>
+                        <button class="btn btn__gray btn--unpublish" data-modal="unpublish">
+                            <span>Снять с публикации</span>
                         </button>
+
+                        <!-- <button class="btn btn__green btn--publish">
+                            <span>Разместить объявление</span>
+                        </button> -->
+                        
+                        <!-- <button class="btn btn__gray btn--archive">
+                            <span>Переместить в архив</span>
+                        </button> -->
+                        <!-- <button class="btn btn__gray btn--delete">
+                            <span>Удалить</span>
+                        </button> -->
+                        <!-- <button class="btn btn__green btn--publish-again">
+                            <span>Опубликовать снова</span>
+                        </button> -->
+                        <!-- <button class="btn btn__green btn--publish-again">
+                            <span>Отправить на проверку</span>
+                        </button> -->
+                        
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- modal unpublish -->
+        <div class="unpublish-modal modal desktop">
+            <div class="modal-back"></div>
+            <div class="modal-wrapper">
+                <div class="modal-exit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M8 8L16 16" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M16 8L8 16" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+
+                <div class="modal-content">
+                    <div class="modal__title">Выберите причину:</div>
+                    <div class="modal__list">
+                        <label for="soldByChasi" class="modal__list__item">
+                            <span>Продал с помощью Часы.ру</span>
+                            <input type="radio" name="reason" id="soldByChasi" checked />
+                        </label>
+
+                        <label for="soldByExt" class="modal__list__item">
+                            <span>Продал где-то ещё</span>
+                            <input type="radio" name="reason" id="soldByExt" />
+                        </label>
+
+                        <label for="other" class="modal__list__item">
+                            <span>Другая причина</span>
+                            <input type="radio" name="reason" id="other" />
+                        </label>
+                    </div>
+                    <button class="btn btn__green btn--unpublish--modal">Снять с публикации</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- modal options menu mobile -->
+        <div class="modal bottom-sheet options-modal mobile">
+            <div class="modal-back"></div>
+            <div class="bottom-sheet-wrapper">
+                <div class="bottom-sheet-content">
+                    <div class="bottom-sheet__header">
+                        <button class="btn--go-back">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                                <path d="M15 18L9 12L15 6" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="bottom-sheet__items">
+                        <label for="soldByExtModal" class="bottom-sheet__item">
+                            <span>Продал где-то ещё</span>
+                            <input type="radio" name="reason" id="soldByExtModal" />
+                        </label>
+
+                        <label for="editModal" class="bottom-sheet__item">
+                            <span>Редактировать</span>
+                            <input type="radio" name="reason" id="editModal" />
+                        </label>
+
+                        <label for="unpublishModal" class="bottom-sheet__item btn--unpublish--modal">
+                            <span>Снять с публикации</span>
+                            <input type="radio" name="reason" id="unpublishModal" />
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- pop-up -->
+        <div class="pop-up">
+            <div class="pop-up__text">Объявление снято с публикации</div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M8 8L16 16" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M16 8L8 16" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </div>
 
         <!-- currency modal -->
         <div class="modal bottom-sheet currency-modal mobile">
@@ -396,36 +593,8 @@
             </div>
         </div>
 
-        <!-- modal options menu mobile -->
-        <div class="modal bottom-sheet options-modal mobile">
-            <div class="modal-back"></div>
-            <div class="bottom-sheet-wrapper">
-                <div class="bottom-sheet-content">
-                    <div class="bottom-sheet__header">
-                        <button class="btn--go-back">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
-                                <path d="M15 18L9 12L15 6" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="bottom-sheet__items">
-                        <label for="sendToCheckModal" class="bottom-sheet__item">
-                            <span>Отправить на проверку</span>
-                            <input type="radio" name="reason" id="sendToCheckModal" />
-                        </label>
-
-                        <label for="editModal" class="bottom-sheet__item">
-                            <span>Редактировать</span>
-                            <input type="radio" name="reason" id="editModal" />
-                        </label>
-
-                        <label for="sendToArchiveModal" class="bottom-sheet__item">
-                            <span>Переместить в архив</span>
-                            <input type="radio" name="reason" id="sendToArchiveModal" />
-                        </label>
-                    </div>
-                </div>
-            </div>
+        <!-- fancybox bg-->
+        <div class="fancybox-bg">
         </div>
 
         <include src="./components/footer.html"></include>
