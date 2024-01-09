@@ -38,6 +38,8 @@ const entryPoints = {
   adv_card_consumer_one_pic: path.resolve(__dirname, "src", "index.js"),
   adv_card_seller: path.resolve(__dirname, "src", "index.js"),
   error_page: path.resolve(__dirname, "src", "index.js"),
+  profile_faq: path.resolve(__dirname, "src", "index.js"),
+  profile_service_info: path.resolve(__dirname, "src", "index.js"),
   // Добавьте другие страницы здесь
 };
 

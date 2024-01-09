@@ -138,11 +138,28 @@
         line-height: normal;
         color: #ED3241;
         cursor: pointer;
+        margin-bottom: 2.4rem;
+    }
+    &__delete {
+        color: #7E8582;
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        cursor: pointer;
+        
+        svg {
+            width: 2.4rem;
+            height: 2.4rem;
+        }
     }
 
     &__container {
         width: 90rem;
-        height: auto;
+        height: fit-content;
         padding: 4rem 3.2rem;
         border-radius: 1.6rem;
         background: #FFF;
@@ -354,6 +371,13 @@
             line-height: 150%;
         }
     }
+
+    &__service_info {
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+    }
 }
 .photo-modal {
     &__img {
@@ -495,7 +519,7 @@
             text-align: center;
         }
         &__links {
-            gap: 4.8rem;
+            gap: 0.8rem;
             margin-bottom: 4.8rem;
         }
         &__link {
@@ -505,6 +529,9 @@
             border-radius: 1.6rem;
             background: #F1F3F3;
             position: relative;
+            &:first-child {
+                margin-bottom: 4rem;
+            }
             &.active {
                 font-weight: 600;
             }
@@ -523,9 +550,21 @@
             border-radius: 4rem;
             padding: 0 2rem;
             font-size: 3.2rem;
+            margin-left: auto;
+            margin-right: 8.8rem;
         }
         &__exit {
             font-size: 3.2rem;
+            margin-bottom: 0;
+        }
+        &__delete {
+            gap: 1.6rem;
+            font-size: 3.2rem;
+            
+            svg {
+                width: 4.8rem;
+                height: 4.8rem;
+            }
         }
     
         &__container {
@@ -718,6 +757,9 @@
                 margin: auto;
             }
         }
+        &__service_info {
+            font-size: 3.2rem;
+        }
     }
     .dropdown {
         &__blur {
@@ -732,6 +774,94 @@
             display: none;
             &.open {
                 display: block;
+            }
+        }
+    }
+}
+
+.profile__faq {
+    &__item {
+        padding: 2rem 0;
+        border-bottom: 0.1rem solid #F1F3F3;
+
+        &:first-child {
+            padding-top: 0;
+        }
+        &:last-child {
+            padding-bottom: 0;
+            border-bottom: 0;
+        }
+    }
+    &_top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+
+        &.active {
+            svg {
+                transform: rotate(0deg);
+            }
+        }
+
+        &__name {
+            font-size: 1.6rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 150%;
+        }
+        svg {
+            flex: none;
+            width: 3.2rem;
+            height: 3.2rem;
+            transition: transform 0.5s ease-in-out;
+            transform: rotate(45deg);
+        }
+    }
+    &_bottom {
+        display: none;
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        margin-top: 1.2rem;
+
+        &__text {
+            width: 65rem;
+        }
+    }
+}
+
+@media (max-width: 48em) {
+    .profile__faq {
+        &__item {
+            padding: 4rem 0;
+            border-bottom: 0.2rem solid #F1F3F3;
+    
+            &:first-child {
+                padding-top: 0;
+            }
+            &:last-child {
+                padding-bottom: 0;
+                border-bottom: 0;
+            }
+        }
+        &_top {
+    
+            &__name {
+                font-size: 3.2rem;
+            }
+            svg {
+                width: 6.4rem;
+                height: 6.4rem;
+            }
+        }
+        &_bottom {
+            font-size: 3.2rem;
+            margin-top: 1.6rem;
+    
+            &__text {
+                width: auto;
             }
         }
     }

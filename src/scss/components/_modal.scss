@@ -131,6 +131,18 @@
         }
     }
 
+    &__text {
+        color: #414141;
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+
+        @media (max-width: 48em) {
+            font-size: 3.2rem;
+        }
+    }
+
     &__desc {
         margin-top: -0.8rem;
         font-size: 1.6rem;

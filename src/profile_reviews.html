@@ -205,7 +205,27 @@
         <section class="profile profile--reviews">
             <div class="container">
                 <div class="profile__left">
-                    <div class="profile__img">
+                    <div class="profile__img empty">
+                        <div class="profile__img_set">
+                            <img src="./assets/images/app-store.webp" alt="">
+                        </div>
+                        <div class="profile__img_menu">
+                            <div class="profile__img_header mobile">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M15 18L9 12L15 6" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>Фото в профиле</span>
+                            </div>
+                            <label class="profile__img_item mobile" data-modal="photo">
+                                <input type="file" accept="image/*" capture="user">
+                                <span>Сделать фото</span>
+                            </label>
+                            <label class="profile__img_item" data-modal="photo">
+                                <input type="file"/>
+                                <span>Загрузить</span>
+                            </label>
+                            <div class="profile__img_item profile__img_delete hidden" >Удалить</div>
+                        </div>
                     </div>
                     <div class="profile__name">
                         Константин <br />
@@ -213,11 +233,21 @@
                     </div>
                     <div class="profile__tel">+ 7 (123) 456-78-90</div>
                     <div class="profile__links desktop">
-                        <div class="profile__link">Персональные данные</div>
-                        <a href="" class="profile__link active">Отзывы <span class="profile__messages_count">1</span></a>
-                        <a href="" class="profile__link">Информация о сервисе<span class="profile__messages_count"></span></a>
+                        <div class="profile__link active">Персональные данные</div>
+                        <a href="" class="profile__link">Отзывы <span class="profile__messages_count">13</span></a>
+                        <a href="" class="profile__link">FAQ</span></a>
+                        <a href="" class="profile__link">Поддержки <span class="profile__messages_count"></span></a>
+                        <a href="" class="profile__link">Информация о сервисе</span></a>
                     </div>
                     <div class="profile__exit desktop" data-modal="exit">Выйти</div>
+                    <div class="profile__delete" data-modal="delete">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M17.3645 8.13281H6.64294C6.05108 8.13281 5.57129 8.61261 5.57129 9.20446V17.7815C5.57129 19.5578 7.01124 20.9977 8.78752 20.9977H15.22C16.073 20.9977 16.891 20.6589 17.4942 20.0557C18.0973 19.4525 18.4362 18.6345 18.4362 17.7815V9.20446C18.4362 8.61261 17.9564 8.13281 17.3645 8.13281Z" stroke="#7E8582" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.8625 5.57298L14.9311 3.71143C14.7133 3.27566 14.2681 3.00026 13.781 3H10.2251C9.73795 3.00026 9.29273 3.27566 9.07497 3.71143L8.14355 5.57298H15.8625Z" stroke="#7E8582" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M10.6095 12.4505C10.6095 12.0363 10.2737 11.7005 9.85948 11.7005C9.44527 11.7005 9.10948 12.0363 9.10948 12.4505H10.6095ZM9.10948 16.7384C9.10948 17.1526 9.44527 17.4884 9.85948 17.4884C10.2737 17.4884 10.6095 17.1526 10.6095 16.7384H9.10948ZM14.9011 12.4505C14.9011 12.0363 14.5653 11.7005 14.1511 11.7005C13.7368 11.7005 13.4011 12.0363 13.4011 12.4505H14.9011ZM13.4011 16.7384C13.4011 17.1526 13.7368 17.4884 14.1511 17.4884C14.5653 17.4884 14.9011 17.1526 14.9011 16.7384H13.4011ZM15.8633 4.82031C15.4491 4.82031 15.1133 5.1561 15.1133 5.57031C15.1133 5.98453 15.4491 6.32031 15.8633 6.32031V4.82031ZM18.4363 6.32031C18.8505 6.32031 19.1863 5.98453 19.1863 5.57031C19.1863 5.1561 18.8505 4.82031 18.4363 4.82031V6.32031ZM8.14427 6.32031C8.55848 6.32031 8.89427 5.98453 8.89427 5.57031C8.89427 5.1561 8.55848 4.82031 8.14427 4.82031V6.32031ZM5.57129 4.82031C5.15708 4.82031 4.82129 5.1561 4.82129 5.57031C4.82129 5.98453 5.15708 6.32031 5.57129 6.32031V4.82031ZM9.10948 12.4505V16.7384H10.6095V12.4505H9.10948ZM13.4011 12.4505V16.7384H14.9011V12.4505H13.4011ZM15.8633 6.32031H18.4363V4.82031H15.8633V6.32031ZM8.14427 4.82031H5.57129V6.32031H8.14427V4.82031Z" fill="#7E8582"/>
+                        </svg>
+                        <span>Удалить аккаунт</span>
+                    </div>
                 </div>
                 <div class="profile__container">
                     <div class="profile__container__header mobile">
@@ -534,6 +564,36 @@
             </div>
         </section>
 
+        <div class="photo-modal modal">
+            <div class="modal-back"></div>
+            <div class="modal-wrapper">
+                <div class="modal-exit desktop">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M8 8L16 16" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M16 8L8 16" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="modal-return mobile">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M15 18L9 12L15 6" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="photo-modal__content modal-content">
+                    <div class="photo-modal__img">
+                        <div class="photo-modal__info">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.3187 13.2521C22.6543 15.5877 22.6543 19.3743 20.3187 21.7098C17.9832 24.0454 14.1966 24.0454 11.861 21.7098C9.52549 19.3743 9.52549 15.5877 11.861 13.2521C14.1966 10.9166 17.9832 10.9166 20.3187 13.2521" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M29.5 11.5V25C29.5 26.6575 28.1575 28 26.5 28H5.5C3.8425 28 2.5 26.6575 2.5 25V11.5C2.5 9.8425 3.8425 8.5 5.5 8.5H8.5L10.693 4.744C10.9615 4.2835 11.455 4 11.989 4H19.945C20.4715 4 20.959 4.276 21.2305 4.726L23.5 8.5H26.5C28.1575 8.5 29.5 9.8425 29.5 11.5Z" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Загрузка фотографии</span>
+                        </div>
+                        <!-- <img id="photoCreating" src="" alt=""> -->
+                    </div>
+                    <button id="cropImg" class="btn btn__green">Сделать фото</button>
+                </div>
+            </div>
+        </div>
+
         <!-- modal delete review -->
         <div class="delete-review-modal modal modal--sm">
             <div class="modal-back"></div>
@@ -579,6 +639,32 @@
                     <div class="modal--sm__btns">
                         <button class="btn btn__green btn--exit">Выйти</button>
                         <a href="#!" data-modal="close-modal">Отменить действие</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- modal delete -->
+        <div class="delete-modal modal modal--sm">
+            <div class="modal-back"></div>
+            <div class="modal-wrapper">
+                <div class="modal-exit desktop">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M8 8L16 16" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M16 8L8 16" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="modal-return mobile">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M15 18L9 12L15 6" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="modal-content">
+                    <div class="modal--sm__title">Вы точно хотите удалить аккаунт?</div>
+                    <div class="modal--sm__text">После подтверждения удаления аккаунт будет безвозвратно удален</div>
+                    <div class="modal--sm__btns">
+                        <button class="btn btn__green btn--exit">Удалить</button>
+                        <a href="#!" data-modal="close-modal">Отмена</a>
                     </div>
                 </div>
             </div>

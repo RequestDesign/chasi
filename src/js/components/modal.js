@@ -18,6 +18,10 @@ $(document).ready(function () {
 		e.preventDefault()
 		$('.exit-modal').addClass('active');
 	});
+	$('[data-modal="delete"]').on('click', (e) => {
+		e.preventDefault()
+		$('.delete-modal').addClass('active');
+	});
 	$('[data-modal="delete-adv"]').on('click', (e) => {
 		e.preventDefault()
 		$('.delete-adv-modal').addClass('active');

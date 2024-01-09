@@ -237,9 +237,19 @@
                     <div class="profile__links desktop">
                         <div class="profile__link active">Персональные данные</div>
                         <a href="" class="profile__link">Отзывы <span class="profile__messages_count">13</span></a>
-                        <a href="" class="profile__link">Служба поддержки <span class="profile__messages_count"></span></a>
+                        <a href="" class="profile__link">FAQ</span></a>
+                        <a href="" class="profile__link">Поддержки <span class="profile__messages_count"></span></a>
+                        <a href="" class="profile__link">Информация о сервисе</span></a>
                     </div>
                     <div class="profile__exit desktop" data-modal="exit">Выйти</div>
+                    <div class="profile__delete desktop" data-modal="delete">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M17.3645 8.13281H6.64294C6.05108 8.13281 5.57129 8.61261 5.57129 9.20446V17.7815C5.57129 19.5578 7.01124 20.9977 8.78752 20.9977H15.22C16.073 20.9977 16.891 20.6589 17.4942 20.0557C18.0973 19.4525 18.4362 18.6345 18.4362 17.7815V9.20446C18.4362 8.61261 17.9564 8.13281 17.3645 8.13281Z" stroke="#7E8582" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.8625 5.57298L14.9311 3.71143C14.7133 3.27566 14.2681 3.00026 13.781 3H10.2251C9.73795 3.00026 9.29273 3.27566 9.07497 3.71143L8.14355 5.57298H15.8625Z" stroke="#7E8582" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M10.6095 12.4505C10.6095 12.0363 10.2737 11.7005 9.85948 11.7005C9.44527 11.7005 9.10948 12.0363 9.10948 12.4505H10.6095ZM9.10948 16.7384C9.10948 17.1526 9.44527 17.4884 9.85948 17.4884C10.2737 17.4884 10.6095 17.1526 10.6095 16.7384H9.10948ZM14.9011 12.4505C14.9011 12.0363 14.5653 11.7005 14.1511 11.7005C13.7368 11.7005 13.4011 12.0363 13.4011 12.4505H14.9011ZM13.4011 16.7384C13.4011 17.1526 13.7368 17.4884 14.1511 17.4884C14.5653 17.4884 14.9011 17.1526 14.9011 16.7384H13.4011ZM15.8633 4.82031C15.4491 4.82031 15.1133 5.1561 15.1133 5.57031C15.1133 5.98453 15.4491 6.32031 15.8633 6.32031V4.82031ZM18.4363 6.32031C18.8505 6.32031 19.1863 5.98453 19.1863 5.57031C19.1863 5.1561 18.8505 4.82031 18.4363 4.82031V6.32031ZM8.14427 6.32031C8.55848 6.32031 8.89427 5.98453 8.89427 5.57031C8.89427 5.1561 8.55848 4.82031 8.14427 4.82031V6.32031ZM5.57129 4.82031C5.15708 4.82031 4.82129 5.1561 4.82129 5.57031C4.82129 5.98453 5.15708 6.32031 5.57129 6.32031V4.82031ZM9.10948 12.4505V16.7384H10.6095V12.4505H9.10948ZM13.4011 12.4505V16.7384H14.9011V12.4505H13.4011ZM15.8633 6.32031H18.4363V4.82031H15.8633V6.32031ZM8.14427 4.82031H5.57129V6.32031H8.14427V4.82031Z" fill="#7E8582"/>
+                        </svg>
+                        <span>Удалить аккаунт</span>
+                    </div>
                 </div>
                 <div class="profile__container">
                     <div class="profile__container_title desktop">Персональные данные</div>
@@ -353,18 +363,18 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="profile__form_item">
+                            <!-- <div class="profile__form_item">
                                 <label class="profile__form_item_top">
                                     <input type="text" value="" />
                                     <div class="profile__form_name">Улица</div>
                                 </label>
-                            </div>
-                            <div class="profile__form_item">
+                            </div> -->
+                            <!-- <div class="profile__form_item">
                                 <label class="profile__form_item_top">
                                     <input type="text" value="33, корпус 4" />
                                     <div class="profile__form_name active">Дом</div>
                                 </label>
-                            </div>
+                            </div> -->
                             <div class="profile__form_item">
                                 <label class="profile__form_item_top">
                                     <input type="date" value="1995-03-16" />
@@ -481,9 +491,19 @@
                 </div>
                 <div class="profile__links mobile">
                     <a href="" class="profile__link">Отзывы <span class="profile__messages_count">13</span></a>
-                    <a href="" class="profile__link">Служба поддержки <span class="profile__messages_count"></span></a>
+                    <a href="" class="profile__link">FAQ</span></a>
+                    <a href="" class="profile__link">Поддержки <span class="profile__messages_count"></span></a>
+                    <a href="" class="profile__link">Информация о сервисе</span></a>
                 </div>
-                <div class="profile__exit mobile">Выйти</div>
+                <div class="profile__exit mobile" data-modal="exit">Выйти</div>
+                <div class="profile__delete mobile" data-modal="delete">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.3645 8.13281H6.64294C6.05108 8.13281 5.57129 8.61261 5.57129 9.20446V17.7815C5.57129 19.5578 7.01124 20.9977 8.78752 20.9977H15.22C16.073 20.9977 16.891 20.6589 17.4942 20.0557C18.0973 19.4525 18.4362 18.6345 18.4362 17.7815V9.20446C18.4362 8.61261 17.9564 8.13281 17.3645 8.13281Z" stroke="#7E8582" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15.8625 5.57298L14.9311 3.71143C14.7133 3.27566 14.2681 3.00026 13.781 3H10.2251C9.73795 3.00026 9.29273 3.27566 9.07497 3.71143L8.14355 5.57298H15.8625Z" stroke="#7E8582" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.6095 12.4505C10.6095 12.0363 10.2737 11.7005 9.85948 11.7005C9.44527 11.7005 9.10948 12.0363 9.10948 12.4505H10.6095ZM9.10948 16.7384C9.10948 17.1526 9.44527 17.4884 9.85948 17.4884C10.2737 17.4884 10.6095 17.1526 10.6095 16.7384H9.10948ZM14.9011 12.4505C14.9011 12.0363 14.5653 11.7005 14.1511 11.7005C13.7368 11.7005 13.4011 12.0363 13.4011 12.4505H14.9011ZM13.4011 16.7384C13.4011 17.1526 13.7368 17.4884 14.1511 17.4884C14.5653 17.4884 14.9011 17.1526 14.9011 16.7384H13.4011ZM15.8633 4.82031C15.4491 4.82031 15.1133 5.1561 15.1133 5.57031C15.1133 5.98453 15.4491 6.32031 15.8633 6.32031V4.82031ZM18.4363 6.32031C18.8505 6.32031 19.1863 5.98453 19.1863 5.57031C19.1863 5.1561 18.8505 4.82031 18.4363 4.82031V6.32031ZM8.14427 6.32031C8.55848 6.32031 8.89427 5.98453 8.89427 5.57031C8.89427 5.1561 8.55848 4.82031 8.14427 4.82031V6.32031ZM5.57129 4.82031C5.15708 4.82031 4.82129 5.1561 4.82129 5.57031C4.82129 5.98453 5.15708 6.32031 5.57129 6.32031V4.82031ZM9.10948 12.4505V16.7384H10.6095V12.4505H9.10948ZM13.4011 12.4505V16.7384H14.9011V12.4505H13.4011ZM15.8633 6.32031H18.4363V4.82031H15.8633V6.32031ZM8.14427 4.82031H5.57129V6.32031H8.14427V4.82031Z" fill="#7E8582"/>
+                    </svg>
+                    <span>Удалить аккаунт</span>
+                </div>
             </div>
         </section>
         <include src="./components/footer.html"></include>
@@ -719,6 +739,7 @@
             </div>
         </div>
 
+        <!-- modal exit -->
         <div class="exit-modal modal modal--sm">
             <div class="modal-back"></div>
             <div class="modal-wrapper">
@@ -738,6 +759,32 @@
                     <div class="modal--sm__btns">
                         <button class="btn btn__green btn--exit">Выйти</button>
                         <a href="#!" data-modal="close-modal">Отменить действие</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- modal delete -->
+        <div class="delete-modal modal modal--sm">
+            <div class="modal-back"></div>
+            <div class="modal-wrapper">
+                <div class="modal-exit desktop">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M8 8L16 16" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M16 8L8 16" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="modal-return mobile">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M15 18L9 12L15 6" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="modal-content">
+                    <div class="modal--sm__title">Вы точно хотите удалить аккаунт?</div>
+                    <div class="modal--sm__text">После подтверждения удаления аккаунт будет безвозвратно удален</div>
+                    <div class="modal--sm__btns">
+                        <button class="btn btn__green btn--exit">Удалить</button>
+                        <a href="#!" data-modal="close-modal">Отмена</a>
                     </div>
                 </div>
             </div>

@@ -13,6 +13,7 @@ import "./js/pages/characteristic";
 import "./js/pages/filter";
 import "./js/pages/profile-reviews";
 import "./js/pages/profile";
+import "./js/pages/profile-faq";
 import "./js/components/header";
 import "./js/components/modal";
 import "./js/components/forms";
