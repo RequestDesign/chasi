@@ -12,6 +12,7 @@
         <header class="header desktop">
             <div class="container">
                 <div class="header__top">
+                    <a class="header__menu" data-modal="menu-modal"><img class="header__menu_icon" src="./assets/images/menu-icon.svg" alt="Logo"></a>
                     <div class="header__top_container_left">
                         <a class="header__logo"><img src="./assets/images/logo.svg" alt="Logo"></a>
                         <div class="header__logo_text desktop">Кременчуг-Константиновское</div>
@@ -25,7 +26,7 @@
                             </svg>
                             <input class="header__search_input" type="text" placeholder="Введите название модели">
                         </div>
-                        <a class="header__filter" href="">
+                        <a class="header__filter mobile" href="">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M14 14H16C16.552 14 17 14.448 17 15V19C17 19.552 16.552 20 16 20H14C13.448 20 13 19.552 13 19V15C13 14.448 13.448 14 14 14Z" stroke="#7E8582" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M21 17H17" stroke="#7E8582" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -218,13 +219,13 @@
                         <div class="swiper-thumbnail-container">
                             <div class="swiper swiper-thumbnail">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <img src="./assets/images/rolex-2.webp" alt="rolex" />
+                                    <div class="swiper-slide swiper-slide--video">
+                                        <img src="//img.youtube.com/vi/hxGyLeT8FEI/maxresdefault.jpg" alt="rolex" />
                                     </div>
                                     <div class="swiper-slide">
                                         <img src="./assets/images/rolex.webp" alt="rolex" />
                                     </div>
-                                    <div class="swiper-slide">
+                                    <div class="swiper-slide ">
                                         <img src="./assets/images/rolex-3.webp" alt="rolex" />
                                     </div>
                                     <div class="swiper-slide">
@@ -254,8 +255,8 @@
                         </div>
                         <div class="adv-card__swiper swiper">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide" data-fancybox="swiper-gallery" data-src="./assets/images/rolex-2.webp">
-                                    <img src="./assets/images/rolex-2.webp" alt="rolex" />
+                                <div class="swiper-slide swiper-slide--video" data-fancybox="swiper-gallery" data-src="https://youtu.be/hxGyLeT8FEI?si=1Uc1j5STbrajR8gc">
+                                    <img src="//img.youtube.com/vi/hxGyLeT8FEI/maxresdefault.jpg" alt="rolex" />
                                 </div>
                                 <div class="swiper-slide" data-fancybox="swiper-gallery" data-src="./assets/images/rolex.webp">
                                     <img src="./assets/images/rolex.webp" alt="rolex" />
@@ -298,14 +299,24 @@
                         </div>
                         <div class="adv-card__details">
                             <span class="adv-card__detail adv-card__location">Москва</span>
-                            <svg class="gray-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 4" fill="none">
+                            <!-- <svg class="gray-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 4" fill="none">
                                 <circle cx="2" cy="2" r="2" fill="#7E8582" />
-                            </svg>
-                            <span class="adv-card__detail adv-card__date">Опубликовано 28.08.2023</span>
-                            <svg class="gray-circle desktop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 4" fill="none">
+                            </svg> -->
+                            <span class="adv-card__detail adv-card__date">28.08.2023</span>
+                            <!-- <svg class="gray-circle desktop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 4" fill="none">
                                 <circle cx="2" cy="2" r="2" fill="#7E8582" />
-                            </svg>
-                            <span class="adv-card__detail adv-card__number desktop">Объявление №1245457890</span>
+                            </svg> -->
+                            <span class="adv-card__detail adv-card__number ">№1245457890</span>
+
+                            <span class="adv-card__detail adv-card__waich-count ">
+                                <div class="adv-card__waich-count-svg-box">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15 8.5C15 10.985 11.866 13 8 13C4.134 13 1 10.985 1 8.5C1 6.015 4.134 4 8 4C11.866 4 15 6.015 15 8.5Z" stroke="#7E8582" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.74905 8.49767C9.77067 9.13699 9.44193 9.73722 8.89158 10.0633C8.34123 10.3894 7.65687 10.3894 7.10652 10.0633C6.55617 9.73722 6.22743 9.13699 6.24905 8.49767C6.22743 7.85835 6.55617 7.25811 7.10652 6.93205C7.65687 6.60598 8.34123 6.60598 8.89158 6.93205C9.44193 7.25811 9.77067 7.85835 9.74905 8.49767V8.49767Z" stroke="#7E8582" stroke-linecap="round" stroke-linejoin="round" />
+                                      </svg>
+                                </div>
+                                123
+                            </span>
                         </div>
                         <div class="adv-card__price">
                             18 567 000 ₽
@@ -365,9 +376,9 @@
                                     <div class="user-card__name">Константин Константинопольский</div>
                                     <div class="user-card__location">Владивосток, Приморский край</div>
                                 </div>
-                                <div class="user-card__photo">
+                                <a href="./assets/images/user-pic.webp" data-fancybox="" class="user-card__photo">
                                     <img src="./assets/images/user-pic.webp" alt="User" />
-                                </div>
+                                </a>
                             </div>
                             <div class="user-card__bottom">
                                 <div class="user-card__rating">
@@ -406,14 +417,23 @@
                     </div>
                     <div class="adv-card__details">
                         <span class="adv-card__detail adv-card__location">Москва</span>
-                        <svg class="gray-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 4" fill="none">
+                        <!-- <svg class="gray-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 4" fill="none">
                             <circle cx="2" cy="2" r="2" fill="#7E8582" />
-                        </svg>
-                        <span class="adv-card__detail adv-card__date">Опубликовано 28.08.2023</span>
-                        <svg class="gray-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 4" fill="none">
+                        </svg> -->
+                        <span class="adv-card__detail adv-card__date">28.08.2023</span>
+                        <!-- <svg class="gray-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 4" fill="none">
                             <circle cx="2" cy="2" r="2" fill="#7E8582" />
-                        </svg>
-                        <span class="adv-card__detail adv-card__number">Объявление №1245457890</span>
+                        </svg> -->
+                        <span class="adv-card__detail adv-card__number">№1245457890</span>
+                        <span class="adv-card__detail adv-card__waich-count ">
+                            <div class="adv-card__waich-count-svg-box">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 8.5C15 10.985 11.866 13 8 13C4.134 13 1 10.985 1 8.5C1 6.015 4.134 4 8 4C11.866 4 15 6.015 15 8.5Z" stroke="#7E8582" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.74905 8.49767C9.77067 9.13699 9.44193 9.73722 8.89158 10.0633C8.34123 10.3894 7.65687 10.3894 7.10652 10.0633C6.55617 9.73722 6.22743 9.13699 6.24905 8.49767C6.22743 7.85835 6.55617 7.25811 7.10652 6.93205C7.65687 6.60598 8.34123 6.60598 8.89158 6.93205C9.44193 7.25811 9.77067 7.85835 9.74905 8.49767V8.49767Z" stroke="#7E8582" stroke-linecap="round" stroke-linejoin="round" />
+                                  </svg>
+                            </div>
+                            123
+                        </span>
                     </div>
                     <div class="adv-card__price">
                         18 567 000 ₽
@@ -437,9 +457,9 @@
                                     <div class="user-card__name">Константин Константинопольский</div>
                                     <div class="user-card__location">Владивосток, Приморский край</div>
                                 </div>
-                                <div class="user-card__photo">
+                                <a href="./assets/images/user-pic.webp" data-fancybox="" class="user-card__photo">
                                     <img src="./assets/images/user-pic.webp" alt="User" />
-                                </div>
+                                </a>
                             </div>
                             <div class="user-card__bottom">
                                 <div class="user-card__rating">

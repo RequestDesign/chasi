@@ -1,0 +1,2901 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://api-maps.yandex.ru/v3/?apikey=4d7b8985-4ebf-4fde-8884-668550d59df1&lang=ru_RU"></script>
+    <title>Условия пользования сайтом</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__top">
+          <a class="header__menu" data-modal="menu-modal"><img class="header__menu_icon" src="./assets/images/menu-icon.svg" alt="menu"></a>
+          <div class="header__top_container_left">
+            <a class="header__logo"
+              ><img src="./assets/images/logo.svg" alt="Logo"
+            /></a>
+            <div class="header__logo_text desktop">
+              Кременчуг-Константиновское
+            </div>
+          </div>
+          <div class="header__top_container_center">
+            <div class="header__search_blur"></div>
+            <div class="header__search">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M15.7138 6.8382C18.1647 9.28913 18.1647 13.2629 15.7138 15.7138C13.2629 18.1647 9.28913 18.1647 6.8382 15.7138C4.38727 13.2629 4.38727 9.28913 6.8382 6.8382C9.28913 4.38727 13.2629 4.38727 15.7138 6.8382"
+                  stroke="#7E8582"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M19 19L15.71 15.71"
+                  stroke="#7E8582"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <input
+                class="header__search_input"
+                type="text"
+                placeholder="Введите название модели"
+              />
+            </div>
+            <a class="header__filter mobile" href="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M14 14H16C16.552 14 17 14.448 17 15V19C17 19.552 16.552 20 16 20H14C13.448 20 13 19.552 13 19V15C13 14.448 13.448 14 14 14Z"
+                  stroke="#7E8582"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M21 17H17"
+                  stroke="#7E8582"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M13 17H3"
+                  stroke="#7E8582"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M10 10H8C7.448 10 7 9.552 7 9V5C7 4.448 7.448 4 8 4H10C10.552 4 11 4.448 11 5V9C11 9.552 10.552 10 10 10Z"
+                  stroke="#7E8582"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M3 7H7"
+                  stroke="#7E8582"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M11 7H21"
+                  stroke="#7E8582"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+            <div class="header__search-cancel">Отменить</div>
+            <div class="header__search_box">
+              <div class="header__search_list">
+                <a class="header__search_item">
+                  <span>Rolex</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M9 18L15 12L9 6"
+                      stroke="#031E16"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+                <a class="header__search_item">
+                  <span>Rolex Cosmograph Daytona </span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M9 18L15 12L9 6"
+                      stroke="#031E16"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+                <a class="header__search_item">
+                  <span>Rolex Cosmograph Daytona </span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M9 18L15 12L9 6"
+                      stroke="#031E16"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+                <a class="header__search_item">
+                  <span>Rolex</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M9 18L15 12L9 6"
+                      stroke="#031E16"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+                <a class="header__search_item">
+                  <span>Rolex Cosmograph Daytona </span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M9 18L15 12L9 6"
+                      stroke="#031E16"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+                <a class="header__search_item">
+                  <span>Rolex Cosmograph Daytona </span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M9 18L15 12L9 6"
+                      stroke="#031E16"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+                <a class="header__search_item">
+                  <span>Rolex</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M9 18L15 12L9 6"
+                      stroke="#031E16"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+                <a class="header__search_item">
+                  <span>Rolex Cosmograph Daytona </span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M9 18L15 12L9 6"
+                      stroke="#031E16"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+                <a class="header__search_item">
+                  <span>Rolex Cosmograph Daytona </span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M9 18L15 12L9 6"
+                      stroke="#031E16"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+                <a class="header__search_item">
+                  <span>Rolex</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M9 18L15 12L9 6"
+                      stroke="#031E16"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+                <a class="header__search_item">
+                  <span>Rolex Cosmograph Daytona </span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M9 18L15 12L9 6"
+                      stroke="#031E16"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+                <a class="header__search_item">
+                  <span>Rolex Cosmograph Daytona </span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M9 18L15 12L9 6"
+                      stroke="#031E16"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+                <a class="header__search_item">
+                  <span>Rolex</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M9 18L15 12L9 6"
+                      stroke="#031E16"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+                <a class="header__search_item">
+                  <span>Rolex Cosmograph Daytona </span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M9 18L15 12L9 6"
+                      stroke="#031E16"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+                <a class="header__search_item">
+                  <span>Rolex Cosmograph Daytona </span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M9 18L15 12L9 6"
+                      stroke="#031E16"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="header__top_container_right">
+            <a class="header__icon">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M16 7.28133C16.9187 6.20667 18.508 5 20.928 5C25.16 5 28 8.97333 28 12.6733C28 20.408 18.3707 26.3333 16 26.3333C13.6293 26.3333 4 20.408 4 12.6733C4 8.97333 6.84 5 11.072 5C13.492 5 15.0813 6.20667 16 7.28133Z"
+                  stroke="#031E16"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span>Избранное</span>
+            </a>
+            <a class="header__icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M16 26.375V26.375C9.99337 26.375 5.125 21.5066 5.125 15.5V15.5C5.125 9.49337 9.99337 4.625 16 4.625V4.625C22.0066 4.625 26.875 9.49337 26.875 15.5V15.5C26.875 21.5066 22.0066 26.375 16 26.375Z"
+                  stroke="#031E16"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M15.9987 10.667V20.3337"
+                  stroke="#031E16"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M20.8346 15.5H11.168"
+                  stroke="#031E16"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span>Объявления</span>
+            </a>
+            <a class="header__icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="33"
+                height="32"
+                viewBox="0 0 33 32"
+                fill="none"
+              >
+                <path
+                  d="M11.3267 26.6667H16.5"
+                  stroke="#031E16"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M11.5185 26.667H7.06651C5.96918 26.667 5.41985 25.3403 6.19585 24.5656L7.64918 23.1123"
+                  stroke="#031E16"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M5.8335 15.9997C5.8335 10.109 10.6095 5.33301 16.5002 5.33301C22.3908 5.33301 27.1668 10.109 27.1668 15.9997C27.1668 21.8903 22.3908 26.6663 16.5002 26.6663"
+                  stroke="#031E16"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M8.1399 22.6134L7.64656 23.1067"
+                  stroke="#031E16"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M8.14416 22.6173C6.7015 20.7987 5.8335 18.5027 5.8335 16"
+                  stroke="#031E16"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span>Сообщения</span>
+            </a>
+            <a class="header__icon" data-modal="login-modal">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+              >
+                <path
+                  d="M23.6898 7.81022C27.9367 12.0572 27.9367 18.9428 23.6898 23.1898C19.4428 27.4367 12.5571 27.4367 8.31022 23.1898C4.06326 18.9428 4.06326 12.0571 8.31022 7.81022C12.5572 3.56326 19.4428 3.56326 23.6898 7.81022"
+                  stroke="#031E16"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M18.4041 11.0581C19.7315 12.3855 19.7315 14.5376 18.4041 15.865C17.0767 17.1924 14.9245 17.1924 13.5971 15.865C12.2697 14.5376 12.2697 12.3855 13.5971 11.0581C14.9245 9.73065 17.0767 9.73065 18.4041 11.0581"
+                  stroke="#031E16"
+                  stroke-width="1.35938"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M22.8935 23.9076C21.1595 22.0818 18.7139 20.9375 15.9975 20.9375C13.2812 20.9375 10.8355 22.0818 9.10156 23.9088"
+                  stroke="#031E16"
+                  stroke-width="1.35938"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span>Профиль</span>
+            </a>
+          </div>
+        </div>
+        <div class="header__bottom">
+          <div class="header__bottom_swiper">
+            <div class="swiper-wrapper">
+              <a class="swiper-slide header__bottom_slide">Rolex</a>
+              <a class="swiper-slide header__bottom_slide">Orient</a>
+              <a class="swiper-slide header__bottom_slide">Fossil</a>
+              <a class="swiper-slide header__bottom_slide">Cartier</a>
+              <a class="swiper-slide header__bottom_slide">Rolex</a>
+              <a class="swiper-slide header__bottom_slide">Orient</a>
+              <a class="swiper-slide header__bottom_slide">Fossil</a>
+              <a class="swiper-slide header__bottom_slide">Cartier</a>
+              <a class="swiper-slide header__bottom_slide">Rolex</a>
+              <a class="swiper-slide header__bottom_slide">Orient</a>
+              <a class="swiper-slide header__bottom_slide">Fossil</a>
+              <a class="swiper-slide header__bottom_slide">Cartier</a>
+              <a class="swiper-slide header__bottom_slide">Rolex</a>
+              <a class="swiper-slide header__bottom_slide">Orient</a>
+              <a class="swiper-slide header__bottom_slide">Fossil</a>
+              <a class="swiper-slide header__bottom_slide">Cartier</a>
+              <a class="swiper-slide header__bottom_slide">Rolex</a>
+              <a class="swiper-slide header__bottom_slide">Orient</a>
+              <a class="swiper-slide header__bottom_slide">Fossil</a>
+              <a class="swiper-slide header__bottom_slide">Cartier</a>
+              <a class="swiper-slide header__bottom_slide">Rolex</a>
+              <a class="swiper-slide header__bottom_slide">Orient</a>
+              <a class="swiper-slide header__bottom_slide">Fossil</a>
+              <a class="swiper-slide header__bottom_slide">Cartier</a>
+            </div>
+          </div>
+          <div class="swiper-button-next desktop">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M9 18L15 12L9 6"
+                stroke="#031E16"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="terms">
+      <div class="container">
+        <div class="terms__inner">
+          <p class="terms__title">
+            УСЛОВИЯ ПОЛЬЗОВАНИЯ САЙТОМ (ОФЕРТА) ОБЩЕСТВА С ОГРАНИЧЕННОЙ
+            ОТВЕТСТВЕННОСТЬЮ «НашеВремя»
+          </p>
+          <div class="terms__content-box">
+            <p class="terms__text">
+              Настоящие условия (правила) пользования торговой площадкой
+              общества с ограниченной ответ- ственностью «НашеВремя» (ООО
+              «НашеВремя» ОГРН 1237700278364) сайта https://chasi24.ru/ (да-лее
+              также Правила и/или Оферта) являются публичной офертой для
+              привлечения продавцов и про-дажи их товаров конечному потребителю
+              и содержат следующие термины:
+            </p>
+            <p class="terms__text">
+              <span>Торговая площадка</span> – сайт и сервис
+              <a href="">https://chasi24.ru/</a>, предназначенный для
+              предоставления доступа к информации о товарах продавцов для
+              Пользователей (далее Сайт или Сервис).
+            </p>
+            <p class="terms__text">
+              <span>Владелец Торговой площадки</span> – ООО «НашеВремя» Оператор
+              Сайта/Сервиса https://chasi24.ru/ (адрес регистрации РФ, 105066,
+              г. Москва, ул. Ольховская, д. 45, стр. 1, помещ. 1/1/4;
+              Chasi24.ru@yandex.ru; +78003331292) ;
+            </p>
+            <p class="terms__text">
+              <span>Пользователь</span> – любое физическое лицо, использующее
+              Торговую площадку для ознакомления с информацией о товарах и/или
+              приобретения товаров – часов – на размещенных здесь условиях.
+            </p>
+            <p class="terms__text">
+              <span>Продавец</span> – юридическое лицо, индивидуальный
+              предприниматель или самозанятый гражданин, зарегистрированные в
+              установленном порядке в РФ или за рубежом, осуществляющие
+              деятельность по продаже товаров и предлагающие
+              Пользователю/Покупателю заключить договор купли-продажи Товара,
+              размещая Товары на Торговой площадке.
+            </p>
+            <p class="terms__text">
+              <span>Покупатель</span> – физическое лицо, приобретающее на
+              Торговой площадке Товар для личных нужд, не связанных с
+              предпринимательской деятельностью, при помощи оформления и оплаты
+              Заказа посредством платежных сервисов Торговой площадки.
+            </p>
+            <p class="terms__text">
+              <span>Товар</span> – предмет договора купли-продажи, заключаемого
+              между Пользователем и Продавцом. Прода- вец является собственником
+              реализуемого Товара. Все взаимоотношения, связанные с куплей -
+              продажей Товара, возникают между Продавцом, размещающим Товар на
+              Торговой площадке, и Пользователем.
+            </p>
+            <p class="terms__text">
+              <span>Личный кабинет</span> – персональный и не доступный третьим
+              лицам раздел Торговой площадки, оформляемый Пользователем и
+              служащий в целях оформления Заказов и получения специальных
+              предложений (при их наличии) в соответствии с настоящей офертой,
+              доступ к которому осуществля- ется после регистрации путем ввода
+              персональных (аутентификационных) данных Пользователя.
+            </p>
+            <p class="terms__text">
+              <span>Заказ</span> – осуществление Пользователем действий,
+              направленных на заключение им договора купли - продажи
+              Товара/Товаров с Продавцом/Продавцами посредством Торговой
+              площадки.
+            </p>
+            <p class="terms__text">
+              <span>Чат</span> – сервис Торговой площадки для взаимодействия
+              Пользователя с Оператором и/или Продавцом.
+            </p>
+            <p class="terms__text">
+              <span>Карточка товара</span> – сведения о товаре, содержащие
+              визуальное и текстовое описание товара, его характеристики,
+              сведения о продавце, цене и иные сведения, которые уместны для
+              возможности принятия решения о заказе товара. Карточка товара
+              содержит существенные условия договора купли - продажи и
+              заполняется Продавцом товара самостоятельно.
+            </p>
+            <p class="terms__text">
+              <span>Регистрационные данные</span> – данные, указываемые
+              Пользователем при оформлении заказа и в Лич- ном кабинете при и
+              после регистрации Пользователя.
+            </p>
+            <p class="terms__text">Общие положения</p>
+            <p class="terms__text">
+              Торговая площадка предоставляет Пользователю безвозмездную
+              возможность поиска информации о Товарах, ознакомления с товарными
+              предложениями Продавцов, получения (в т.ч. по результатам поиска)
+              товарных предложений и информации, Заказа Товара, договоренности с
+              Продавцом услов ий купли-продажи и получения Товара, оплаты
+              Товара, размещения отзыва на Товар, а также иные со- путствующие
+              купле-продаже Товара возможности.
+            </p>
+            <p class="terms__text">
+              Пользуясь Торговой площадкой, оформляя Заказы, оплачивая Заказы,
+              отказываясь от Товаров, Поль- зователь безоговорочно соглашается с
+              условиями настоящих Правил, которые являются Публичной офертой по
+              смыслу ст. 437 ГК РФ, и обязуется их соблюдать.
+            </p>
+            <p class="terms__text">
+              Продавцом на Торговой площадке являются юридические лица различных
+              организационно-правовых форм, индивидуальные предприниматели,
+              самозанятые граждане, использующие специальный нало- говый режим
+              «Налог на профессиональный доход», в том числе также иностранные
+              граждане и юри- дические лица.
+            </p>
+            <p class="terms__text">
+              Информация о Продавце Товара размещается в Карточке товара. Данная
+              информация предоставляет- ся непосредственно Продавцом товара,
+              публикуется Оператором без изменения ее содержания и смысла.
+              Ответственность за полноту информации и ее достоверность лежит на
+              Продавце, предоставляющем информацию.
+            </p>
+            <p class="terms__text">
+              Карточка товара, предлагаемого к реализации иностранным продавцом,
+              может не содержать инфор- мацию об идентификационном номере в
+              связи с разностью форматов и отсутствием таких номеров в
+              иностранной юрисдикции. Информация, позволяющая идентифицировать
+              такого Продавца, предоставлена по запросу потребителя самим
+              Продавцом или Оператором (при наличии такой информации у
+              Оператора).
+            </p>
+
+            <div class="terms__list-wrapper">
+              <p class="terms__text">
+                На Торговой площадке реализован сервис отзывов и оценок
+                Пользователей на приобретенный Товар, который действует по
+                следующим правилам, с которыми Пользователь, оставляющий отзыв о
+                Товаре и оценивающий Товар, соглашается:
+              </p>
+              <div class="terms__list-box">
+                <ul class="terms__list">
+                  <li class="terms__list-item terms__text">
+                    оставлять отзывы о Товарах, размещенных на Торговой
+                    площадке, ставить оценки Товарам при использовании Торговой
+                    площадки может любой авторизованный Пользователь;
+                  </li>
+                  <li class="terms__list-item terms__text">
+                    с отзывом Пользователя в соответствующем разделе Торговой
+                    площадки будет опубликовано его имя, указанное в Личном
+                    кабинете Торговой площадки;
+                  </li>
+                  <li class="terms__list-item terms__text">
+                    отзывы, содержание которых не относится к тематике работы
+                    Торговой площадки, осуществле- нию покупок на ней, не
+                    публикуются;
+                  </li>
+                  <li class="terms__list-item terms__text">
+                    отзывы, содержание которых не относится к реальному опыту
+                    использования соответствующего Товара, не публикуются;
+                  </li>
+                  <li class="terms__list-item terms__text">
+                    отзывы, которые содержат запрещенную информацию1, не
+                    публикуются;
+                  </li>
+                </ul>
+
+                <ul class="terms__list">
+                  <li class="terms__list-item terms__text">
+                    1 содержит угрозы, дискредитирует, оскорбляет, порочит честь
+                    и достоинство или деловую репутацию или нарушает
+                    неприкосновенность частной жизни других Пользователей Сайта
+                    или третьих лиц;
+                  </li>
+                  <li class="terms__list-item terms__text">
+                    нарушает права несовершеннолетних лиц;
+                  </li>
+                  <li class="terms__list-item terms__text">
+                    является непристойной, содержит нецензурную лексику,
+                    содержит порнографические изображения и тексты или сцены
+                    сексуального характера с участием несовершеннолетних;
+                  </li>
+                  <li class="terms__list-item terms__text">
+                    содержит сцены насилия либо бесчеловечного обращения с
+                    животными;
+                  </li>
+                  <li class="terms__list-item terms__text">
+                    содержит описание средств и способов суицида, любое
+                    подстрекательство к его совершению;
+                  </li>
+                  <li class="terms__list-item terms__text">
+                    пропагандирует и/или способствует разжиганию расовой,
+                    религиозной, этнической ненависти или вражды, пропагандирует
+                    фашизм или идеологию расового превосходства;
+                  </li>
+                  <li class="terms__list-item terms__text">
+                    содержит экстремистские материалы;
+                  </li>
+                  <li class="terms__list-item terms__text">
+                    пропагандирует преступную деятельность или содержит советы,
+                    инструкции или руководства по совершению преступных
+                    дейcтвий;
+                  </li>
+                  <li class="terms__list-item terms__text">
+                    содержит информацию ограниченного доступа, включая, но не
+                    ограничиваясь, государственной и коммерческой тайной,
+                    информацией о частной жизни третьих лиц;
+                  </li>
+                  <li class="terms__list-item terms__text">
+                    содержит рекламу или описывает привлекательность
+                    употребления наркотических веществ, информацию о
+                    распространении наркотиков, рецепты их изготовления и советы
+                    по употреблению;
+                  </li>
+                  <li class="terms__list-item terms__text">
+                    носит мошеннический характер;
+                  </li>
+                  <li class="terms__list-item terms__text">
+                    нарушает права третьих лиц на результаты интеллектуальной
+                    деятельности;
+                  </li>
+                </ul>
+
+                <ul class="terms__list">
+                  <li class="terms__list-item terms__text">
+                    отзывы и комментарии, содержащие ссылки на другие веб-сайты,
+                    персональные данные третьих лиц, а также иную информацию
+                    запрещенную или ограниченную к распространению, не публи-
+                    куются;
+                  </li>
+                  <li class="terms__list-item terms__text">
+                    период публикации отзыва на Сайте указан в
+                    <a href=""
+                      >Политике обработки персональных данных Оператора</a
+                    >.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <p class="terms__text">
+              Пользователь соглашается с тем, что размещенные им на Торговой
+              площадке сообщения и материа- лы могут быть использованы
+              Оператором в рекламных или маркетинговых материалах, размещае- мых
+              в сети Интернет для привлечения внимания других потребителей к
+              Торговой площадке в целом или к товарам третьих лиц, как с
+              указанием автора сообщения или материала (в качестве имени авто-
+              ра при этом будет указываться имя Пользователя, которое он указал
+              при регистрации или в настройках своих данных в Личном кабинете),
+              так и без этого, без обязанности предоставлять отчеты об
+              использовании таких сообщений и материалов, без необходимости
+              получения специального разреше- ния Пользователя и без выплаты
+              авторского вознаграждения, на территории всего мира без
+              ограничения срока, с правом Оператора предоставлять указанные
+              права использования таких сообщений и материалов третьим лицам.
+            </p>
+            <p class="terms__text">
+              Пользователь соглашается, что оставленные им отзывы и поставленные
+              оценки могут быть опубликованы и использованы на Торговой площадке
+              или на сайтах третьих лиц без дополнительного согласия
+              Пользователя. При этом отзывы и приложенные к нему изображения
+              публикуются и используются «как есть» с сохранением авторской
+              грамматики и пунктуации, под именем Пользователя, указанным в
+              Личном кабинете. Пользователь несет ответственность за
+              достоверность сведений, содержащихся в оставленных им отзывах.
+            </p>
+            <p class="terms__text">
+              Оформить Заказ на Торговой площадке могут зарегистрированные
+              Пользователи, при этом Пользователь должен зарегистрироваться на
+              сайте единожды и иметь один Личный кабинет. Наличие двух личных
+              кабинетов с одинаковыми регистрационными данными не допускается.
+              Если Пользователь желает иметь несколько Личных кабинетов,
+              аутентификационные данные должны быть различны (как минимум под
+              разными логинами).
+            </p>
+            <p class="terms__text">
+              При регистрации на Торговой площадке и ее использовании
+              Пользователь предоставляет Оператору свои регистрационные данные
+              (в том числе, персональные данные): номер телефона, имя/логин,
+              адрес, реквизиты электронных средств платежа (номер, срок
+              действия, код CVV/CVC). Полный пере- чень персональных данных,
+              которые может и/или которые требуется ввести Пользователю, изложен
+              в
+              <a href=""
+                >приложении 1 к Политике обработки персональных данных ООО
+                «НашеВремя»</a
+              >. Пользователь вправе указать дополнительные данные о себе (в том
+              числе, персональные данные), например сведения о параметрах
+              фигуры, предпочтения и пожелания – все, что Пользователь сочтет
+              уместным.
+            </p>
+            <p class="terms__text">
+              Пользователь, зарегистрировавшийся на Торговой площадке, для
+              получения доступа к Личному кабинету проходит индивидуальную
+              идентификацию путем ввода логина и пароля, сообщенного ему
+              Оператором на указанный им контактный номер телефона при помощи
+              смс-сообщения или push- уведомления. Индивидуальная идентификация
+              Пользователя позволяет избежать несанкционированных действий
+              третьих лиц от имени Пользователя и открывает доступ к
+              дополнительным сервисам.
+            </p>
+            <p class="terms__text">
+              Передача Пользователем кода доступа третьим лицам не допускается.
+              Пользователь несёт ответственность за все возможные негативные
+              последствия, в том числе материальные убытки в случае
+              предоставлении доступа в Личный кабинет третьим лицам.
+            </p>
+            <p class="terms__text">
+              Коррекция ранее указанного номера телефона Пользователя
+              осуществляется Оператором по соответствующему заявлению
+              Пользователя.
+            </p>
+
+            <ul class="terms__list">
+              <li class="terms__list-item terms__text">
+                нарушает права субъектов персональных данных;
+              </li>
+              <li class="terms__list-item terms__text">
+                нарушает иные права и интересы граждан и юридических лиц или
+                требования законодательства Российской Федерации;
+              </li>
+              <li class="terms__list-item terms__text">
+                является массовой рассылкой или содержит ее;
+              </li>
+              <li class="terms__list-item terms__text">
+                является программным обеспечением и осуществляет действия,
+                направленные на нарушение нормального функционирования
+                технических возможностей и оборудования Оператора или содержит
+                это;
+              </li>
+              <li class="terms__list-item terms__text">
+                является вирусом или другими вредоносными программами или
+                содержит их;
+              </li>
+              <li class="terms__list-item terms__text">
+                содержит коммерческую и политическую рекламу;
+              </li>
+              <li class="terms__list-item terms__text">
+                может нанести иной вред
+              </li>
+            </ul>
+
+            <p class="terms__text">
+              Утеря телефонного номера, на который зарегистрирован Личный
+              кабинет, равно как и его переход другому лицу является
+              ответственностью Пользователя.
+            </p>
+
+            <div class="terms__list-wrapper">
+              <p class="terms__text">
+                Регистрируя Личный кабинет на Торговой площадке Пользователь
+                соглашается с тем, что:
+              </p>
+              <div class="terms__list-box">
+                <ul class="terms__list">
+                  <li class="terms__list-item terms__text">
+                    Регистрационные и персональные данные указаны Пользователем
+                    добровольно и осознанно;
+                  </li>
+                  <li class="terms__list-item terms__text">
+                    В случае ввода персональных данных третьих лиц эти указаны с
+                    предварительного и подтвер- жденного согласия этих третьих
+                    лиц; наличие согласия третьих лиц находится в полной ответ-
+                    ственности Пользователя;
+                  </li>
+                  <li class="terms__list-item terms__text">
+                    Регистрационные и персональные данные передаются в
+                    электронной форме по открытым каналам связи сети «Интернет»,
+                    используются (обрабатываются, собираются, систематизируются,
+                    хранятся и обрабатываются другими способами) Оператором для
+                    реализации целей, указанных в настоящих Правилах и в этих же
+                    целях могут быть переданы третьим лицам (их перечень
+                    исчерпывающе приведен в Политике обработки персональных
+                    данных, далее по тексту упоминается эта Политика) (здесь
+                    вставить ссылку-связку с приложением 1 к политике);
+                  </li>
+                  <li class="terms__list-item terms__text">
+                    Регистрационные и персональные данные обрабатываются
+                    Оператором в целях предоставления Пользователю информации о
+                    товарах Продавцов на Торговой площадке;
+                  </li>
+                  <li class="terms__list-item terms__text">
+                    Регистрационные и персональные данные обрабатываются
+                    Оператором в целях продвижения товаров Продавцов путем
+                    организации и обеспечения и прямых контактов между
+                    Продавцами и Пользователями с помощью на Торговой площадке;
+                  </li>
+                  <li class="terms__list-item terms__text">
+                    Оператор осуществляет сбор, запись, систематизацию,
+                    накопление, хранение, уточнение (обнов- ление, изменение),
+                    извлечение, анализ и использование, передачу
+                    (распространение, предостав- ление, доступ), поручение
+                    обработки третьим лицам, получение от третьих лиц,
+                    обезличивание, блокирование, удаление, уничтожение
+                    регистрационных данных Пользователя (в том числе,
+                    персональных данных);
+                  </li>
+                  <li class="terms__list-item terms__text">
+                    Согласие Пользователя на обработку персональных данных может
+                    быть отозвано Пользователем посредством уведомления на
+                    электронный адрес Оператора
+                    <a href="mailto:https://chasi24.ru/contacts"
+                      >https://chasi24.ru/contacts</a
+                    >
+                    ;
+                  </li>
+                  <li class="terms__list-item terms__text">
+                    Оператор не несет ответственности за точность и правильность
+                    информации, предоставляемой Пользователем при регистрации и
+                    за возможные последствия указания Пользователем неточной или
+                    неправильной информации о себе;
+                  </li>
+                  <li class="terms__list-item terms__text">
+                    Договор купли-продажи между Пользователем и Продавцом при
+                    оформлении Пользователем на Торговой площадке Заказа
+                    заключается на условиях гражданского законодательства,
+                    настоящих Правил и влечет правовые последствия для Продавца
+                    и Пользователя только при заказе Товара и его оплаты
+                    посредством использования сервисов Торговой площадки, по
+                    результатам которых сведения о заказе отражаются в Личном
+                    кабинете Пользователя;
+                  </li>
+                  <li class="terms__list-item terms__text">
+                    При оформлении заказа с использованием Личного кабинета
+                    Торговой площадки ответственность за Заказ, в том числе
+                    возможные финансовые убытки, лежит на Пользователе –
+                    владельце Личного кабинета;
+                  </li>
+                  <li class="terms__list-item terms__text">
+                    Заказывая на Торговой площадке Товар, Пользователь заключает
+                    договор купли-продажи с Про- давцом Товара. В рамках одного
+                    Заказа Пользователь может заключить несколько договоров
+                    купли-продажи в отношении выбранных им Товаров;
+                  </li>
+                  <li class="terms__list-item terms__text">
+                    При Заказе Товара Пользователь вступает в договорные
+                    отношения непосредственно с Продав- цом, реализующим
+                    заказываемый Товар;
+                  </li>
+                  <li class="terms__list-item terms__text">
+                    Заключение Пользователем и/или Продавцом договоров с любыми
+                    третьими лицами вне Торго- вой площадки, а равно оплата
+                    заказа иным способом, чем с использованием Торговой площадки
+                    не порождает правовых последствий для Оператора как
+                    владельца Торговой площадки, в т.ч. при получении
+                    предложения о заключении такого договора из информации о
+                    товарах, размещенной на Торговой площадки;
+                  </li>
+                  <li class="terms__list-item terms__text">
+                    Нажимая кнопку «оформить»/«оплатить» (либо иную кнопку,
+                    которая подтверждает волеизъяв- ление Пользователя на
+                    совершение Заказа и перечисление за него оплаты),
+                    Пользователь под- тверждает ознакомление с настоящей офертой
+                    и соглашается со всеми ее условиями, в том числе условиями
+                    обработки персональных данных, оплаты товаров, условий и
+                    порядка получения Товара и иных договоренностей с Продавцом
+                    (в том числе об отказе от Товара);
+                  </li>
+                </ul>
+                <ul class="terms__list">
+                  <li class="terms__list-item terms__text">
+                    Информация, представленная в Карточке товара, может не в
+                    полной мере передавать все характеристики товара (включая
+                    цвет, форму, наличие и описание некоторых функций). Для
+                    получения полной информации Пользователю следует задать
+                    вопрос в чате Торговой площадки (при его наличии) и/или
+                    обратиться к Продавцу. Оформление Пользователем Заказа без
+                    такого обращения является подтверждением того, что
+                    информация о Товаре достаточна Пользователю для оформления
+                    Заказа;
+                  </li>
+                  <li class="terms__list-item terms__text">
+                    Пользователь, оформляя и (или) оплачивая Заказ подтверждает,
+                    что информация о Товаре и его цене, размещенная в Карточке
+                    Товара, а также иная информация о Продавце Товара, способе
+                    получения Товара и его возврата является полной и
+                    достаточной для оформления Заказа. Пользователь гарантирует,
+                    что при недостаточности информации о свойствах Товара, его
+                    цене, способе получения Товара и его возврата Пользователь
+                    обратится к Продавцу Товара или Оператору с запросом
+                    дополнительной информации. Если Пользователь, оформляя
+                    Заказ, не обращается к Продавцу Товара или Оператору, то
+                    информация о Товаре является полной и достаточной для Заказа
+                    товара Пользователем;
+                  </li>
+                  <li class="terms__list-item terms__text">
+                    Оператор может поручить исполнение Заказа третьему лицу,
+                    оставаясь ответственным за его исполнение перед
+                    Пользователем;
+                  </li>
+                  <li class="terms__list-item terms__text">
+                    Оператор уведомит Пользователя посредством электронных писем
+                    / push-уведомлений / сообщений (SMS) на телефонный номер,
+                    указанный Пользователем / звонком и может попросить оценить
+                    качество работы Торговой площадки / Продавца / приобретенный
+                    Товар;
+                  </li>
+                  <li class="terms__list-item terms__text">
+                    Пользователь всегда может отказаться от указанных способов
+                    взаимодействия, отключив их в Личном кабинете;
+                  </li>
+                  <li class="terms__list-item terms__text">
+                    Цена Товара на Торговой площадке указывается в карточке
+                    товара Продавцами в рублях Российской Федерации и включает в
+                    себя все предусмотренные законодательством налоги;
+                  </li>
+                  <li class="terms__list-item terms__text">
+                    Организация и обеспечение доставки Товара до Пользователя
+                    или иного указанного им лица, отказ от Товара, возврат
+                    Товара осуществляются непосредственно между Пользователем и
+                    Продавцом без участия Оператора и находятся вне его
+                    полномочий и ответственности 2;
+                  </li>
+                  <li class="terms__list-item terms__text">
+                    Пользователю доступна предварительная оплата Заказа или
+                    оплата Заказа при получении. Нали- чие вариантов вида и
+                    формы расчетов за Товар предоставляется Продавцом,
+                    оптимальный из них выбирается Пользователем. При этом
+                    Оператор как Торговая площадка только организует и
+                    обеспечивает возможность предоставления и выбора таких
+                    вариантов, исполняя волеизъявление Продавцов и
+                    Пользователей;
+                  </li>
+                  <li class="terms__list-item terms__text">
+                    При оплате Заказов банковской картой или иными доступными
+                    способами, позволяющими производить оплату заказов на
+                    Торговой площадке, Пользователь дает согласие на обработку
+                    вво- димых платежных персональных данных. Пользователь
+                    осознаёт, что указанные действия со стороны Оператора
+                    производятся в интересах Пользователя и направлены на
+                    исполнение воли Пользователя. Приобретая товар на Торговой
+                    площадке, Пользователь предоставляет Оператору согласие на
+                    списание денежных средств по реквизитам банковских карт,
+                    реквизиты которых ука- заны Пользователем в Личном кабинете
+                    (далее – Платежным данным), согласие на обработку которых не
+                    отозвано в установленном порядке;
+                  </li>
+                  <li class="terms__list-item terms__text">
+                    Пользователь гарантирует, что является держателем банковских
+                    карт, реквизиты которых само- стоятельно предоставляет при
+                    оплате Заказа на Торговой площадке или у него имеется
+                    законное право на распоряжение ими;
+                  </li>
+                  <li class="terms__list-item terms__text">
+                    Обработка платежных персональных данных Пользователя
+                    осуществляется Оператором в целях, отраженных в настоящих
+                    Правилах и Политике обработки персональных данных (здесь
+                    вставить ссылку-связку с приложением 1 к политике), и
+                    предусмотренных законодательством о защите персональных
+                    данных. Сокрытие банковской карты делается Оператором для
+                    защиты ее рекви- зитов и не является отзывом согласия на
+                    обработку персональных данных. Согласие на обработ- ку
+                    платежных персональных данных может быть отозвано
+                    Пользователем посредством удаления Платежных данных из
+                    Личного кабинета.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <p class="terms__text">
+              2 При приобретении некоторых видов часов посредством торговой
+              площадки действуют положения Постановления Правительства РФ от
+              10.11.2011 № 924 «Об утверждении перечня технически сложных
+              товаров», п. 13 – касаемо их возврата
+            </p>
+
+            <div class="terms__list-wrapper">
+              <p class="terms__text">Оператор вправе:</p>
+              <div class="terms__list-box">
+                <ul class="terms__list">
+                  <li class="terms__list-item terms__text">
+                    Осуществлять записи телефонных переговоров Пользователя с
+                    Продавцом в рамках исполнения Заказов Пользователя на
+                    Торговой площадке. В соответствии с п. 4 ст. 16 Федерального
+                    закона
+                  </li>
+                  <li class="terms__list-item terms__text">
+                    «Об информации, информационных технологиях и о защите
+                    информации» Оператор обязуется предотвращать попытки
+                    несанкционированного доступа к информации и/или передачу ее
+                    лицам, не имеющим непосредственного отношения к исполнению
+                    Заказов, своевременно обнаруживать и пресекать такие факты;
+                  </li>
+                  <li class="terms__list-item terms__text">
+                    Отказать Пользователю в исполнении Заказа при отсутствии
+                    предоплаты Товара, если она обяза- тельно предусмотрена
+                    Продавцом;
+                  </li>
+                  <li class="terms__list-item terms__text">
+                    Отменить Заказ с безналичным способом оплаты по истечении 10
+                    минут с момента оформления, в случае непоступления оплаты;
+                  </li>
+                  <li class="terms__list-item terms__text">
+                    Использовать технологию «cookies». «Cookies» не содержат
+                    конфиденциальную информацию и не передаются третьим лицам;
+                  </li>
+                  <li class="terms__list-item terms__text">
+                    Получать информацию об ip-адресе посетителя Торговой
+                    площадки. Эта информация не исполь- зуется для установления
+                    личности посетителя и не подлежит передаче третьим лицам;
+                  </li>
+                  <li class="terms__list-item terms__text">
+                    Направлять Пользователю сообщения рекламно-информационного
+                    характера посредством е-mail и sms-рассылок с информацией о
+                    скидках, акциях, новых поступлениях и т.п. в соответствии с
+                    актуальным статусом подписки Пользователя в Личном кабинете.
+                    Частота рассылок определяет- ся Оператором самостоятельно в
+                    одностороннем порядке;
+                  </li>
+                  <li class="terms__list-item terms__text">
+                    Изменять условия акций на Торговой площадке по распоряжению
+                    Продавцов;
+                  </li>
+                  <li class="terms__list-item terms__text">
+                    Изменять в любое время полностью или в части положения
+                    настоящей оферты в одностороннем порядке соответственно
+                    требованиям законодательства или иных обстоятельств, но с
+                    учетом за- щиты законных интересов Продавцов и
+                    Пользователей. При этом изменение положений настоя- щей
+                    оферты не является отказом от ответственности Оператора
+                    и/или Продавцов, размещающих Товары на Торговой площадке, по
+                    уже заключённым договорам. Моментом начала действия но- вой
+                    редакции оферты является момент их размещения на Торговой
+                    площадке;
+                  </li>
+                  <li class="terms__list-item terms__text">
+                    Заблокировать Личный кабинет Пользователя в случае нарушения
+                    им настоящих Правил, подтверждения совершения им
+                    мошеннических и иных противоправных действий, неоднократной
+                    отмены Заказа и отказа от доставленных Товаров, поступления
+                    соответствующего требования от контролирующих, надзорных или
+                    правоохранительных органов.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="terms__list-wrapper">
+              <p class="terms__text">Пользователь вправе:</p>
+              <div class="terms__list-box">
+                <ul class="terms__list">
+                  <li class="terms__list-item terms__text">
+                    Отказаться от получения е-mail и sms-рассылок, для этого ему
+                    нужно нажать на ссылку в письме
+                  </li>
+                  <li class="terms__list-item terms__text">
+                    «Вы можете отписаться от рассылки из своего Личного
+                    кабинета» или зайти в раздел «Подписки» в Личном кабинете
+                  </li>
+                  <li class="terms__list-item terms__text">
+                    Отказаться от Заказа в любое время при наличии технической
+                    возможности отменить заказ;
+                  </li>
+                  <li class="terms__list-item terms__text">
+                    Отозвать согласие на обработку своих персональных данных в
+                    любой момент.
+                  </li>
+                </ul>
+                <ul class="terms__list">
+                  <li class="terms__list-item terms__text">
+                    На Пользователя при заказе Товара и пользовании Торговой
+                    площадкой возлагаются обязанности:
+                  </li>
+                  <li class="terms__list-item terms__text">
+                    Ознакомиться с содержанием и условиями настоящих Правил,
+                    ценами на Товары, предлагаемы- ми на Торговой площадке,
+                    договориться непосредственно с Продавцом о вариантах и
+                    способах получения Товара до оформления Заказа;
+                  </li>
+                  <li class="terms__list-item terms__text">
+                    Сообщить все необходимые данные, однозначно идентифицирующие
+                    его как Пользователя или указываемое им лицо, получающее
+                    Товар;
+                  </li>
+                  <li class="terms__list-item terms__text">
+                    Оплатить заказываемый Товар в соответствии с договоренностью
+                    с Продавцом;
+                  </li>
+                  <li class="terms__list-item terms__text">
+                    Самостоятельно нести ответственность за доступ в Личный
+                    кабинет, не передавать третьим ли- цам доступ к своему
+                    Личному кабинету в целях защиты персональных данных
+                    Пользователя;
+                  </li>
+                  <li class="terms__list-item terms__text">
+                    Нести ответственность за вред, причинённый Торговой
+                    площадке, Продавцам, и любым третьим лицам, если вред
+                    причинён вследствие неправомерных действий Пользователя на
+                    Торговой площадке.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <p class="terms__text">
+              Права на изображения, торговые марки, а также текстовая информация
+              и графические изображения принадлежат их правообладателям.
+            </p>
+            <p class="terms__text">
+              Оператор не является Продавцом Товаров, размещенных к продаже на
+              Торговой площадке. Обращения и претензии
+              <br />
+              Претензии о качестве, количестве и иным свойствам Товаров
+              предъявляются непосредственно Проавцу Товара любыми средствами
+              коммуникации по усмотрению Пользователя.
+            </p>
+            <p class="terms__text">
+              Оператор не является представителем или агентом Продавцов по
+              приему и рассмотрению претензий о качестве, количестве и иным
+              свойствам Товара. Оператор организует и обеспечивает передачу по-
+              лученных посредством Сервиса Торговой площадки от Пользователей
+              претензий Продавцам, не рас- сматривает поступившие претензии и не
+              отвечает от своего имени по ним.
+            </p>
+            <p class="terms__text">
+              Ответственность за рассмотрение претензии, направление ответа, а
+              также за возврат денежных средств, равно как за выплату неустоек,
+              штрафов и иных убытков лежит на Продавце Товара, соот- ветствующие
+              требования должны быть предъявлены Пользователем непосредственно
+              Продавцу Товара.
+            </p>
+            <p class="terms__text">Прочее</p>
+            <p class="terms__text">
+              Оператор не несет ответственности за сбои услуг связи, что
+              повлекло утерю какой-либо информации и/или неблагоприятные
+              последствия не по вине Оператора.
+            </p>
+            <p class="terms__text">
+              Явные и очевидные ошибки, включая опечатки, допущенные в описании
+              Товара, юридически обязывающими не являются.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="auth-modal-placeholder">
+        <div class="modal cookie-modal active auth-modal">
+          <div class="modal-back modal-back--no-close"></div>
+          <div class="modal-wrapper modal-wrapper--cookie">
+            <div class="auth-modal-top-mobile">
+              <!-- <div class="auth-modal-content__logo mobile">
+                  <img src="./assets/images/logo.svg" alt="Logo" />
+                </div> -->
+              <!-- <div class="modal-exit">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M8 8L16 16"
+                      stroke="#031E16"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M16 8L8 16"
+                      stroke="#031E16"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div> -->
+            </div>
+  
+            <div class="modal-content auth-modal-content">
+              <div class="auth-modal-content__title">
+                Ваше согласие для оптимального опыта использования CHASI24
+              </div>
+  
+              <div class="auth-modal-content__desc">
+                Мы используем куки-файлы и аналогичные технологии, чтобы
+                обеспечить надежность и безопасность использования наших
+                предложений. Мы также используем Ваши данные, чтобы показывать Вам
+                интересные для Вас часы и персонализированную рекламу. Поскольку
+                мы являемся международной торговой площадкой, осуществляется
+                передача персональных данных в США и есть риск, что
+                государственные учреждения могут получить к ним доступ.
+              </div>
+  
+              <a href="#!" class="auth-modal-content__forgot-pwd"
+                >Положение о защите данных</a
+              >
+              <button class="auth-modal-content--btn-close btn btn__green">
+                Я даю согласие
+              </button>
+  
+              <a href="#" class="auth-modal-content__forgot-pwd">Настройки</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+<!-- menu modal -->
+<div class="auth-modal-placeholder">
+  <div class="modal menu-modal">
+    <div class="modal-back modal-back--no-close"></div>
+    <div class="menu-modal__container">
+    <div class="menu-modal-wrapper">
+      <div class="menu-modal-top-mobile">
+        <div class="menu-modal-content__logo mobile">
+            <img src="./assets/images/logo.svg" alt="Logo" />
+        </div>
+        <div class="menu-modal-exit modal-exit">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M8 8L16 16" stroke="#7E8582" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M16 8L8 16" stroke="#7E8582" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </div>
+    </div>
+      <div class="modal-content menu-modal-content">
+       
+        <div class="menu-modal-content__info">
+          <div class="menu-modal-content__info_top">
+          <a class="menu-modal-content__item" href="#!" data-modal="login-modal">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                  <path d="M23.6898 7.81022C27.9367 12.0572 27.9367 18.9428 23.6898 23.1898C19.4428 27.4367 12.5571 27.4367 8.31022 23.1898C4.06326 18.9428 4.06326 12.0571 8.31022 7.81022C12.5572 3.56326 19.4428 3.56326 23.6898 7.81022" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M18.4041 11.0581C19.7315 12.3855 19.7315 14.5376 18.4041 15.865C17.0767 17.1924 14.9245 17.1924 13.5971 15.865C12.2697 14.5376 12.2697 12.3855 13.5971 11.0581C14.9245 9.73065 17.0767 9.73065 18.4041 11.0581" stroke="#031E16" stroke-width="1.35938" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M22.8935 23.9076C21.1595 22.0818 18.7139 20.9375 15.9975 20.9375C13.2812 20.9375 10.8355 22.0818 9.10156 23.9088" stroke="#031E16" stroke-width="1.35938" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>Войти</span>
+          </a>
+          <a class="menu-modal-content__item" href="#!">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24.642 23.1168L23.4317 21.3756C23.2664 21.1389 23.1775 20.8574 23.1768 20.5687V15.5718C23.1768 13.6946 22.4312 11.8944 21.1038 10.567C19.7765 9.23968 17.9762 8.49399 16.099 8.49399C14.2219 8.49399 12.4216 9.23968 11.0943 10.567C9.76692 11.8944 9.02122 13.6946 9.02122 15.5718V20.5687C9.02054 20.8574 8.93163 21.1389 8.76642 21.3756L7.55611 23.1168C7.37286 23.3198 7.25235 23.5716 7.20916 23.8417C7.16598 24.1118 7.20196 24.3886 7.31277 24.6387C7.42358 24.8887 7.60447 25.1013 7.83355 25.2508C8.06264 25.4002 8.33011 25.4801 8.60363 25.4807H12.6309C12.7934 26.2807 13.2274 27 13.8594 27.5166C14.4915 28.0332 15.2827 28.3154 16.099 28.3154C16.9154 28.3154 17.7066 28.0332 18.3386 27.5166C18.9707 27 19.4047 26.2807 19.5672 25.4807H23.5944C23.868 25.4801 24.1354 25.4002 24.3645 25.2508C24.5936 25.1013 24.7745 24.8887 24.8853 24.6387C24.9961 24.3886 25.0321 24.1118 24.9889 23.8417C24.9457 23.5716 24.8252 23.3198 24.642 23.1168ZM16.099 26.8963C15.661 26.8951 15.234 26.7584 14.8767 26.5049C14.5193 26.2515 14.2491 25.8938 14.1031 25.4807H18.095C17.949 25.8938 17.6788 26.2515 17.3214 26.5049C16.9641 26.7584 16.5371 26.8951 16.099 26.8963ZM8.60363 24.0652C8.63562 24.0355 8.66412 24.0022 8.68857 23.9661L9.92718 22.1825C10.2576 21.7091 10.4354 21.146 10.4368 20.5687V15.5718C10.4368 14.0701 11.0333 12.6299 12.0952 11.568C13.1571 10.5061 14.5973 9.90955 16.099 9.90955C17.6008 9.90955 19.041 10.5061 20.1029 11.568C21.1647 12.6299 21.7613 14.0701 21.7613 15.5718V20.5687C21.7627 21.146 21.9405 21.7091 22.2709 22.1825L23.5095 23.9661C23.534 24.0022 23.5625 24.0355 23.5944 24.0652H8.60363Z" fill="#031E16"/>
+              <circle cx="16.2141" cy="3.20238" r="2.20238" fill="#031E16"/>
+              </svg>
+          <span>Уведомления</span>
+      </a>
+          <a class="menu-modal-content__item" href="#!">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path id="Path" d="M5.16797 26.5003V26.5003C5.16797 24.1681 7.05797 22.2781 9.39014 22.2781H13.6123C15.9445 22.2781 17.8345 24.1681 17.8345 26.5003V26.5003" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path id="Path_2" d="M14.1141 12.8002C15.557 14.2431 15.557 16.5825 14.1141 18.0255C12.6712 19.4684 10.3318 19.4684 8.88883 18.0255C7.44591 16.5825 7.44591 14.2431 8.88883 12.8002C10.3318 11.3573 12.6712 11.3573 14.1141 12.8002" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path id="Path_3" d="M25.1139 18.1075C28.2732 18.1075 30.8352 15.5455 30.8352 12.3862C30.8352 9.22686 28.2744 6.66486 25.1139 6.66486C21.9534 6.66486 19.3926 9.22686 19.3926 12.3862" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path id="Path_4" d="M25.1196 18.1123C24.2586 18.1123 23.4431 17.9222 22.7105 17.5827L19.1895 18.3305L19.9256 14.8025C19.5838 14.0675 19.3925 13.2485 19.3925 12.3852" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path id="Path_5" d="M22.4508 12.4569C22.4735 12.4797 22.4735 12.5167 22.4508 12.5394C22.428 12.5622 22.391 12.5622 22.3683 12.5394C22.3455 12.5167 22.3455 12.4797 22.3683 12.4569C22.391 12.4342 22.428 12.4342 22.4508 12.4569" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path id="Path_6" d="M25.0758 12.4569C25.0985 12.4797 25.0985 12.5167 25.0758 12.5394C25.053 12.5622 25.016 12.5622 24.9933 12.5394C24.9705 12.5167 24.9705 12.4797 24.9933 12.4569C25.016 12.4342 25.053 12.4342 25.0758 12.4569" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path id="Path_7" d="M27.7008 12.4569C27.7235 12.4797 27.7235 12.5167 27.7008 12.5394C27.678 12.5622 27.641 12.5622 27.6183 12.5394C27.5955 12.5167 27.5955 12.4797 27.6183 12.4569C27.641 12.4342 27.678 12.4342 27.7008 12.4569" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+              <span>Помощь</span>
+          </a>
+      </div>
+
+      <div class="menu-modal-content__divider menu-modal-content__divider-desk"></div>
+
+      <div class="menu-modal-content__info_bottom">
+          <a class="menu-modal-content__item" href="#!">
+              О нас
+          </a>
+          <a class="menu-modal-content__item" href="#!">
+              FAQ
+          </a>
+          <a class="menu-modal-content__item" href="#!">
+              Контакты
+          </a>
+          <a class="menu-modal-content__item" href="#!">
+              Правила модерации
+          </a>
+          <a class="menu-modal-content__item" href="#!">
+          Как работает сервис
+      </a>
+      </div>
+      </div>
+      <div class="menu-modal-content__divider"></div>
+
+
+      <div class="menu-modal-content__bottom"> 
+        <a class="menu-modal-content__item_bottom" href="#!">
+            Политика конфиденциальности
+        </a>
+        <a class="menu-modal-content__item_bottom " href="#!">
+            Оферта
+        </a>
+    </div>
+
+    <div class="menu-modal-content__divider menu-modal-content__mobile"></div>
+    <div class="menu-modal-content__mobile"> 
+      <div class="menu-modal-content__item_bottom" href="#!">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.12012 20H12.0001" stroke="#7E8582" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M8.26352 20H4.92452C4.10152 20 3.68952 19.005 4.27152 18.424L5.36152 17.334" stroke="#7E8582" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M4 12C4 7.582 7.582 4 12 4C16.418 4 20 7.582 20 12C20 16.418 16.418 20 12 20" stroke="#7E8582" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M5.72992 16.96L5.35992 17.33" stroke="#7E8582" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M5.733 16.963C4.651 15.599 4 13.877 4 12" stroke="#7E8582" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+       <span> email@chasi.ru</span>
+      </div>
+      <div class="menu-modal-content__item_bottom" href="#!">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M10.8561 13.1439C9.68615 11.9739 8.80415 10.6639 8.21815 9.33487C8.09415 9.05387 8.16715 8.72487 8.38415 8.50787L9.20315 7.68987C9.87415 7.01887 9.87415 6.06987 9.28815 5.48387L8.11415 4.30987C7.33315 3.52887 6.06715 3.52887 5.28615 4.30987L4.63415 4.96187C3.89315 5.70287 3.58415 6.77187 3.78415 7.83187C4.27815 10.4449 5.79615 13.3059 8.24515 15.7549C10.6941 18.2039 13.5551 19.7219 16.1681 20.2159C17.2281 20.4159 18.2971 20.1069 19.0381 19.3659L19.6891 18.7149C20.4701 17.9339 20.4701 16.6679 19.6891 15.8869L18.5161 14.7139C17.9301 14.1279 16.9801 14.1279 16.3951 14.7139L15.4921 15.6179C15.2751 15.8349 14.9461 15.9079 14.6651 15.7839C13.3361 15.1969 12.0261 14.3139 10.8561 13.1439Z" stroke="#7E8582" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+          <span>+7 (999) 999-99-99</span>
+      </div>
+  </div>
+    <div class="menu-modal-content__apps">
+      <a href="#!" class="menu-modal-content__app">
+        <img src="./assets/images/google-play.webp" alt="Google Play" />
+      </a>
+      <a href="#!" class="menu-modal-content__app">
+        <img src="./assets/images/app-store.webp" alt="App Store" />
+      </a>
+    </div>
+
+    </div>
+    </div>
+    </div>
+
+
+</div>
+</div>
+
+      <!-- login modal -->
+      <div class="auth-modal-placeholder">
+        <div class="modal login-modal auth-modal">
+          <div class="modal-back modal-back--no-close"></div>
+          <div class="modal-wrapper">
+            <div class="auth-modal-top-mobile">
+              <div class="auth-modal-content__logo mobile">
+                <img src="./assets/images/logo.svg" alt="Logo" />
+              </div>
+              <div class="modal-exit">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M8 8L16 16"
+                    stroke="#031E16"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M16 8L8 16"
+                    stroke="#031E16"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+  
+            <div class="modal-content auth-modal-content">
+              <div class="auth-modal-content__title desktop">Вход</div>
+  
+              <div class="auth-modal-content__desc">
+                Войдите, чтобы просматривать информацию в профиле
+              </div>
+              <!-- switchers -->
+              <div class="auth-modal-content__switchers">
+                <button
+                  class="switcher switcher--auth switcher--active"
+                  data-switcher="EmailLogin"
+                >
+                  Почта
+                </button>
+                <button
+                  class="switcher switcher--auth"
+                  data-switcher="PhoneLogin"
+                >
+                  Телефон
+                </button>
+              </div>
+  
+              <!-- switcher-container -->
+              <div class="auth-modal-content__switcher-container">
+                <!-- log in by email -->
+                <div
+                  class="switcher-content switcher-content--active"
+                  data-inputs="EmailLogin"
+                >
+                  <form class="auth-modal-content__form" id="loginByEmailForm">
+                    <div class="input-wrapper">
+                      <input
+                        type="text"
+                        class="auth-modal-content__input"
+                        id="emailLoginInput"
+                        required
+                      />
+                      <span>Почта</span>
+                    </div>
+                    <div class="input-wrapper">
+                      <input
+                        type="password"
+                        class="auth-modal-content__input"
+                        id="emailLoginPasswordInput"
+                        required
+                      />
+                      <span>Пароль</span>
+                      <label class="input-eye">
+                        <input type="checkbox" />
+                        <svg
+                          class="inActive"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                        >
+                          <path
+                            d="M14.1223 9.87975C15.2933 11.0508 15.2933 12.9518 14.1223 14.1248C12.9513 15.2958 11.0503 15.2958 9.87727 14.1248C8.70627 12.9538 8.70627 11.0527 9.87727 9.87975C11.0503 8.70675 12.9503 8.70675 14.1223 9.87975"
+                            stroke="#7E8582"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M3 12C3 11.341 3.152 10.689 3.446 10.088V10.088C4.961 6.991 8.309 5 12 5C15.691 5 19.039 6.991 20.554 10.088V10.088C20.848 10.689 21 11.341 21 12C21 12.659 20.848 13.311 20.554 13.912V13.912C19.039 17.009 15.691 19 12 19C8.309 19 4.961 17.009 3.446 13.912V13.912C3.152 13.311 3 12.659 3 12Z"
+                            stroke="#7E8582"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+  
+                        <svg
+                          class="isActive"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.5582 13.5519C13.9186 14.6302 12.6764 15.1977 11.4426 14.9752C10.2087 14.7527 9.24301 13.787 9.02048 12.5531C8.79795 11.3193 9.36544 10.077 10.4438 9.4375"
+                            stroke="#7E8582"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M17.9969 16.9946C16.2721 18.3028 14.1651 19.0079 12.0003 19.0014C8.41322 19.0652 5.09886 17.0938 3.44275 13.9112C2.84786 12.7054 2.84786 11.2915 3.44275 10.0856C4.271 8.43626 5.5913 7.085 7.22105 6.21875"
+                            stroke="#7E8582"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M20.4272 14.1311C20.4674 14.0551 20.5196 13.9869 20.5576 13.9094C21.1524 12.7036 21.1524 11.2896 20.5576 10.0838C18.9015 6.90123 15.5871 4.92981 12 4.99369C11.7751 4.99369 11.5565 5.02371 11.3345 5.03833"
+                            stroke="#7E8582"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M21.0037 19.9993L3.99658 2.99219"
+                            stroke="#7E8582"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </label>
+                    </div>
+                  </form>
+                </div>
+  
+                <!-- log in by tel -->
+                <div class="switcher-content" data-inputs="PhoneLogin">
+                  <form class="auth-modal-content__form" id="loginByPhoneForm">
+                    <div class="input-wrapper">
+                      <input
+                        type="tel"
+                        class="auth-modal-content__input"
+                        id="phoneLoginInput"
+                        required
+                      />
+                      <span>Телефон</span>
+                    </div>
+                    <div class="input-wrapper">
+                      <input
+                        type="password"
+                        class="auth-modal-content__input auth-modal-content__input--error"
+                        id="phoneLoginPasswordInput"
+                        required
+                      />
+                      <label class="input-eye">
+                        <input type="checkbox" />
+                        <svg
+                          class="inActive"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                        >
+                          <path
+                            d="M14.1223 9.87975C15.2933 11.0508 15.2933 12.9518 14.1223 14.1248C12.9513 15.2958 11.0503 15.2958 9.87727 14.1248C8.70627 12.9538 8.70627 11.0527 9.87727 9.87975C11.0503 8.70675 12.9503 8.70675 14.1223 9.87975"
+                            stroke="#7E8582"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M3 12C3 11.341 3.152 10.689 3.446 10.088V10.088C4.961 6.991 8.309 5 12 5C15.691 5 19.039 6.991 20.554 10.088V10.088C20.848 10.689 21 11.341 21 12C21 12.659 20.848 13.311 20.554 13.912V13.912C19.039 17.009 15.691 19 12 19C8.309 19 4.961 17.009 3.446 13.912V13.912C3.152 13.311 3 12.659 3 12Z"
+                            stroke="#7E8582"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+  
+                        <svg
+                          class="isActive"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.5582 13.5519C13.9186 14.6302 12.6764 15.1977 11.4426 14.9752C10.2087 14.7527 9.24301 13.787 9.02048 12.5531C8.79795 11.3193 9.36544 10.077 10.4438 9.4375"
+                            stroke="#7E8582"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M17.9969 16.9946C16.2721 18.3028 14.1651 19.0079 12.0003 19.0014C8.41322 19.0652 5.09886 17.0938 3.44275 13.9112C2.84786 12.7054 2.84786 11.2915 3.44275 10.0856C4.271 8.43626 5.5913 7.085 7.22105 6.21875"
+                            stroke="#7E8582"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M20.4272 14.1311C20.4674 14.0551 20.5196 13.9869 20.5576 13.9094C21.1524 12.7036 21.1524 11.2896 20.5576 10.0838C18.9015 6.90123 15.5871 4.92981 12 4.99369C11.7751 4.99369 11.5565 5.02371 11.3345 5.03833"
+                            stroke="#7E8582"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M21.0037 19.9993L3.99658 2.99219"
+                            stroke="#7E8582"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </label>
+                      <span>Пароль</span>
+                      <div class="error-text">Текст ошибки</div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <a
+                href="#!"
+                data-modal="reset-password-modal"
+                class="auth-modal-content__forgot-pwd"
+                >Забыли пароль?</a
+              >
+              <button
+                class="btn btn__green"
+                disabled
+                type="submit"
+                id="loginButton"
+              >
+                Войти
+              </button>
+              <div class="auth-modal-content__agr">
+                Входя вы подтверждаете, что ознакомились и принимаете
+                <a href="#!">правила пользования сервисом</a>
+              </div>
+              <div class="auth-modal-content__registration">
+                <span>В первый раз здесь? </span>
+                <a href="#!" data-modal="signup-modal">Зарегистрируйтесь</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- sign up modal -->
+      <div class="auth-modal-placeholder">
+        <div class="modal signup-modal auth-modal">
+          <div class="modal-back"></div>
+          <div class="modal-wrapper">
+            <div class="auth-modal-top-mobile">
+              <div class="auth-modal-content__logo mobile">
+                <img src="./assets/images/logo.svg" alt="Logo" />
+              </div>
+              <div class="modal-exit">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M8 8L16 16"
+                    stroke="#031E16"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M16 8L8 16"
+                    stroke="#031E16"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="modal-content auth-modal-content">
+              <div class="auth-modal-content__title desktop">Регистрация</div>
+              <div class="auth-modal-content__desc" id="signupInfo">
+                Создайте аккаунт, чтобы пользоваться всеми возможностями сервиса
+              </div>
+              <!-- stages -->
+              <div class="auth-modal-content__signup-stages">
+                <!-- FIRST STAGE: switchers, tel/email -->
+                <div class="signup-first-stage">
+                  <!-- switchers -->
+                  <div class="auth-modal-content__switchers">
+                    <button
+                      class="switcher switcher--signup"
+                      data-switcher="emailReg"
+                    >
+                      Почта
+                    </button>
+                    <button
+                      class="switcher switcher--signup"
+                      data-switcher="phoneReg"
+                    >
+                      Телефон
+                    </button>
+                  </div>
+  
+                  <!-- input: tel or email -->
+                  <div class="auth-modal-content__switcher-container">
+                    <!-- input email -->
+                    <div class="switcher-content" data-input="emailReg">
+                      <form
+                        class="auth-modal-content__form"
+                        id="signupByEmailForm"
+                      >
+                        <div class="input-wrapper">
+                          <input
+                            type="text"
+                            class="auth-modal-content__input"
+                            id="emailInput"
+                            required
+                          />
+                          <span>Почта</span>
+                        </div>
+                      </form>
+                    </div>
+  
+                    <!-- input tel -->
+                    <div class="switcher-content" data-input="phoneReg">
+                      <form
+                        class="auth-modal-content__form"
+                        id="signupByPhoneForm"
+                      >
+                        <div class="input-wrapper">
+                          <input
+                            type="text"
+                            class="auth-modal-content__input"
+                            id="phoneInput"
+                            required
+                          />
+                          <span>Телефон</span>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+  
+                  <!-- button continue - go to 2d stage -->
+                  <button
+                    class="btn btn__green"
+                    disabled
+                    type="submit"
+                    id="continueRegButton"
+                  >
+                    Продолжить
+                  </button>
+  
+                  <!-- already have account -->
+                  <div class="auth-modal-content__authorization">
+                    <span>Уже есть аккаунт? </span>
+                    <a href="#!" data-modal="login-modal">Войдите</a>
+                  </div>
+                </div>
+  
+                <!-- SECOND STAGE: tel/email, code -->
+                <div class="signup-second-stage">
+                  <!-- switchers -->
+                  <div class="auth-modal-content__switchers">
+                    <button
+                      class="switcher switcher--signup"
+                      data-switcher="emailReg"
+                    >
+                      Почта
+                    </button>
+                    <button
+                      class="switcher switcher--signup"
+                      data-switcher="phoneReg"
+                    >
+                      Телефон
+                    </button>
+                  </div>
+  
+                  <!-- form with tel/email input and code input -->
+                  <form class="auth-modal-content__form" id="enterCodeForm">
+                    <!-- input tel/email: depends on prev stage -->
+                    <div class="input-wrapper">
+                      <input
+                        type="text"
+                        class="auth-modal-content__input"
+                        id="emailInputDisabled"
+                        readonly
+                        required
+                      />
+                      <span>Почта</span>
+                    </div>
+  
+                    <div class="input-wrapper">
+                      <input
+                        type="tel"
+                        class="auth-modal-content__input"
+                        id="phoneInputDisabled"
+                        readonly
+                        required
+                      />
+                      <span>Телефон</span>
+                    </div>
+  
+                    <!-- input code -->
+                    <div class="input-wrapper">
+                      <input
+                        type="text"
+                        class="auth-modal-content__input"
+                        id="regCode"
+                        required
+                      />
+                      <span>Код</span>
+                    </div>
+                  </form>
+  
+                  <!-- button confirm code - go to 3d stage -->
+                  <button
+                    class="btn btn__green"
+                    disabled
+                    type="submit"
+                    id="confirmCodeButton"
+                  >
+                    Продолжить
+                  </button>
+  
+                  <!-- send code again -->
+                  <div class="send-code-again">
+                    Отправить код повторно через <span class="time">01:00</span>
+                  </div>
+                </div>
+  
+                <!-- THIRD STAGE: create password -->
+                <div class="signup-third-stage">
+                  <!-- inputs: pwd -->
+                  <form class="auth-modal-content__form" id="createPasswordForm">
+                    <div class="input-wrapper">
+                      <input
+                        type="password"
+                        class="auth-modal-content__input"
+                        id="passwordInput"
+                        required
+                      />
+                      <span>Пароль</span>
+                      <label class="input-eye">
+                        <input type="checkbox" />
+                        <svg
+                          class="inActive"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                        >
+                          <path
+                            d="M14.1223 9.87975C15.2933 11.0508 15.2933 12.9518 14.1223 14.1248C12.9513 15.2958 11.0503 15.2958 9.87727 14.1248C8.70627 12.9538 8.70627 11.0527 9.87727 9.87975C11.0503 8.70675 12.9503 8.70675 14.1223 9.87975"
+                            stroke="#7E8582"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M3 12C3 11.341 3.152 10.689 3.446 10.088V10.088C4.961 6.991 8.309 5 12 5C15.691 5 19.039 6.991 20.554 10.088V10.088C20.848 10.689 21 11.341 21 12C21 12.659 20.848 13.311 20.554 13.912V13.912C19.039 17.009 15.691 19 12 19C8.309 19 4.961 17.009 3.446 13.912V13.912C3.152 13.311 3 12.659 3 12Z"
+                            stroke="#7E8582"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+  
+                        <svg
+                          class="isActive"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.5582 13.5519C13.9186 14.6302 12.6764 15.1977 11.4426 14.9752C10.2087 14.7527 9.24301 13.787 9.02048 12.5531C8.79795 11.3193 9.36544 10.077 10.4438 9.4375"
+                            stroke="#7E8582"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M17.9969 16.9946C16.2721 18.3028 14.1651 19.0079 12.0003 19.0014C8.41322 19.0652 5.09886 17.0938 3.44275 13.9112C2.84786 12.7054 2.84786 11.2915 3.44275 10.0856C4.271 8.43626 5.5913 7.085 7.22105 6.21875"
+                            stroke="#7E8582"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M20.4272 14.1311C20.4674 14.0551 20.5196 13.9869 20.5576 13.9094C21.1524 12.7036 21.1524 11.2896 20.5576 10.0838C18.9015 6.90123 15.5871 4.92981 12 4.99369C11.7751 4.99369 11.5565 5.02371 11.3345 5.03833"
+                            stroke="#7E8582"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M21.0037 19.9993L3.99658 2.99219"
+                            stroke="#7E8582"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </label>
+                    </div>
+  
+                    <div class="input-wrapper">
+                      <input
+                        type="password"
+                        class="auth-modal-content__input"
+                        id="repeatPasswordInput"
+                        required
+                      />
+                      <span>Повторите пароль</span>
+                      <label class="input-eye">
+                        <input type="checkbox" />
+                        <svg
+                          class="inActive"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                        >
+                          <path
+                            d="M14.1223 9.87975C15.2933 11.0508 15.2933 12.9518 14.1223 14.1248C12.9513 15.2958 11.0503 15.2958 9.87727 14.1248C8.70627 12.9538 8.70627 11.0527 9.87727 9.87975C11.0503 8.70675 12.9503 8.70675 14.1223 9.87975"
+                            stroke="#7E8582"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M3 12C3 11.341 3.152 10.689 3.446 10.088V10.088C4.961 6.991 8.309 5 12 5C15.691 5 19.039 6.991 20.554 10.088V10.088C20.848 10.689 21 11.341 21 12C21 12.659 20.848 13.311 20.554 13.912V13.912C19.039 17.009 15.691 19 12 19C8.309 19 4.961 17.009 3.446 13.912V13.912C3.152 13.311 3 12.659 3 12Z"
+                            stroke="#7E8582"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+  
+                        <svg
+                          class="isActive"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.5582 13.5519C13.9186 14.6302 12.6764 15.1977 11.4426 14.9752C10.2087 14.7527 9.24301 13.787 9.02048 12.5531C8.79795 11.3193 9.36544 10.077 10.4438 9.4375"
+                            stroke="#7E8582"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M17.9969 16.9946C16.2721 18.3028 14.1651 19.0079 12.0003 19.0014C8.41322 19.0652 5.09886 17.0938 3.44275 13.9112C2.84786 12.7054 2.84786 11.2915 3.44275 10.0856C4.271 8.43626 5.5913 7.085 7.22105 6.21875"
+                            stroke="#7E8582"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M20.4272 14.1311C20.4674 14.0551 20.5196 13.9869 20.5576 13.9094C21.1524 12.7036 21.1524 11.2896 20.5576 10.0838C18.9015 6.90123 15.5871 4.92981 12 4.99369C11.7751 4.99369 11.5565 5.02371 11.3345 5.03833"
+                            stroke="#7E8582"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M21.0037 19.9993L3.99658 2.99219"
+                            stroke="#7E8582"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </label>
+                    </div>
+                  </form>
+  
+                  <!-- button confirm pwd - go to 4d stage -->
+                  <button
+                    class="btn btn__green"
+                    disabled
+                    type="submit"
+                    id="confirmPasswordButton"
+                  >
+                    Продолжить
+                  </button>
+                </div>
+  
+                <!-- FOURTH STAGE: fill user data -->
+                <div class="signup-fourth-stage">
+                  <!-- user data form with inputs -->
+                  <form class="auth-modal-content__form" id="fillingUserDataForm">
+                    <div class="input-wrapper">
+                      <input
+                        type="text"
+                        class="auth-modal-content__input"
+                        id="nameInput"
+                        required
+                      />
+                      <span>Имя</span>
+                    </div>
+  
+                    <div class="input-wrapper">
+                      <input
+                        type="text"
+                        class="auth-modal-content__input"
+                        id="surnameInput"
+                        required
+                      />
+                      <span>Фамилия</span>
+                    </div>
+  
+                    <div class="input-wrapper" id="cityInputWrapper">
+                      <input
+                        type="text"
+                        class="auth-modal-content__input"
+                        id="cityInput"
+                        required
+                      />
+                      <span>Город</span>
+                      <ul class="city-list"></ul>
+                    </div>
+  
+                    <!-- <div class="input-wrapper">
+                                      <input type="tel" class="auth-modal-content__input" id="newPhoneInput" required />
+                                      <span>Телефон</span>
+                                  </div> -->
+  
+                    <!-- <div class="input-wrapper">
+                                      <input type="text" class="auth-modal-content__input" id="newEmailInput" required />
+                                      <span>Почта</span>
+                                  </div> -->
+                  </form>
+  
+                  <!-- agreement -->
+                  <div class="auth-modal-content__agr">
+                    Регистрируясь на сайте, я  даю согласие
+                    <a href="#!">на обработку персональных данных.</a>
+                  </div>
+  
+                  <!-- button sign up - close and reset signup-modal -->
+                  <button
+                    class="btn btn__green"
+                    disabled
+                    type="submit"
+                    id="signUpButton"
+                  >
+                    Зарегистрироваться
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- reset password modal -->
+      <div class="auth-modal-placeholder">
+        <div class="modal auth-modal reset-password-modal">
+          <div class="modal-back"></div>
+          <div class="modal-wrapper">
+            <div class="auth-modal-top-mobile">
+              <div class="auth-modal-content__logo mobile">
+                <img src="./assets/images/logo.svg" alt="Logo" />
+              </div>
+              <div class="modal-exit">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M8 8L16 16"
+                    stroke="#031E16"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M16 8L8 16"
+                    stroke="#031E16"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="modal-content auth-modal-content">
+              <div class="auth-modal-content__title desktop">
+                Восстановление пароля
+              </div>
+              <div class="auth-modal-content__desc" id="resetPasswordInfo">
+                Введите свой номер или почту и мы отправим вам код для
+                восстановления пароля
+              </div>
+  
+              <div class="auth-modal-content__reset-password-stages">
+                <!-- first stage -->
+                <div class="reset-password-first-stage">
+                  <!-- switchers -->
+                  <div class="auth-modal-content__switchers">
+                    <button
+                      class="switcher switcher--reset-pwd"
+                      data-switcher="resetPwdByEmail"
+                    >
+                      Почта
+                    </button>
+                    <button
+                      class="switcher switcher--reset-pwd"
+                      data-switcher="resetPwdByPhone"
+                    >
+                      Телефон
+                    </button>
+                  </div>
+  
+                  <div class="auth-modal-content__switcher-container">
+                    <!-- input email -->
+                    <div class="switcher-content" data-input="resetPwdByEmail">
+                      <form
+                        id="resetPwdByEmailForm"
+                        class="auth-modal-content__form"
+                      >
+                        <div class="input-wrapper">
+                          <input
+                            type="text"
+                            class="auth-modal-content__input"
+                            id="resetPwdEmailInput"
+                            required
+                          />
+                          <span>Почта</span>
+                        </div>
+                      </form>
+                    </div>
+  
+                    <!-- input tel -->
+                    <div class="switcher-content" data-input="resetPwdByPhone">
+                      <form
+                        id="resetPwdByPhoneForm"
+                        class="auth-modal-content__form"
+                      >
+                        <div class="input-wrapper">
+                          <input
+                            type="text"
+                            class="auth-modal-content__input"
+                            id="resetPwdPhoneInput"
+                            required
+                          />
+                          <span>Телефон</span>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+  
+                  <button
+                    class="btn btn__green"
+                    disabled
+                    type="submit"
+                    id="sendCodeButton"
+                  >
+                    Отправить код
+                  </button>
+                </div>
+                <!-- second stage -->
+                <div class="reset-password-second-stage">
+                  <!-- switchers -->
+                  <div class="auth-modal-content__switchers">
+                    <button
+                      class="switcher switcher--reset-pwd"
+                      data-switcher="resetPwdByEmail"
+                    >
+                      Почта
+                    </button>
+                    <button
+                      class="switcher switcher--reset-pwd"
+                      data-switcher="resetPwdByPhone"
+                    >
+                      Телефон
+                    </button>
+                  </div>
+  
+                  <!-- form with tel/email input and code input -->
+                  <form
+                    class="auth-modal-content__form"
+                    id="resetPasswordCodeForm"
+                  >
+                    <!-- input tel/email: depends on prev stage -->
+                    <div class="input-wrapper">
+                      <input
+                        type="text"
+                        class="auth-modal-content__input"
+                        id="emailPwdInputDisabled"
+                        readonly
+                        required
+                      />
+                      <span>Почта</span>
+                    </div>
+  
+                    <div class="input-wrapper">
+                      <input
+                        type="tel"
+                        class="auth-modal-content__input"
+                        id="phonePwdInputDisabled"
+                        readonly
+                        required
+                      />
+                      <span>Телефон</span>
+                    </div>
+  
+                    <!-- input code -->
+                    <div class="reset-password-hint">Введите код</div>
+                    <div class="input-wrapper">
+                      <input
+                        type="text"
+                        class="auth-modal-content__input"
+                        id="resetPasswordCode"
+                        required
+                      />
+                      <span>Код</span>
+                    </div>
+                  </form>
+                  <button
+                    class="btn btn__green"
+                    disabled
+                    type="submit"
+                    id="resetButton"
+                  >
+                    Восстановить
+                  </button>
+  
+                  <a href="#!" class="send-code-again"
+                    >Отправить код повторно через
+                    <span class="time">01:00</span></a
+                  >
+                </div>
+                <!-- third stage -->
+                <div class="reset-password-third-stage">
+                  <form
+                    class="auth-modal-content__form"
+                    id="createNewPasswordForm"
+                  >
+                    <div class="input-wrapper">
+                      <input
+                        type="password"
+                        class="auth-modal-content__input"
+                        id="newPasswordInput"
+                        required
+                      />
+                      <span>Новый пароль</span>
+                      <label class="input-eye">
+                        <input type="checkbox" />
+                        <svg
+                          class="inActive"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                        >
+                          <path
+                            d="M14.1223 9.87975C15.2933 11.0508 15.2933 12.9518 14.1223 14.1248C12.9513 15.2958 11.0503 15.2958 9.87727 14.1248C8.70627 12.9538 8.70627 11.0527 9.87727 9.87975C11.0503 8.70675 12.9503 8.70675 14.1223 9.87975"
+                            stroke="#7E8582"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M3 12C3 11.341 3.152 10.689 3.446 10.088V10.088C4.961 6.991 8.309 5 12 5C15.691 5 19.039 6.991 20.554 10.088V10.088C20.848 10.689 21 11.341 21 12C21 12.659 20.848 13.311 20.554 13.912V13.912C19.039 17.009 15.691 19 12 19C8.309 19 4.961 17.009 3.446 13.912V13.912C3.152 13.311 3 12.659 3 12Z"
+                            stroke="#7E8582"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+  
+                        <svg
+                          class="isActive"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.5582 13.5519C13.9186 14.6302 12.6764 15.1977 11.4426 14.9752C10.2087 14.7527 9.24301 13.787 9.02048 12.5531C8.79795 11.3193 9.36544 10.077 10.4438 9.4375"
+                            stroke="#7E8582"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M17.9969 16.9946C16.2721 18.3028 14.1651 19.0079 12.0003 19.0014C8.41322 19.0652 5.09886 17.0938 3.44275 13.9112C2.84786 12.7054 2.84786 11.2915 3.44275 10.0856C4.271 8.43626 5.5913 7.085 7.22105 6.21875"
+                            stroke="#7E8582"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M20.4272 14.1311C20.4674 14.0551 20.5196 13.9869 20.5576 13.9094C21.1524 12.7036 21.1524 11.2896 20.5576 10.0838C18.9015 6.90123 15.5871 4.92981 12 4.99369C11.7751 4.99369 11.5565 5.02371 11.3345 5.03833"
+                            stroke="#7E8582"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M21.0037 19.9993L3.99658 2.99219"
+                            stroke="#7E8582"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </label>
+                    </div>
+                    <div class="input-wrapper">
+                      <input
+                        type="password"
+                        class="auth-modal-content__input"
+                        id="repeatNewPasswordInput"
+                        required
+                      />
+                      <span>Повторите новый пароль</span>
+                      <label class="input-eye">
+                        <input type="checkbox" />
+                        <svg
+                          class="inActive"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                        >
+                          <path
+                            d="M14.1223 9.87975C15.2933 11.0508 15.2933 12.9518 14.1223 14.1248C12.9513 15.2958 11.0503 15.2958 9.87727 14.1248C8.70627 12.9538 8.70627 11.0527 9.87727 9.87975C11.0503 8.70675 12.9503 8.70675 14.1223 9.87975"
+                            stroke="#7E8582"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M3 12C3 11.341 3.152 10.689 3.446 10.088V10.088C4.961 6.991 8.309 5 12 5C15.691 5 19.039 6.991 20.554 10.088V10.088C20.848 10.689 21 11.341 21 12C21 12.659 20.848 13.311 20.554 13.912V13.912C19.039 17.009 15.691 19 12 19C8.309 19 4.961 17.009 3.446 13.912V13.912C3.152 13.311 3 12.659 3 12Z"
+                            stroke="#7E8582"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+  
+                        <svg
+                          class="isActive"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.5582 13.5519C13.9186 14.6302 12.6764 15.1977 11.4426 14.9752C10.2087 14.7527 9.24301 13.787 9.02048 12.5531C8.79795 11.3193 9.36544 10.077 10.4438 9.4375"
+                            stroke="#7E8582"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M17.9969 16.9946C16.2721 18.3028 14.1651 19.0079 12.0003 19.0014C8.41322 19.0652 5.09886 17.0938 3.44275 13.9112C2.84786 12.7054 2.84786 11.2915 3.44275 10.0856C4.271 8.43626 5.5913 7.085 7.22105 6.21875"
+                            stroke="#7E8582"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M20.4272 14.1311C20.4674 14.0551 20.5196 13.9869 20.5576 13.9094C21.1524 12.7036 21.1524 11.2896 20.5576 10.0838C18.9015 6.90123 15.5871 4.92981 12 4.99369C11.7751 4.99369 11.5565 5.02371 11.3345 5.03833"
+                            stroke="#7E8582"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M21.0037 19.9993L3.99658 2.99219"
+                            stroke="#7E8582"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </label>
+                    </div>
+                  </form>
+                  <button
+                    class="btn btn__green"
+                    disabled
+                    type="submit"
+                    id="saveButton"
+                  >
+                    Сохранить
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <footer class="footer footer--contacts">
+        <div class="container">
+          <div class="footer__inner">
+            <a class="footer__logo"
+              ><img src="./assets//images/logo.svg" alt="Logo"
+            /></a>
+            <div class="footer__info">
+              <div
+                class="footer__info-item-wrapper footer__info-item-wrapper--big"
+              >
+                <a href="#!" class="footer__info-item">О компании</a>
+                <a href="#!" class="footer__info-item">Контакты</a>
+                <a href="#!" class="footer__info-item">Условия продвижения</a>
+              </div>
+  
+              <div
+                class="footer__info-item-wrapper footer__info-item-wrapper--little"
+              >
+                <a href="mailto:email@chasi.ru" class="footer__info-item"
+                  >email@chasi.ru</a
+                >
+                <a href="tel:+79999999999" class="footer__info-item"
+                  >+7 (999) 999-99-99</a
+                >
+                <a href="#!" class="footer__info-item"
+                  >Политика конфиденциальности</a
+                >
+                <a href="#!" class="footer__info-item"
+                  >Правила пользования сайтом</a
+                >
+                <div class="footer__info-item">©2023</div>
+              </div>
+            </div>
+            <div class="footer__apps">
+              <a href="#!" class="footer__app">
+                <img src="./assets/images/google-play.webp" alt="Google Play" />
+              </a>
+              <a href="#!" class="footer__app">
+                <img src="./assets/images/app-store.webp" alt="App Store" />
+              </a>
+            </div>
+          </div>
+          <div class="footer--mobile mobile">
+            <a class="footer--mobile__icon">
+              <svg
+                class="inActive"
+                xmlns="http://www.w3.org/2000/svg"
+                width="33"
+                height="32"
+                viewBox="0 0 33 32"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M21.864 7.63604C25.3787 11.1508 25.3787 16.8492 21.864 20.364C18.3492 23.8787 12.6508 23.8787 9.13604 20.364C5.62132 16.8492 5.62132 11.1508 9.13604 7.63604C12.6508 4.12132 18.3492 4.12132 21.864 7.63604Z"
+                  fill="none"
+                />
+                <path
+                  d="M21.864 7.63604C25.3787 11.1508 25.3787 16.8492 21.864 20.364C18.3492 23.8787 12.6508 23.8787 9.13604 20.364C5.62132 16.8492 5.62132 11.1508 9.13604 7.63604C12.6508 4.12132 18.3492 4.12132 21.864 7.63604"
+                  stroke="#031E16"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M26.5 26L21.5 21"
+                  stroke="#031E16"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+      
+              <svg
+                class="isActive"
+                xmlns="http://www.w3.org/2000/svg"
+                width="33"
+                height="32"
+                viewBox="0 0 33 32"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M21.864 7.63604C25.3787 11.1508 25.3787 16.8492 21.864 20.364C18.3492 23.8787 12.6508 23.8787 9.13604 20.364C5.62132 16.8492 5.62132 11.1508 9.13604 7.63604C12.6508 4.12132 18.3492 4.12132 21.864 7.63604Z"
+                  fill="none"
+                />
+                <path
+                  d="M21.864 7.63604C25.3787 11.1508 25.3787 16.8492 21.864 20.364C18.3492 23.8787 12.6508 23.8787 9.13604 20.364C5.62132 16.8492 5.62132 11.1508 9.13604 7.63604C12.6508 4.12132 18.3492 4.12132 21.864 7.63604"
+                  stroke="#031E16"
+                  fill="#031E16"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M26.5 26L21.5 21"
+                  stroke="#031E16"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+      
+              <span>Поиск</span>
+            </a>
+            <a class="footer--mobile__icon">
+              <svg
+                class="inActive"
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M16 7.28133C16.9187 6.20667 18.508 5 20.928 5C25.16 5 28 8.97333 28 12.6733C28 20.408 18.3707 26.3333 16 26.3333C13.6293 26.3333 4 20.408 4 12.6733C4 8.97333 6.84 5 11.072 5C13.492 5 15.0813 6.20667 16 7.28133Z"
+                  stroke="#031E16"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+      
+              <svg
+                class="isActive"
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M16 7.28133C16.9187 6.20667 18.508 5 20.928 5C25.16 5 28 8.97333 28 12.6733C28 20.408 18.3707 26.3333 16 26.3333C13.6293 26.3333 4 20.408 4 12.6733C4 8.97333 6.84 5 11.072 5C13.492 5 15.0813 6.20667 16 7.28133Z"
+                  stroke="#031E16"
+                  fill="#031E16"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span>Избранное</span>
+            </a>
+            <a class="footer--mobile__icon">
+              <svg
+                class="inActive"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M16 26.375V26.375C9.99337 26.375 5.125 21.5066 5.125 15.5V15.5C5.125 9.49337 9.99337 4.625 16 4.625V4.625C22.0066 4.625 26.875 9.49337 26.875 15.5V15.5C26.875 21.5066 22.0066 26.375 16 26.375Z"
+                  stroke="#031E16"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M15.9987 10.667V20.3337"
+                  stroke="#031E16"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M20.8346 15.5H11.168"
+                  stroke="#031E16"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+      
+              <svg
+                class="isActive"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M16 26.375V26.375C9.99337 26.375 5.125 21.5066 5.125 15.5V15.5C5.125 9.49337 9.99337 4.625 16 4.625V4.625C22.0066 4.625 26.875 9.49337 26.875 15.5V15.5C26.875 21.5066 22.0066 26.375 16 26.375Z"
+                  stroke="#031E16"
+                  fill="#031E16"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M15.9987 10.667V20.3337"
+                  stroke="#FFF"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M20.8346 15.5H11.168"
+                  stroke="#FFF"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span>Объявления</span>
+            </a>
+            <a class="footer--mobile__icon">
+              <svg
+                class="inActive"
+                xmlns="http://www.w3.org/2000/svg"
+                width="33"
+                height="32"
+                viewBox="0 0 33 32"
+                fill="none"
+              >
+                <path
+                  d="M11.3267 26.6667H16.5"
+                  stroke="#031E16"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M11.5185 26.667H7.06651C5.96918 26.667 5.41985 25.3403 6.19585 24.5656L7.64918 23.1123"
+                  stroke="#031E16"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M5.8335 15.9997C5.8335 10.109 10.6095 5.33301 16.5002 5.33301C22.3908 5.33301 27.1668 10.109 27.1668 15.9997C27.1668 21.8903 22.3908 26.6663 16.5002 26.6663"
+                  stroke="#031E16"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M8.1399 22.6134L7.64656 23.1067"
+                  stroke="#031E16"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M8.14416 22.6173C6.7015 20.7987 5.8335 18.5027 5.8335 16"
+                  stroke="#031E16"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <svg
+                class="isActive"
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M10.8299 26.6615H16.0033H10.8299Z"
+                  fill="#031E16"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M11.0219 26.6615H6.56993C5.4726 26.6615 4.92326 25.3348 5.69926 24.5601L7.1526 23.1068"
+                  fill="#031E16"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M5.3366 15.9948C5.3366 10.1041 10.1126 5.32812 16.0033 5.32812C21.8939 5.32812 26.6699 10.1041 26.6699 15.9948C26.6699 21.8855 21.8939 26.6615 16.0033 26.6615"
+                  fill="#031E16"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7.64327 22.6081L7.14993 23.1015L7.64327 22.6081Z"
+                  fill="#031E16"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7.64726 22.6121C6.2046 20.7935 5.3366 18.4975 5.3366 15.9948L7.64726 22.6121Z"
+                  fill="#031E16"
+                />
+                <path
+                  d="M10.8299 26.6615H16.0033C21.8939 26.6615 26.6699 21.8855 26.6699 15.9948C26.6699 10.1041 21.8939 5.32812 16.0033 5.32812C10.1126 5.32812 5.3366 10.1041 5.3366 15.9948C5.3366 18.4975 6.2046 20.7935 7.64726 22.6121M11.0219 26.6615H6.56993C5.4726 26.6615 4.92326 25.3348 5.69926 24.5601L7.1526 23.1068M7.64327 22.6081L7.14993 23.1015"
+                  stroke="#031E16"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M7.5 23L5.5 16V15.5L15 19.5L16 26H10L7.5 24.5V23Z"
+                  fill="#031E16"
+                />
+              </svg>
+              <span>Сообщения</span>
+              <span class="footer--mobile__num"><span>99+</span></span>
+            </a>
+            <a class="footer--mobile__icon" data-modal="login-modal">
+              <svg
+                class="inActive"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+              >
+                <path
+                  d="M23.6898 7.81022C27.9367 12.0572 27.9367 18.9428 23.6898 23.1898C19.4428 27.4367 12.5571 27.4367 8.31022 23.1898C4.06326 18.9428 4.06326 12.0571 8.31022 7.81022C12.5572 3.56326 19.4428 3.56326 23.6898 7.81022"
+                  stroke="#031E16"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M18.4041 11.0581C19.7315 12.3855 19.7315 14.5376 18.4041 15.865C17.0767 17.1924 14.9245 17.1924 13.5971 15.865C12.2697 14.5376 12.2697 12.3855 13.5971 11.0581C14.9245 9.73065 17.0767 9.73065 18.4041 11.0581"
+                  stroke="#031E16"
+                  stroke-width="1.35938"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M22.8935 23.9076C21.1595 22.0818 18.7139 20.9375 15.9975 20.9375C13.2812 20.9375 10.8355 22.0818 9.10156 23.9088"
+                  stroke="#031E16"
+                  stroke-width="1.35938"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+      
+              <svg
+                class="isActive"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+              >
+                <path
+                  d="M23.6898 7.81022C27.9367 12.0572 27.9367 18.9428 23.6898 23.1898C19.4428 27.4367 12.5571 27.4367 8.31022 23.1898C4.06326 18.9428 4.06326 12.0571 8.31022 7.81022C12.5572 3.56326 19.4428 3.56326 23.6898 7.81022"
+                  stroke="#031E16"
+                  fill="#031E16"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M18.4041 11.0581C19.7315 12.3855 19.7315 14.5376 18.4041 15.865C17.0767 17.1924 14.9245 17.1924 13.5971 15.865C12.2697 14.5376 12.2697 12.3855 13.5971 11.0581C14.9245 9.73065 17.0767 9.73065 18.4041 11.0581"
+                  stroke="#fff"
+                  stroke-width="1.35938"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M22.8935 23.9076C21.1595 22.0818 18.7139 20.9375 15.9975 20.9375C13.2812 20.9375 10.8355 22.0818 9.10156 23.9088"
+                  stroke="#fff"
+                  stroke-width="1.35938"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+      
+              <span>Профиль</span>
+            </a>
+          </div>
+        </div>
+      </footer>
+  </body>
+</html>

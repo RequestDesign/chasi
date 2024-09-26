@@ -1,179 +1,197 @@
 .modal {
-    overflow: hidden;
-    display: none;
-    position: fixed;
+  overflow: hidden;
+  // display: none;
+  opacity: 0;
+  z-index: 0;
+  visibility: hidden;
+  position: fixed;
+//   top: 0;
+//   left: 0;
+  inset: 0;
+  // right: 0;
+  // bottom: 0;
+  // z-index: 1010;
+
+  width: 100vw;
+  height: 100%;
+  transition: opacity 0.5s ease 0s, visibility 0.5s, z-index 0.5s;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(6px);
+
+  &.active {
+    // display: block;
+    opacity: 1;
+    z-index: 1010;
+    visibility: visible;
+  }
+
+  &-back {
+    position: absolute;
     top: 0;
     left: 0;
-    z-index: 1010;
 
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    // background: rgba(0, 0, 0, 0.4);
+    // backdrop-filter: blur(6px);
+  }
+  &-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
 
-    &.active {
-        display: block;
+    transform: translate(-50%, -50%);
+
+    background: #fff;
+    padding: 4rem;
+    border-radius: 1.6rem;
+  }
+  &-exit {
+    cursor: pointer;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+
+    width: 2.4rem;
+    height: 2.4rem;
+
+    svg {
+      width: 100%;
+      height: 100%;
     }
-
-    &-back {
-        position: absolute;
-        top: 0;
-        left: 0;
-
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.4);
-        backdrop-filter: blur(6px);
-    }
-    &-wrapper {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-
-        transform: translate(-50%, -50%);
-
-        background: #fff;
-        padding: 4rem;
-        border-radius: 1.6rem;
-    }
-    &-exit {
-        cursor: pointer;
-        position: absolute;
-        top: 2rem;
-        right: 2rem;
-
-        width: 2.4rem;
-        height: 2.4rem;
-
-        svg {
-            width: 100%;
-            height: 100%;
-        }
-    }
+  }
+}
+.send-code-again.active {
+  cursor: pointer;
 }
 
 @media (max-width: 48em) {
-    .modal {
-        &-wrapper {
-            overflow: auto;
-            padding: 11.8rem 3.2rem 6.2rem;
-            width: 100%;
-            height: 100%;
-            background-color: #fff;
-            border-radius: 0;
-        }
-        &-exit {
-            top: 4rem;
-            right: 4rem;
-
-            width: 4.8rem;
-            height: 4.8rem;
-        }
-
-        &-return {
-            margin-bottom: 4.8rem;
-            width: 4.8rem;
-            height: 4.8rem;
-
-            svg {
-                width: 4.8rem;
-                height: 4.8rem;
-            }
-        }
+  .modal {
+// display: none;
+    
+    &-wrapper {
+      overflow: auto;
+      padding: 11.8rem 3.2rem 6.2rem;
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      border-radius: 0;
     }
+    &-exit {
+      top: 4rem;
+      right: 4rem;
+
+      width: 4.8rem;
+      height: 4.8rem;
+    }
+
+    &-return {
+      margin-bottom: 4.8rem;
+      width: 4.8rem;
+      height: 4.8rem;
+
+      svg {
+        width: 4.8rem;
+        height: 4.8rem;
+      }
+    }
+  }
 }
 
 .modal--sm {
+  @media (max-width: 48em) {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100%;
+    z-index: 1000;
+  }
+
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    width: 34.3rem;
+
     @media (max-width: 48em) {
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        left: 0;
+      width: 100%;
+      gap: 4.8rem;
+      position: relative;
+    }
+  }
+
+
+  .modal-wrapper {
+    @media (max-width: 48em) {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background-color: #fff;
+      z-index: 1010;
+      padding: 4.8rem 3.2rem;
+      border-radius: 4.8rem 4.8rem 0 0;
+      transition: bottom 0.2s ease;
+      height: fit-content;
+      top: unset;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__title {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 120%;
+    @media (max-width: 48em) {
+      font-size: 4rem;
+    }
+  }
+
+  &__text {
+    color: #414141;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+
+    @media (max-width: 48em) {
+      font-size: 3.2rem;
+    }
+  }
+
+  &__desc {
+    margin-top: -0.8rem;
+    font-size: 1.6rem;
+    line-height: 150%;
+    @media (max-width: 48em) {
+      margin-top: -1.6rem;
+      font-size: 3.2rem;
+    }
+  }
+
+  &__btns {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+
+    a {
+      font-size: 1.6rem;
+      color: #298267;
+      text-align: center;
+      line-height: 150%;
+
+      @media (max-width: 48em) {
+        font-size: 3.2rem;
+        position: absolute;
+        top: -10rem;
         right: 0;
-        width: 100vw;
-        height: 100vh;
-        z-index: 1000;
+      }
     }
 
-    .modal-content {
-        display: flex;
-        flex-direction: column;
-        gap: 2.4rem;
-        width: 34.3rem;
-
-        @media (max-width: 48em) {
-            width: 100%;
-            gap: 4.8rem;
-            position: relative;
-        }
+    button {
+      width: 100%;
     }
-
-    .modal-wrapper {
-        @media (max-width: 48em) {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            background-color: #fff;
-            z-index: 1010;
-            padding: 4.8rem 3.2rem;
-            border-radius: 4.8rem 4.8rem 0 0;
-            transition: bottom 0.2s ease;
-            height: fit-content;
-            top: unset;
-            transform: translateX(-50%);
-        }
-    }
-
-    &__title {
-        font-size: 2rem;
-        font-weight: 600;
-        line-height: 120%;
-        @media (max-width: 48em) {
-            font-size: 4rem;
-        }
-    }
-
-    &__text {
-        color: #414141;
-        font-size: 1.6rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 150%;
-
-        @media (max-width: 48em) {
-            font-size: 3.2rem;
-        }
-    }
-
-    &__desc {
-        margin-top: -0.8rem;
-        font-size: 1.6rem;
-        line-height: 150%;
-        @media (max-width: 48em) {
-            margin-top: -1.6rem;
-            font-size: 3.2rem;
-        }
-    }
-
-    &__btns {
-        display: flex;
-        flex-direction: column;
-        gap: 1.6rem;
-
-        a {
-            font-size: 1.6rem;
-            color: #298267;
-            text-align: center;
-            line-height: 150%;
-
-            @media (max-width: 48em) {
-                font-size: 3.2rem;
-                position: absolute;
-                top: -10rem;
-                right: 0;
-            }
-        }
-
-        button {
-            width: 100%;
-        }
-    }
+  }
 }

@@ -22,8 +22,8 @@ const swiperThumbnail = new Swiper(".swiper-thumbnail", {
   watchOverflow: true,
   modules: [Navigation],
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev"
+    nextEl: ".swiper-thumbnail ~ .swiper-button-next",
+    prevEl: ".swiper-thumbnail ~ .swiper-button-prev"
   },
 });
 

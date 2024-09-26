@@ -27,7 +27,8 @@ $(function () {
         $(".change-tel-second-stage").hide();
 
         $("#changeTelInput").on("input", function () {
-            $("#sendCodeOnTelButton").prop("disabled", !($("#changeTelInput").val().trim() !== ""));
+            $("#sendCodeOnTelButton").prop("disabled", !($("#changeTelInput").val().trim().match(/\d/g).length === 11))
+            // $("#sendCodeOnTelButton").prop("disabled", !($("#changeTelInput").val().trim() !== ""));
         });
 
         //handle click on sendCodeOnTelButton

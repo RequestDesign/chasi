@@ -3,40 +3,40 @@ import Swiper from "swiper";
 import "swiper/css";
 
 //show chat on dialog click
-$(function () {
-    if (window.innerWidth < 769) {
-        $(".chat__switcher-content").hide();
+// $(function () {
+//     if (window.innerWidth < 769) {
+//         $(".chat__switcher-content").hide();
 
-        $(".chat__dialogs__item").on("click", function () {
-            $(".chat__switcher-content").hide();
-            let switcherValue = $(this).data("switcher");
-            $('.chat__switcher-content[data-content="' + switcherValue + '"]').show();
-            $(".chat__dialog").css("right", "0%");
+//         $(".chat__dialogs__item").on("click", function () {
+//             $(".chat__switcher-content").hide();
+//             let switcherValue = $(this).data("switcher");
+//             $('.chat__switcher-content[data-content="' + switcherValue + '"]').show();
+//             $(".chat__dialog").css("right", "0%");
 
-            let activeMessagesContainer = $('.chat__switcher-content[data-content="' + switcherValue + '"]').find(".chat__dialog__messages");
-            activeMessagesContainer.addClass("active");
-            activeMessagesContainer.scrollTop(activeMessagesContainer.prop("scrollHeight"));
-            updateButtonVisibility();
-        });
+//             let activeMessagesContainer = $('.chat__switcher-content[data-content="' + switcherValue + '"]').find(".chat__dialog__messages");
+//             activeMessagesContainer.addClass("active");
+//             activeMessagesContainer.scrollTop(activeMessagesContainer.prop("scrollHeight"));
+//             updateButtonVisibility();
+//         });
 
-        $(".btn--close-dialog").on("click", function () {
-            $(".chat__dialog").css("right", "-100%");
-        });
-    } else {
-        $(".chat__switcher-content").hide();
-        $('.chat__switcher-content[data-content="dialogFirstVisit"]').show();
+//         $(".btn--close-dialog").on("click", function () {
+//             $(".chat__dialog").css("right", "-100%");
+//         });
+//     } else {
+//         $(".chat__switcher-content").hide();
+//         $('.chat__switcher-content[data-content="dialogFirstVisit"]').show();
 
-        $(".chat__dialogs__item").on("click", function () {
-            $(".chat__switcher-content").hide();
-            let switcherValue = $(this).data("switcher");
-            $('.chat__switcher-content[data-content="' + switcherValue + '"]').show();
-            let activeMessagesContainer = $('.chat__switcher-content[data-content="' + switcherValue + '"]').find(".chat__dialog__messages");
-            activeMessagesContainer.addClass("active");
-            activeMessagesContainer.scrollTop(activeMessagesContainer.prop("scrollHeight"));
-            updateButtonVisibility();
-        });
-    }
-});
+//         $(".chat__dialogs__item").on("click", function () {
+//             $(".chat__switcher-content").hide();
+//             let switcherValue = $(this).data("switcher");
+//             $('.chat__switcher-content[data-content="' + switcherValue + '"]').show();
+//             let activeMessagesContainer = $('.chat__switcher-content[data-content="' + switcherValue + '"]').find(".chat__dialog__messages");
+//             activeMessagesContainer.addClass("active");
+//             activeMessagesContainer.scrollTop(activeMessagesContainer.prop("scrollHeight"));
+//             updateButtonVisibility();
+//         });
+//     }
+// });
 
 //add photo
 $(".input--add-photo").on("change", function () {

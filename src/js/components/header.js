@@ -29,7 +29,7 @@ const header__bottom_swiper = new Swiper(".header__bottom_swiper", {
     spaceBetween: `${remToPx(0.8)}rem`,
     modules: [Navigation],
     navigation: {
-        nextEl: ".swiper-button-next",
+        nextEl: ".header__bottom_swiper ~ .swiper-button-next",
       },
 });
 

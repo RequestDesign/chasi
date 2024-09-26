@@ -1,0 +1,209 @@
+.company{
+    &__content{
+        padding: 4rem 4rem 6.4rem;
+        background-color: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 14rem;
+        font-family: Montserrat;
+        @media (max-width: 48em) {
+            gap: 12rem;
+            padding: 0rem;
+          }
+    }
+    &__top{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        @media (max-width: 48em) {
+           flex-direction: column;
+           gap: 4.8rem;
+          }
+        &_info{
+            display: flex;
+            flex-direction: column;
+            gap: 2.4rem;
+            width: 57.1rem;
+            @media (max-width: 48em) {
+              width: 100%;
+              gap: 4.8rem;
+              }
+        }
+        &_img{
+            width: 63rem;
+            @media (max-width: 48em) {
+                width: 100%;
+              }
+        }
+    }
+    &__title{
+        font-size: 3.2rem;
+        font-weight: 600;
+        line-height: 112.5% ;
+        color: #031E16;
+        @media (max-width: 48em) {
+            font-size:4.8rem;
+            line-height: 116.667% ;
+        }
+        &_span{
+            color: #FFFFFF;
+            background-color: #1D7D4D;
+            border-radius: 2.5rem;
+            padding: 0.4rem 1.6rem;
+        }
+    }
+    &__box-text{
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+        @media (max-width: 48em) {
+            gap: 3rem;
+        }
+    }
+    &__text{
+        color: #031E16;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height:  150%;
+        @media (max-width: 48em) {
+            font-size: 3.2rem;
+        }
+    }
+    &__advantages{
+        display: flex;
+        flex-direction: column;
+        gap: 3.2rem;
+        align-items: center;
+        width: 100%;
+        @media (max-width: 48em) {
+            gap: 4.8rem;
+        }
+        &_list{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            @media (max-width: 48em) {
+                flex-direction: column;
+                gap: 3.2rem;
+            }
+        }
+        &_item{
+            border-radius: 12px;
+            border: 2px solid #1D7D4D;
+            padding: 3.2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.6rem;
+            width: 30.8rem;
+            align-items: center;
+            text-align: center;
+            @media (max-width: 48em) {
+                gap: 1.6rem;
+                width: 100%;
+                padding: 4.8rem;
+            }
+        }
+        &_title{
+            color: #1D7D4D;
+        }
+    }
+    &__mission{
+        text-align: center;
+        width: 96.5rem;
+        @media (max-width: 48em) {
+            width: 100%;
+            text-align: start;
+        }
+    }
+    &__promotion{
+        display: flex;
+        justify-content: space-between;
+        height: 30.5rem;
+        align-items: center;
+        width: 100%;
+        @media (max-width: 48em) {
+            height: auto;
+            flex-direction: column;
+            gap: 4.8rem;
+        }
+        &_info{
+            display: flex;
+            flex-direction: column;
+            gap: 2.4rem;
+            width: 51.5rem;
+            @media (max-width: 48em) {
+                width: 100%;
+                gap: 4.8rem;
+            }
+        }
+        &_right{
+            border-radius: 0.8rem;
+            border: 0.9px solid  #F1F3F3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 63.5rem;
+            padding: 4.2rem 3.9rem;
+            @media (max-width: 48em) {
+                width: 100%;
+                padding: 0rem;
+                border: 0px;
+            }
+        }
+
+    }
+    &__button{
+        background-color: #1D7D4D;
+        width: 14.6rem;
+        height: 4.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 200rem;
+        @media (max-width: 48em) {
+            width: 29rem;
+            height: 9.2rem;
+        }
+        &_text{
+            color: #FFFFFF;
+        }
+    }   
+    &__bottom{
+        display: flex;
+        flex-direction: column;
+        gap: 3.2rem;
+        align-items: center;
+        text-align: center;
+        @media (max-width: 48em) {
+            width: 100%;
+            height: auto;
+            gap: 4.8rem;
+            align-items: start;
+            text-align: start;
+        }
+        &_title{
+            max-width: 93.5rem;
+        }
+        &_text{
+            max-width: 60rem;
+        }
+    }
+    &__apps{
+        display: flex;
+        gap: 1.2rem;
+        @media (max-width: 48em){
+            gap: 4.8rem;
+        }
+    }
+    &__app{
+        width: 12rem;
+        height: 3.8rem;
+        @media (max-width: 48em){
+            width: 24rem;
+            height: 7.6rem;
+        }
+    }
+   
+}

@@ -58,6 +58,7 @@
                     & ~ .characteristic__form_input {
                         margin-bottom: 2.6rem;
                         position: relative;
+                        
 
                         .characteristic__dropdown_error-text {
                             position: absolute;
@@ -65,6 +66,7 @@
                             margin: 0;
                             left: 0;
                         }
+                    
                     }
                 }
                 .characteristic__dropdown_top {
@@ -72,8 +74,16 @@
                 }
                 .characteristic__form_input {
                     border: 0.1rem solid #ED3241;
+                 
                 }
             }
+            .characteristic__form_input {
+                & input {
+                    width: 100%;
+                }
+             
+            }
+        
 
             &--big {
                 align-items: flex-start;
@@ -177,6 +187,7 @@
             display: flex;
             flex-direction: column;
             gap: 2.4rem;
+            margin-bottom: 4rem;
         }
         &_down_addit_closed {
             display: none;
@@ -247,16 +258,18 @@
                 width: 2.4rem;
                 height: 2.4rem;
                 position: absolute;
-                right: 0;
-                top: 0;
+                right: 0.4rem;
+                top: 0.4rem;
                 cursor: pointer;
+                border-radius: 0.4rem;
+                background-color: rgba(0, 0, 0, 0.3);
 
                 &::after {
                     content: '';
                     display: flex;
                     width: 2.4rem;
                     height: 2.4rem;
-                    background: url(./assets/images/close-icon-black.svg) no-repeat;
+                    background: url(./assets/images/close-ico.svg) no-repeat;
                     background-size: cover;
                 }
 
@@ -339,7 +352,7 @@
             background: #FFF;
             box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.10);
             border-radius: 0.8rem;
-
+            z-index: 20;
             &_header {
                 display: none;
             }
@@ -486,6 +499,7 @@
 
 @media (max-width: 48em){
     .characteristic {
+        margin-bottom: 26rem;
         &.open  {
             position: relative;
             z-index: 2;
@@ -665,6 +679,14 @@
             &_btns {
                 display: flex;
                 gap: 1.2rem;
+
+
+                position: fixed;
+                bottom: 12rem;
+                left: 0;
+                right: 0;
+                padding: 4.8rem 3.2rem;
+                background-color: #fff;
             }
         }
         &__photos {
@@ -767,9 +789,11 @@
                 position: fixed;
                 bottom: 0;
                 left: 0;
+                z-index: 20;
 
                 &_big {
-                    height: 90vh;
+                    // height: 90vh;
+                    height: 90%;
                 }
     
                 &_header {

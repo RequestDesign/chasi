@@ -1,8 +1,10 @@
 @import "./scss/fonts";
 @import "./scss/libs/set";
 @import "./scss/libs/cropper";
+@import "./scss/libs/croppie";
 @import "./scss/components/header";
 @import "./scss/components/footer";
+@import "./scss/components/footer--contacts";
 @import "./scss/components/modal";
 @import "./scss/components/login-modal";
 @import "./scss/components/signup-modal";
@@ -10,10 +12,13 @@
 @import "./scss/components/profile-modals";
 @import "./scss/components/recomendation-modal";
 @import "./scss/components/unpublish-modal";
+@import "./scss/components/archive-modal";
 @import "./scss/components/currency-modal";
 @import "./scss/components/fancybox-gallery";
 @import "./scss/components/dropdown";
 @import "./scss/components/bottom-sheet";
+@import "./scss/components/contacts";
+@import "./scss/components/promotions";
 @import "./scss/pages/main-page";
 @import "./scss/pages/main-page";
 @import "./scss/pages/adv-card-draft";
@@ -28,4 +33,9 @@
 @import "./scss/pages/adv-card-consumer";
 @import "./scss/pages/adv-card-seller";
 @import "./scss/pages/error_page";
+@import "./scss/pages/terms";
+@import "./scss/pages/policy";
+@import "./scss/components/menu-modal";
+@import "./scss/pages/moderation_policy.scss";
+@import "./scss/pages/company.scss";
 @import "./scss/style";

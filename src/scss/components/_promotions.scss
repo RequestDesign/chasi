@@ -1,0 +1,239 @@
+.promotions {
+  margin-bottom: 0;
+  // .promotion__inner
+  @media (max-width: 48em) {
+    margin-bottom: 0;
+  }
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 14rem;
+    padding: 5.4rem 4rem 10rem;
+    border-radius: 3.8rem 3.8rem 0 0;
+    background: #fff;
+    @media (max-width: 48em) {
+      padding: 4rem 0 12rem;
+      gap: 12rem;
+      border-radius: unset;
+    }
+  }
+
+  // .promotion__header-box
+
+  &__header-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 7.9rem;
+    @media (max-width: 48em) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 4.8rem;
+    }
+  }
+
+  // .promotion__header-title-box
+
+  &__header-title-box {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    @media (max-width: 48em) {
+      gap: 4.8rem;
+    }
+  }
+
+  // .promotion__header-title
+
+  &__header-title {
+    font-weight: 600;
+    font-size: 3.2rem;
+    line-height: 112%;
+    @media (max-width: 48em) {
+      font-size: 4.8rem;
+    }
+  }
+
+  // .promotion__header-text-box
+
+  &__header-text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    @media (max-width: 48em) {
+      gap: 3.2rem;
+    }
+  }
+
+  // .promotion__header-text
+
+  &__header-text {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 150%;
+    color: #031e16;
+    @media (max-width: 48em) {
+      font-size: 3.2rem;
+    }
+  }
+
+  // .promotion__header-btn
+
+  &__header-btn {
+    width: fit-content;
+    background-color: #1d7d4d !important;
+  }
+
+  // .promotion__header-img-wrapper
+
+  &__header-img-wrapper {
+    border: 0.1rem solid #f1f3f3;
+    width: 70.6rem;
+    flex-shrink: 0;
+    border-radius: 3.2rem;
+    padding: 4.2rem;
+    @media (max-width: 48em) {
+      width: 68.6rem;
+      padding: 0;
+      border-radius: 0;
+      border: unset;
+    }
+  }
+
+  // .promotion__header-img-box
+
+  &__header-img-box {
+    width: 61.9rem;
+    height: 24.4rem;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    @media (max-width: 48em) {
+      width: 68.6rem;
+      height: 28rem;
+    }
+  }
+
+  // .promotion__list
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 14rem;
+    align-items: center;
+    @media (max-width: 48em) {
+      gap: 12rem;
+    }
+  }
+
+  // .promotion__item
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    align-items: center;
+    text-align: center;
+    @media (max-width: 48em) {
+      gap: 4.8rem;
+    }
+  }
+
+  // .promotion__item-title-box
+
+  &__item-title-box {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    @media (max-width: 48em) {
+      gap: 4.8rem;
+    }
+  }
+
+  // .promotion__item-title
+
+  &__item-title {
+    font-weight: 600;
+    font-size: 3.2rem;
+    line-height: 112%;
+    text-align: center;
+    @media (max-width: 48em) {
+      font-size: 4.8rem;
+    }
+    &--platinum {
+      & span {
+        display: inline-block;
+        padding: 0.4rem 1.6rem;
+        color: #fff;
+        background-color: #1d7d4d;
+        border-radius: 2.5rem;
+        @media (max-width: 48em) {
+          padding: 0.4rem 1.6rem ;
+          border-radius: 4.8rem;
+        }
+      }
+    }
+
+    &--gold {
+      & span {
+        display: inline-block;
+        padding: 0.4rem 1.6rem;
+        border: 0.2rem solid #1d7d4d;
+        border-radius: 2.5rem;
+        @media (max-width: 48em) {
+          padding: 0 1.6rem 0.4rem;
+          border-radius: 4.8rem;
+          border: 0.4rem solid #1d7d4d;
+        }
+      }
+    }
+
+    &--silver {
+    }
+  }
+
+  // .promotion__item-desc
+
+  &__item-desc {
+    width: 55rem;
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 117%;
+    @media (max-width: 48em) {
+      width: 100%;
+      font-size: 4.8rem;
+    }
+  }
+
+  // .promotion__item-text
+
+  &__item-text {
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 150%;
+    @media (max-width: 48em) {
+      font-size: 3.2rem;
+    }
+  }
+
+  // .promotion__item-img-box
+
+  &__item-img-box {
+    border: 0.1rem solid #f1f3f3;
+    border-radius: 1.2rem;
+    width: 70.2rem;
+    height: 23rem;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    @media (max-width: 48em) {
+      width: 68.6rem;
+      height: 22.4rem;
+    }
+  }
+}

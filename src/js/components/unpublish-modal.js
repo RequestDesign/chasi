@@ -7,7 +7,7 @@ $('[data-modal="unpublish"]').on('click', () => {
 $('.btn--unpublish--modal').on('click', function () {
     $('.modal').removeClass('active');
 	$('body').removeClass('lock');
-
+    document.querySelector("body").style.paddingRight = ``;
     $('.pop-up').addClass('showed')
 		setTimeout(()=> {
 			$('.pop-up').removeClass('showed')

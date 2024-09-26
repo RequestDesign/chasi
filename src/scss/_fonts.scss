@@ -5,3 +5,17 @@
   src: url("./assets/fonts/HelveticaNeueCyr-Roman.woff") format("woff"),
     url("./assets/fonts/HelveticaNeueCyr-Roman.woff2") format("woff2");
 }
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 600;
+  src: url("./assets/fonts/Montserrat-SemiBold.woff") format("woff"),
+    url("./assets/fonts/Montserrat-SemiBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 400;
+  src: url("./assets/fonts/Montserrat-Regular.woff") format("woff"),
+    url("./assets/fonts/Montserrat-Regular.woff2") format("woff2");
+}

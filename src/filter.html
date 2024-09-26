@@ -6,16 +6,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-	<title>Поиск через фильтр</title>
+	<title>Поиск через фильтр</title> 
 </head>
 
 <body>
     <header class="header">
         <div class="container">
             <div class="header__top">
+                <a class="header__menu" data-modal="menu-modal"><img class="header__menu_icon" src="./assets/images/menu-icon.svg" alt="Logo"></a>
                 <div class="header__top_container_left">
-                    <a class="header__logo"><img src="./assets/images/logo.svg" alt="Logo"></a>
-                    <div class="header__logo_text desktop">Кременчуг-Константиновское</div>
+                    <a class="header__logo header__logo_main"><img src="./assets/images/logo.svg" alt="Logo"></a>
+                    <!-- <div class="header__logo_text desktop">Кременчуг-Константиновское</div> -->
                 </div>
                 <div class="header__top_container_center">
                     <div class="header__search_blur"></div>
@@ -26,7 +27,7 @@
                         </svg>
                         <input class="header__search_input" type="text" placeholder="Введите название модели">
                     </div>
-                    <a class="header__filter" href="">
+                    <a class="header__filter mobile" href="">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M14 14H16C16.552 14 17 14.448 17 15V19C17 19.552 16.552 20 16 20H14C13.448 20 13 19.552 13 19V15C13 14.448 13.448 14 14 14Z" stroke="#7E8582" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M21 17H17" stroke="#7E8582" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -156,6 +157,7 @@
                             <path d="M8.14416 22.6173C6.7015 20.7987 5.8335 18.5027 5.8335 16" stroke="#031E16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                         <span>Сообщения</span>
+                        <span class="header__icon-num"><span>99+</span></span>
                     </a>
                     <a class="header__icon" data-modal="login-modal">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
@@ -438,15 +440,15 @@
                                 <div class="filter__item_title">Продавцы</div>
                                 <div class="filter__item_box">
                                     <label class="filter__box_choice">
-                                        <input type="checkbox">
+                                        <input type="radio" name="sellers">
                                         <span>Все</span>
                                     </label>
                                     <label class="filter__box_choice">
-                                        <input type="checkbox">
+                                        <input type="radio" name="sellers">
                                         <span>Частные</span>
                                     </label>
                                     <label class="filter__box_choice">
-                                        <input type="checkbox">
+                                        <input type="radio" name="sellers">
                                         <span>Компании</span>
                                     </label>
                                 </div>
@@ -455,15 +457,15 @@
                                 <div class="filter__item_title">Пол</div>
                                 <div class="filter__item_box">
                                     <label class="filter__box_choice">
-                                        <input type="checkbox">
+                                        <input type="radio" name="gender">
                                         <span>Мужские</span>
                                     </label>
                                     <label class="filter__box_choice">
-                                        <input type="checkbox">
+                                        <input type="radio" name="gender">
                                         <span>Женские</span>
                                     </label>
                                     <label class="filter__box_choice">
-                                        <input type="checkbox">
+                                        <input type="radio" name="gender">
                                         <span>Унисекс</span>
                                     </label>
                                 </div>
@@ -1017,7 +1019,10 @@
             </div>
             <div class="filter__right">
                 <div class="main-page__top">
-                    <div class="main-page__title">Объявления</div>
+                    <div class="main-page__title">Объявления
+                    <span class="main-page__title-local">Кременчуг-Константиновское</span>
+
+                    </div>
                     <div class="main-page__sorting">
                         <div class="main-page__sorting_top">
                             <span>По популярности</span>
@@ -1080,7 +1085,7 @@
                         <div class="main-page__item-city">Ростов-на-Дону</div>
                         <div class="main-page__item-cost">132 300 ₽</div>
                     </div>
-                    <div class="main-page__item desktop">
+                    <div class="main-page__item ">
                         <a class="main-page__item-img">
                             <img src="./assets/images/main__item-img3.webp" alt="">
                         </a>
@@ -1091,9 +1096,9 @@
                             </svg>
                         </div>
                         <div class="main-page__item-city">Рязань</div>
-                        <div class="main-page__item-cost">1 895 ₽</div>
+                        <div class="main-page__item-cost main-page__item-cost--green">1 895 ₽</div>
                     </div>
-                    <div class="main-page__item desktop">
+                    <div class="main-page__item ">
                         <a class="main-page__item-img">
                             <img src="./assets/images/main__item-img4.webp" alt="">
                         </a>
@@ -1276,7 +1281,7 @@
                             </svg>
                         </div>
                         <div class="main-page__swiper-small-item_city">Санкт-Петербург</div>
-                        <div class="main-page__swiper-small-item_cost">17 490 ₽</div>
+                        <div class="main-page__swiper-small-item_cost main-page__item-cost--green">17 490 ₽</div>
                     </div>
                     <div class="main-page__swiper-small_add">
                         <div class="main-page__item-add">Реклама</div>
@@ -1325,7 +1330,7 @@
                         <div class="main-page__item-city">Ростов-на-Дону</div>
                         <div class="main-page__item-cost">132 300 ₽</div>
                     </div>
-                    <div class="main-page__item desktop">
+                    <div class="main-page__item ">
                         <a class="main-page__item-img">
                             <img src="./assets/images/main__item-img3.webp" alt="">
                         </a>
@@ -1338,7 +1343,7 @@
                         <div class="main-page__item-city">Рязань</div>
                         <div class="main-page__item-cost">1 895 ₽</div>
                     </div>
-                    <div class="main-page__item desktop">
+                    <div class="main-page__item ">
                         <a class="main-page__item-img">
                             <img src="./assets/images/main__item-img4.webp" alt="">
                         </a>
@@ -1388,7 +1393,7 @@
                             </svg>
                         </div>
                         <div class="main-page__big_text">Классические мужские часы производства Франция. Надёжная модель на каждый день. На хорошем ходу, календарь работает корректно. Продается в комплекте с ремешком. Цена чисто символическая.</div>
-                        <div class="main-page__big_price">1 624 359 ₽</div>
+                        <div class="main-page__big_price main-page__item-cost--green">1 624 359 ₽</div>
                     </div>
                     <div class="main-page__big_pagination pagination__slides"></div>
                 </div>
@@ -1419,7 +1424,7 @@
                         <div class="main-page__item-city">Ростов-на-Дону</div>
                         <div class="main-page__item-cost">132 300 ₽</div>
                     </div>
-                    <div class="main-page__item desktop">
+                    <div class="main-page__item ">
                         <a class="main-page__item-img">
                             <img src="./assets/images/main__item-img3.webp" alt="">
                         </a>
@@ -1432,7 +1437,7 @@
                         <div class="main-page__item-city">Рязань</div>
                         <div class="main-page__item-cost">1 895 ₽</div>
                     </div>
-                    <div class="main-page__item desktop">
+                    <div class="main-page__item ">
                         <a class="main-page__item-img">
                             <img src="./assets/images/main__item-img4.webp" alt="">
                         </a>

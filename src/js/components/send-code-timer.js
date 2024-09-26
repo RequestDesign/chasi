@@ -11,9 +11,9 @@ export function startTimer() {
         timerElement = $('<span class="time">01:00</span>');
         linkElement.append(timerElement);
     }
+    timerElement = $('.send-code-again .time');
 
     duration = 60;
-
     timer = setInterval(function () {
         if (duration > 0) {
             duration--;

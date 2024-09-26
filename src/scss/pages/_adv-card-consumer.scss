@@ -108,11 +108,49 @@
         align-items: center;
         gap: 0.8rem;
         margin-bottom: 2.4rem;
-
+        flex-wrap: wrap;
         @media (max-width: 48em) {
             font-size: 2.6rem;
             gap: 1.6rem;
             margin-bottom: 3.2rem;
+        }
+
+    }
+
+    &__detail {
+        display: flex;
+        align-items:center;
+        gap: 0.8rem;
+
+        &:not(:first-child)::before {
+            content: "•";
+
+        }
+        @media (max-width: 48em) {
+            gap: 1.6rem;
+        }
+        
+    }
+
+    &__waich-count {
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+        @media (max-width: 48em) {
+            gap: 0.8rem;
+        }
+        & .adv-card__waich-count-svg-box {
+            width: 1.6rem;
+            height: 1.6rem;
+            & svg {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            @media (max-width: 48em) {
+                width: 3.2rem;
+                height: 3.2rem;
+            }
         }
     }
 
@@ -505,8 +543,10 @@
         gap: 1.6rem;
 
         @media (max-width: 48em) {
-            height: unset;
-            width: unset;
+            // height: unset;
+            // width: unset;
+            
+            width: 100%;
         }
 
         .adv-card__swiper {
@@ -514,8 +554,9 @@
             height: 54rem;
 
             @media (max-width: 48em) {
-                height: unset;
-                width: unset;
+                // height: unset;
+                // width: unset;
+                width: 100%;
             }
 
             .swiper-slide {
@@ -537,6 +578,27 @@
                     object-fit: cover;
                 }
             }
+
+            .swiper-slide--video {
+                position: relative;
+                & img {
+                    filter: blur(4px);
+                }
+
+                &::after {
+                    content: '';
+                    background: url(./assets/images/play.svg) no-repeat top/contain;
+                    position: absolute;
+                    width: 6rem;
+                    height: 6rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
         }
 
         .swiper-thumbnail-container {
@@ -544,6 +606,9 @@
             height: 54rem;
             width: 11.8rem;
             margin: 0;
+
+
+ 
 
             @media (max-width: 48em) {
                 display: none;
@@ -604,21 +669,81 @@
         }
 
         .swiper-thumbnail {
+            // height: 54rem;
+            // width: 11.8rem;
+            // border-radius: 0.8rem;
+            // overflow: hidden;
+
+
             height: 54rem;
+            padding: 1rem 0;
             width: 11.8rem;
             border-radius: 0.8rem;
+         
             overflow: hidden;
+
 
             .swiper-slide {
                 height: 8rem;
                 width: 11.8rem;
-                opacity: 0.5;
-                overflow: hidden;
-                border-radius: 0.8rem;
+                // opacity: 0.5;
+                // overflow: hidden;
+                // border-radius: 0.8rem;
+                cursor: pointer;
+                &::before {
+                    content:'';
+                    position: absolute;
+                    inset: 0;
+                    background-color:rgba(241, 243, 243);
+                    border-radius: 0.8rem;
+                    opacity: 0.5;
+                    transition: opacity 0.3s;
+                    z-index: 2;
+                }
+            }
+
+            .swiper-slide--video {
+                position: relative;
+                & img {
+                    filter: blur(2px);
+                }
+
+                &::before {
+            
+                }
+
+                &::after {
+                    content:'';
+                    background: url(./assets/images/play.svg) no-repeat top/contain;
+                    position: absolute;
+                    width: 2.5rem;
+                    height: 2.5rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    z-index: 6;
+                }
             }
 
             .swiper-slide-thumb-active {
-                opacity: 1;
+                // opacity: 1;
+                & img {
+                    // opacity: 1;
+                }
+                &::before {
+                    opacity: 0;
+                }
+            }
+
+            img {
+                height: 100%;
+                object-fit: cover;
+                border-radius: 0.8rem;
+                // opacity: 0.5;
+                // transition: opacity 0.3s;
             }
 
             @media (max-width: 48em) {
@@ -666,7 +791,17 @@
                 height: 100%;
                 object-fit: cover;
             }
+
+         
         }
+
+        @media (max-width: 48em) {
+            width: 100%;
+            height: 51.2rem;
+            border-radius: 2.4rem;
+        }
+
+    
     }
 
     &__info--mobile {
